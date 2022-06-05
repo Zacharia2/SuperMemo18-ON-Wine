@@ -76,7 +76,7 @@
 
    解压到指定目录：tar -zxvf 压缩文件名.tar.gz   -C   <目标目录>
 
-2. 压缩命令：tar -zcvf 压缩文件名.tar.gz 被压缩的文件夹
+2. 压缩命令：tar -zcvf 压缩文件名.tar.gz <被压缩的文件夹>
 
 
 
