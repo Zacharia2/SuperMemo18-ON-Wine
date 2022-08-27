@@ -2,6 +2,26 @@
 
 ## 安装步骤：
 
+如果想最快上手(无需手动配置)
+
+Debian / Ubuntu
+
+```bash
+wget https://github.com/Zacharia2/SuperMemo18-ON-Wine/releases/download/v3/SuperMemo18-Wine32-dpkg-3.deb \
+&& sudo apt install ./SuperMemo18-Wine32-dpkg-3.deb
+```
+
+Arch / Manjaro
+
+```bash
+mkdir -p /tmp/sm18
+cd /tmp/sm18
+wget https://raw.githubusercontent.com/Zacharia2/SuperMemo18-ON-Wine/main/PKGBUILD
+makepkg -i
+```
+
+## 手动配置
+
 1. 将SM18-ON-Wine文件夹放到HOME目录里面。并在终端中将工作目录切换到该目录
 
    ```sh
@@ -21,10 +41,10 @@
 
    ```sh
    bash winetricks    #启动winetricks向导
-   
+   ```
    在Winetricks-择-Wine容器对话框中选择创建新的wine容器。
    出现新窗口，Architecture（架构）选择32，Name输入：SM18-Wine32点击OK，然后弹出新的窗口点击Yes（为wine报告统计数据帮助wine的发展）。等待创建结束就可以关闭向导窗口（容器对话框）。
-   ```
+   
 
 3. 把字体文件放到容器系统中的字体文件夹
 
@@ -59,13 +79,6 @@
    rm -rf $HOME/.local/share/wineprefixes/SM18-Wine32/drive_c/SuperMemo
    cp -rf $HOME/SM18-ON-Wine/SuperMemo $HOME/.local/share/wineprefixes/SM18-Wine32/drive_c
    ```
-
-
-
-
-
-
-
 
 
 ## 需要用到的知识
