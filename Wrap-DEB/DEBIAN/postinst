@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# 安装后执行的脚本
+
+chmod a+x /opt/SM18.05-WINE-Vessel/Wine-x86_64-ubuntu.latest.AppImage
+sudo ln -s /opt/SM18.05-WINE-Vessel/Wine-x86_64-ubuntu.latest.AppImage /usr/bin/sm-wine
+mkdir /opt/SM18.05-WINE-Vessel/drive_c/SuperMemo/SuperMemo资料库
+
+# 获取桌面路径
+desk=`cat $HOME/.config/user-dirs.dirs | grep DESKTOP | tail  -1  |cut -d '=' -f 2  | sed 's/\"//g'`
+# echo $desk
+
+# 添加C盘、D盘、E盘卡包文件夹与资料库，应放到明显的位置打开。
+ln -s /opt/SM18.05-WINE-Vessel/drive_c/SuperMemo/systems $desk/SuperMemo Card and Data/SuperMemo C盘卡包
+ln -s /opt/SM18.05-WINE-Vessel/drive_d/ $desk/SuperMemo Card and Data/SuperMemo D盘卡包
+ln -s /opt/SM18.05-WINE-Vessel/drive_e/ $desk/SuperMemo Card and Data/SuperMemo E盘卡包
+ln -s /opt/SM18.05-WINE-Vessel/drive_c/SuperMemo/SuperMemo资料库 $desk/SuperMemo Card and Data/SuperMemo C盘资料库

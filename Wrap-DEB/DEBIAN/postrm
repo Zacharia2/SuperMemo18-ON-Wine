@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# 卸载后执行的脚本
+
+
+# 获取桌面路径
+desk=`cat $HOME/.config/user-dirs.dirs | grep DESKTOP | tail  -1  |cut -d '=' -f 2  | sed 's/\"//g'`
+
+# 删除wine.appimage 链接文件
+sudo rm /usr/bin/sm-wine
+
+# 删除ln链接文件夹
+rm  $desk/SuperMemo Card and Data/SuperMemo C盘卡包
+rm  $desk/SuperMemo Card and Data/SuperMemo D盘卡包
+rm  $desk/SuperMemo Card and Data/SuperMemo E盘卡包
+rm  $desk/SuperMemo Card and Data/SuperMemo C盘资料库
+
+# 删除软件所在文件夹。
+sudo rm -rf /opt/SM18.05-WINE-Vessel

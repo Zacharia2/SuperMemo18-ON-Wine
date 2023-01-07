@@ -1,0 +1,28 @@
+Package:SuperMemo18.05-WINE32
+Version:lazy-wine32-package.v1.4.0
+Section:contrib
+Architecture:i386
+Maintainer:WhiteFall
+Description:SuperMemo On Wine.(32bit)
+ 在linux中使用SuperMemo.请使用管理员权限安装本软件.
+ . 
+ 安装: sudo dpkg -i SuperMemo18.05-lazy-wine32-package.v1.4.0.deb
+ 卸载：sudo dpkg -r supermemo18.05-wine32:i386
+ 封装：sudo dpkg -b Wrap-DEB SuperMemo18.05-lazy-wine32-package.v1.4.0.deb
+ . 
+ 运行软件请使用启动器文件：SuperMemo18.desktop
+ . 
+ 配置sm-wine容器请使用SuperMemo18.05-winecfg.desktop
+ . 
+ 可以使用sm-wine命令启动SuperMemo18-WINE32自带的wine appimage。没有设置WINEPREFIX容器根目录变量的情况下这将会在HOME目录生成默认的.wine容器。
+ .
+ 配置容器以及为容器安装软件命令：
+ . 
+ env WINEARCH=win32 WINEPREFIX="/opt/SM18.05-WINE-Vessel/" sm-wine <要安装的Windows程序>
+ . 
+ env WINEARCH=win32 WINEPREFIX="/opt/SM18.05-WINE-Vessel/" sm-wine <配置容器的命令winecfg>
+ . 
+ 软件实际所在目录：/opt/SM18.05-WINE-Vessel/drive_c/SuperMemo
+ . 
+ 说明文档以及项目地址：https://github.com/Zacharia2/SuperMemo18-ON-Wine ，请需要时查阅。
+
