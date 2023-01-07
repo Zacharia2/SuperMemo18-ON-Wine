@@ -1,23 +1,27 @@
-# SuperMemo18-Wine32
+# SuperMemo18.05-WINE32
+
+
+![](https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/docs/images/%E9%A2%84%E8%A7%88%E5%9B%BE%EF%BC%9ASM18.05-WINE32.png)
+
 
 ## 文件说明
 
 - [SM18.05-WINE-Vessel文件夹](https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/SM18.05-WINE-Vessel/)
-  - SuperMemo容器环境（无Supermemo软件包），分离软件用于保持环境整洁。
+  - SuperMemo容器环境（仅含Supermemo软件的bin配置目录，请不要覆盖此文件夹（SuperMemo/bin）中的配置文件），分离软件用于保持环境整洁。
 - [SM18.05-WINE-Vessel/README.md](https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/SM18.05-WINE-Vessel/README.md)
   - SuperMemo容器环境使用教程。（仅限Linux）
 - [docs/Instal-and-Package.md](https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/docs/Instal-and-Package.md)
-  - 从零开始安装supermemo，以及打包为deb安装包教程（流程与知识及注意事项）
+  - Linux系统中从零开始安装supermemo、与封装deb安装包的流程、知识及注意事项。
 - config/winetricks-cache
-  - winetricks安装supermemo的缓存依赖文件。用于跳过网络下载，加快安装速度。
+  - winetricks（wine工具）安装supermemo的缓存依赖文件。用于跳过网络下载，加快安装速度。
 - config/supermemo18.verb
-  - winetricks 的 supermemo 安装自动化配置文件。
+  - winetricks（wine工具）的 supermemo 安装自动化配置文件。
 - config/SuperMemo18.desktop
   - SuperMemo快速启动的桌面图标。（打包时可以用）
 - config/wine-sm18.05-winecfg.desktop
   - SuperMemo快速启动wine容器配置的桌面图标。（打包时可以用）
 
-![](https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/docs/images/%E9%A2%84%E8%A7%88%E5%9B%BE%EF%BC%9ASM18.05-WINE32.png)
+
 
 ## 安装步骤：
 
@@ -43,6 +47,8 @@ makepkg -i
 #### 相关链接：
 
 - Installers for SuperMemo for Windows using Winetricks：https://github.com/alessivs/supermemo-wine
+
+- supermemo懒人包：https://github.com/L-M-Sherlock/sm18-lazy-package/releases
 
 - [邹佳庆/Wine_Appimage - 码云 - 开源中国 (gitee.com)](https://gitee.com/zoujiaqing/Wine_Appimage/tree/master)
 
