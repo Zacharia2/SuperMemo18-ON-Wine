@@ -86,22 +86,37 @@
    cp -r /sm18-lazy-package-1.4.0/sm18/* $HOME/.local/share/wineprefixes/SM18-Wine32/drive_c/SuperMemo/
    ```
 
+9. 修改两个配置文件：SuperMemo/bin/supermemo.ini、SuperMemo/bin/layout.ini
+
+   ```ini
+   supermemo.ini 
+   找到[Alarm],修改file字段如下文所示：
+
+   [Alarm]
+   File=c:\supermemo\bin\sounds\Alarm_Clock_Tick.wav
+   ```
+   ```
+   layout.ini
+   
+   隐藏背景图片，防止遮挡。
+   修改所有的Background值，改为0（假，false）
+   ```
 
 ## 需要用到的知识
 
 ### 一、tar压缩与解压缩
 
-1. 解压命令：tar -zxvf 压缩文件名.tar.gz
+1. 解压命令：`tar -zxvf 压缩文件名.tar.gz`
 
-   解压到指定目录：tar -zxvf 压缩文件名.tar.gz   -C   <目标目录>
+   解压到指定目录：`tar -zxvf 压缩文件名.tar.gz   -C   <目标目录>`
 
-2. 压缩命令：tar -zcvf 压缩文件名.tar.gz <被压缩的文件夹>
+2. 压缩命令：`tar -zcvf 压缩文件名.tar.gz <被压缩的文件夹>`
 
 
 
 ### 二、在命令中预设环境变量然后运行程序
 
-```
+```sh
 env WINEARCH=win32 WINEPREFIX="/opt/SM18-Wine32/" wine <要安装的Windows程序>
 env WINEARCH=win32 WINEPREFIX="/opt/SM18-Wine32/" wine <配置容器的命令winecfg>
 ```
@@ -109,16 +124,16 @@ env WINEARCH=win32 WINEPREFIX="/opt/SM18-Wine32/" wine <配置容器的命令win
 
 ### 三、dpkg的打包安装与卸载命令
 
-1. 打包 sudo dpkg -b <包目录> 包名.deb
-2. 安装 sudo dpkg -i 包名.deb
-3. 卸载 sudo dpkg -r 包名(/mydpkg/DEBIAN/control文件中定义的名字)
+1. 打包 `sudo dpkg -b <包目录> 包名.deb`
+2. 安装 `sudo dpkg -i 包名.deb`
+3. 卸载 `sudo dpkg -r 包名(/mydpkg/DEBIAN/control文件中定义的名字)`
 
 
 
 ### 四、创建与删除符号链接
 
-- 创建符号链接：ln -s <当前文件>   <目标目录/文件>
-- 删除链接时，直接用rm命令
+- 创建符号链接：`ln -s <当前文件>   <目标目录/文件>`
+- 删除链接时，直接用`rm`命令
 
 
 
