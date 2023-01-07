@@ -203,7 +203,7 @@ Version:18.05.pkged.3
 Section:contrib
 Architecture:i386
 Installed-Size:435712
-Maintainer:Miao
+Maintainer:WhiteFall
 Description:SuperMemo On Wine.(32bit)
  下载的sm18卡包可以放在这个目录: /mnt/SuperMemo卡包 ,该目录链接 C:\\SuperMemo/systems，打开它点击SuperMemo18.desktop启动supermemo，在sm中打开卡包。
  . 
