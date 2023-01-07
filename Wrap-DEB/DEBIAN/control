@@ -1,5 +1,5 @@
 Package:SuperMemo18.05-WINE32
-Version:lazy-wine32-package.v1.4.0
+Version:1.4.0.lazy-wine32-package
 Section:contrib
 Architecture:i386
 Maintainer:WhiteFall
