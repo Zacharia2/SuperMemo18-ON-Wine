@@ -1,0 +1,13 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\CLSID\\{3050F667-98B5-11CF-BB82-00AA00BDCE0B}
+
+#arch=win32
+
+[] 1650919628
+#time=1d858e5a131d92c
+@="Microsoft Html Popup Window"
+
+[InprocServer32] 1650919628
+#time=1d858e5a131e4bc
+@="C:\\windows\\system32\\mshtml.dll"
+"ThreadingModel"="Apartment"

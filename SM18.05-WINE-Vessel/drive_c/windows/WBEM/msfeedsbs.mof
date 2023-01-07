@@ -1,0 +1,71 @@
+#pragma classflags("forceupdate")
+#pragma namespace("\\\\.\\root\\WMI")
+//
+// WPP Generated File
+// PDB:  s:\ntc.obj.x86fre\inetcore\rss\msfeedsbs\objfre\i386\msfeedsbs.pdb
+// PDB:  Last Updated :2006-6-8:7:26:34:110 (UTC) [binplace]
+//
+
+//ModuleName = ShellPerfTraceProvider	 (Init called in Function DllMain)
+[Dynamic,
+ Description("RSS Platform Backgroundsync Perf Trace"),
+ guid("{ca1cf55c-9e49-4ad3-8038-39cb6f66af11}"),
+ locale("MS\\0x409")]
+class RSSPlatformBackgroundsyncPerformanceTraceProvider : EventTrace
+{
+    [Description ("Enable Flags"),
+        ValueDescriptions{
+             "Perf Flag"},
+        DefineValues{
+             "Perf"},
+        Values{
+             "Perf"},
+        ValueMap{
+             "0x00000001"}
+    ]
+    uint32 Flags;
+};
+
+//ModuleName = ShellTraceProvider	 (Init called in Function DllMain)
+[Dynamic,
+ Description("RSS Platform Backgroundsync Trace"),
+ guid("{f59d1d86-cc03-4736-bc9c-4c7936871b3d}"),
+ locale("MS\\0x409")]
+class RSSPlatformBackgroundsyncTraceProvider : EventTrace
+{
+    [Description ("Enable Flags"),
+        ValueDescriptions{
+             "Fatal Flag",
+             "Error Flag",
+             "Warning Flag",
+             "Info Flag",
+             "API Flag",
+             "FuncCall Flag",
+             "HiFreq Flag"},
+        DefineValues{
+             "Fatal",
+             "Error",
+             "Warning",
+             "Info",
+             "API",
+             "FuncCall",
+             "HiFreq"},
+        Values{
+             "Fatal",
+             "Error",
+             "Warning",
+             "Info",
+             "API",
+             "FuncCall",
+             "HiFreq"},
+        ValueMap{
+             "0x00000001",
+             "0x00000002",
+             "0x00000004",
+             "0x00000008",
+             "0x00000010",
+             "0x00000020",
+             "0x00000040"}
+    ]
+    uint32 Flags;
+};

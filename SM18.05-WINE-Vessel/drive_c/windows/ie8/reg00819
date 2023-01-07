@@ -1,0 +1,16 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\Interface\\{79EAC9C9-BAF9-11CE-8C82-00AA004BA90B}
+
+#arch=win32
+
+[] 1650919630
+#time=1d858e5a25330f8
+@="IPersistMoniker"
+
+[NumMethods] 1650919630
+#time=1d858e5a2530ea2
+@="9"
+
+[ProxyStubClsid32] 1650919630
+#time=1d858e5a2534070
+@="{79EAC9F1-BAF9-11CE-8C82-00AA004BA90B}"

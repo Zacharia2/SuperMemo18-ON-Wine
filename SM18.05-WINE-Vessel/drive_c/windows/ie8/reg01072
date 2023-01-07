@@ -1,0 +1,16 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\Interface\\{36116642-D713-4B97-9B83-7484A9D00433}
+
+#arch=win32
+
+[] 1650919626
+#time=1d858e5a0193fe4
+@="IFileDialogControlEvents"
+
+[NumMethods] 1650919626
+#time=1d858e5a01925c2
+@="7"
+
+[ProxyStubClsid32] 1650919626
+#time=1d858e5a0194656
+@="{B8DA6310-E19B-11D0-933C-00A0C90DCAA9}"

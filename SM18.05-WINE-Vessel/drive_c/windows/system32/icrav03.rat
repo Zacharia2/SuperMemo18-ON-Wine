@@ -1,0 +1,236 @@
+((PICS-version 1.1)
+ (rating-system "http://www.icra.org/")
+ (rating-service "http://www.icra.org/pics/vocabularyv03/")
+ (name "ICRA3")
+ (description "This file defines a simplified implementation of the ICRA vocabulary for use in legacy PICS-based systems. The full version of the current ICRA vocabulary can be seen at http://www.icra.org/vocabulary/.")
+
+ (category 
+  (transmit-as "n")
+  (name "Nudity")
+   (label
+   (name "None")
+   (description "No bare buttocks, breasts or genitals in any context")
+   (value 0) )
+  (label
+   (name "Limited")
+   (description "Bare buttocks and/or bare breasts in artistic, medical, educational, sports or news context. No genitals in any context")
+   (value 1) )
+  (label
+   (name "Some")
+   (description "Bare buttocks and/or bare breasts in any context, genitals only in artistic, medical, educational, sports or news context")
+   (value 2) )
+  (label
+   (name "Unrestricted")
+   (description "Nudity of any kind in any context, although this does not imply sexual content which is described separately")
+   (value 3) ))
+
+ (category 
+  (transmit-as "s")
+  (name "Sexual material")
+   (label
+   (name "None")
+   (description "No passionate kissing, obscured or implied sexual acts, visible sexual touching, explicit sexual language, erections, explicit sexual acts or erotica in any context")
+   (value 0) )
+  (label
+   (name "Limited")
+   (description "Obscured or implied sexual acts and visible sexual touching in an artistic, medical, educational, sports or news context. Passionate kissing in any context. No explicit sexual content in any context")
+   (value 1) )
+  (label
+   (name "Some")
+   (description "Obscured or implied sexual acts, visible sexual touching, and passionate kissing in any context. Explicit sexual context or erotica in artistic, medical, educational, sports or news context only")
+   (value 2) )
+  (label
+   (name "Unrestricted")
+   (description "Sexual material of any kind, in any context, although this does not include sexual violence, which is described separately")
+   (value 3) ))
+
+(category 
+  (transmit-as "v")
+  (name "Violence")
+   (label
+   (name "None")
+   (description "No assault/rape; no injury, torture, killing or blood and dismemberment of humans, animals or fantasy characters (including animation) in any context")
+   (value 0) )
+  (label
+   (name "Limited")
+   (description "Injury, torture, killing or blood and dismemberment of fantasy characters only in artistic, medical, educational, sports or news context. None of aforementioned of humans or animals in any context. No assault/rape")
+   (value 1) )
+  (label
+   (name "Some")
+   (description "Injury, torture, killing or blood and dismemberment of fantasy characters in any context. That of humans or animals in artistic, medical, educational, sports or news context only. No assault/rape")
+   (value 2) )
+  (label
+   (name "Unrestricted")
+   (description "Violence of any kind in any context, including assault/rape")
+   (value 3) ))
+
+(category 
+  (transmit-as "l")
+  (name "Language")
+   (label
+   (name "None")
+   (description "No abusive or vulgar terms, no profanity or swearing, no mild expletives in any context")
+   (value 0) )
+  (label
+   (name "Limited")
+   (description "No abusive or vulgar terms in any context. Profanity, swearing, or mild expletives only in artistic, medical, educational, sports or news context")
+   (value 1) )
+  (label
+   (name "Some")
+   (description "Abusive or vulgar terms only in artistic, medical, educational, sports or news context.  Crude words, profanity or mild expletives in any context")
+   (value 2) )
+  (label
+   (name "Unrestricted")
+   (description "Abusive or vulgar terms, profanity, swearing, or mild expletives in any context, although this does not include sexual language, which is described separately")
+   (value 3) ))
+
+(category 
+  (transmit-as "oa")
+  (name "Depiction of tobacco use")
+   (label
+   (name "None")
+   (description "No depiction of tobacco use in any context")
+   (value 0) )
+  (label
+   (name "Limited")
+   (description "Depiction of tobacco use only in artistic, medical, educational, sports or news context")
+   (value 1) )
+  (label
+   (name "Unrestricted")
+   (description "Depiction of tobacco use in any context")
+   (value 2) ))
+
+
+(category 
+  (transmit-as "ob")
+  (name "Depiction of alcohol use")
+   (label
+   (name "None")
+   (description "No depiction of alcohol use in any context")
+   (value 0) )
+  (label
+   (name "Limited")
+   (description "Depiction of alcohol use only in artistic, medical, educational, sports or news context")
+   (value 1) )
+  (label
+   (name "Unrestricted")
+   (description "Depiction of alcohol use in any context")
+   (value 2) ))
+
+(category 
+  (transmit-as "oc")
+  (name "Depiction of drug use")
+   (label
+   (name "None")
+   (description "No depiction of drug use in any context")
+   (value 0) )
+  (label
+   (name "Limited")
+   (description "Depiction of drug use only in artistic, medical, educational, sports or news context")
+   (value 1) )
+  (label
+   (name "Unrestricted")
+   (description "Depiction of drug use in any context")
+   (value 2) ))
+
+
+(category 
+  (transmit-as "od")
+  (name "Depiction of weapon use")
+   (label
+   (name "None")
+   (description "No depiction of weapon use in any context")
+   (value 0) )
+  (label
+   (name "Limited")
+   (description "Depiction of weapon use only in artistic, medical, educational, sports or news context")
+   (value 1) )
+  (label
+   (name "Unrestricted")
+   (description "Depiction of weapon use in any context")
+   (value 2) ))
+
+(category 
+  (transmit-as "oe")
+  (name "Depiction of gambling")
+   (label
+   (name "None")
+   (description "No depiction of gambling in any context")
+   (value 0) )
+  (label
+   (name "Limited")
+   (description "Depiction of gambling only in artistic, medical, educational, or news context")
+   (value 1) )
+  (label
+   (name "Unrestricted")
+   (description "Depiction of gambling in any context")
+   (value 2) ))
+
+(category 
+  (transmit-as "of")
+  (name "Content that sets a bad example for young children")
+   (label
+   (name "None")
+   (description "No content that sets a bad example for young children, teaching or encouraging children to perform harmful acts or imitate dangerous behaviour in any context")
+   (value 0) )
+  (label
+   (name "Limited")
+   (description "Content that sets a bad example for young children, teaching or encouraging children to perform harmful acts or imitate dangerous behaviour, in artistic, medical, educational, sports or news context only")
+   (value 1) )
+  (label
+   (name "Unrestricted")
+   (description "Content that sets a bad example for young children, teaching or encouraging children to perform harmful acts or imitate dangerous behaviour, in any context")
+   (value 2) ))
+
+(category 
+  (transmit-as "og")
+  (name "Content that creates fear, intimidation, etc.")
+   (label
+   (name "None")
+   (description "No content that creates feelings of fear, intimidation, etc. in any context")
+   (value 0) )
+  (label
+   (name "Limited")
+   (description "Content that creates feelings of fear, intimidation, etc. only in artistic, medical, educational, sports or news context")
+   (value 1) )
+  (label
+   (name "Unrestricted")
+   (description "Content that creates feelings of fear, intimidation, etc. in any context")
+   (value 2) ))
+
+(category 
+  (transmit-as "oh")
+  (name "Incitement/depiction of discrimination or harm")
+   (label
+   (name "None")
+   (description "No incitement/depiction of discrimination or harm in any context")
+   (value 0) )
+  (label
+   (name "Limited")
+   (description "Incitement/depiction of discrimination or harm in artistic, medical, educational, sports or news context only")
+   (value 1) )
+  (label
+   (name "Unrestricted")
+   (description "Incitement/depiction of discrimination or harm in any context")
+   (value 2) ))
+
+(category 
+  (transmit-as "c")
+  (name "User-generated Content")
+   (label
+   (name "None")
+   (description "No user-generated content such as chat rooms and message boards in any context")
+   (value 0) )
+  (label
+   (name "Limited")
+   (description "Moderated user-generated content such as chat rooms and message boards in any context")
+   (value 1) )
+  (label
+   (name "Some")
+   (description "Moderated user-generated content in any context. Unmoderated user-generated content only in artistic, medical, educational, sports or news context")
+   (value 2) )
+  (label
+   (name "Unrestricted")
+   (description "Unmoderated user-generated content such as chat rooms and message boards in any context")
+   (value 3) )) )
+

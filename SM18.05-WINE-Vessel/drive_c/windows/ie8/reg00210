@@ -1,0 +1,13 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\CLSID\\{BFC880F1-7484-11D0-8309-00AA00B6015C}
+
+#arch=win32
+
+[] 1650919627
+#time=1d858e5a0f50150
+@="Download Site Manager"
+
+[InprocServer32] 1650919627
+#time=1d858e5a0f50ba0
+@="C:\\windows\\system32\\inseng.dll"
+"ThreadingModel"="Apartment"

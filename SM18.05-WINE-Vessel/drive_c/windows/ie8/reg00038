@@ -1,0 +1,24 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\CLSID\\{25336921-03F9-11CF-8FD0-00AA00686F13}
+
+#arch=win32
+
+[] 1650919633
+#time=1d858e5a41f8ce2
+@="Microsoft HTML Document 6.0"
+
+[BrowseInPlace] 1650919633
+#time=1d858e5a41f8562
+
+[InprocServer32] 1650919628
+#time=1d858e5a131ad08
+@="C:\\windows\\system32\\mshtml.dll"
+"ThreadingModel"="Apartment"
+
+[MiscStatus] 1650919633
+#time=1d858e5a41f90a2
+@="0"
+
+[ProgId] 1650919628
+#time=1d858e5a131bbc2
+@="htmlfile_FullWindowEmbed"

@@ -1,0 +1,300 @@
+00:00.000: ====================================================================
+00:00.002: Started: 2022/04/26 (Y/M/D) 04:54:45.716 (local)
+00:00.003: Time Format in this log: MM:ss.mmm (minutes:seconds.milliseconds)
+00:00.004: Command line: y:\250bda7aa6b67251247dfe6510e5\update\iesetup.exe
+00:00.005: INFO:    Checking version for y:\250bda7aa6b67251247dfe6510e5\update\iesetup.exe: 8.0.6001.18702
+00:00.596: INFO:    Acquired Package Installer Mutex
+00:00.598: INFO:    Operating System: Windows Workstation: 5.1.2600 (Service Pack 3)
+00:00.613: ERROR:   Couldn't read value: 'LIPPackage' from [Version] section in update.inf
+00:00.615: INFO:    Checking Prerequisites
+00:00.620: INFO:    Checking version for C:\windows\system32\msctf.dll: 5.1.2600.3319
+00:00.621: INFO:    Prerequisites Satisfied: Yes
+00:00.633: ERROR:   Checking version for C:\Program Files\Internet Explorer\iexplore.exe: Failed. (Couldn't get File Version Info size.)
+00:00.636: ERROR:   iexplore.exe: Couldn't get File Version Info size for iexplore.exe
+00:00.726: ERROR:   Checking version for C:\Program Files\Internet Explorer\iexplore.exe: Failed. (Couldn't get File Version Info size.)
+00:00.739: INFO:    Checking version for C:\windows\system32\mshtml.dll: 8.0.6001.18702
+00:00.745: INFO:    Checking version for C:\windows\system32\wininet.dll: 8.0.7601.17601
+00:07.210: INFO:    EULA Accepted
+01:05.662: INFO:    Options selected:
+01:05.664: INFO:        [ ] Download & install updates and MRT
+01:05.711: INFO:    |PreInstall       >>> CPageProgress::DlgProc: Exiting Phase PH_NONE
+01:05.712: INFO:    |PreInstall       >>> CPageProgress::_ChangeState: Original Phase: 0
+01:05.713: INFO:    |Initialize       >>> CPageProgress::_UpdateDisplay: Actual Phase: 1
+01:05.715: INFO:    |Initialize       >>> >[BEGIN]------------------------------
+01:05.716: INFO:    |Initialize       >>> CPageProgress::_UpdateDisplay: Actual Phase: 1
+01:05.717: INFO:    |Initialize       >>> SKIP[FALSE]>>Looking for skip clauses
+01:05.718: INFO:    |Initialize       >>> SKIP[FALSE]>>Result: RUNNING This Phase
+01:05.720: INFO:    |Initialize       >>> Calculating bytes needed to install.
+01:05.723: INFO:    |Initialize       >>> Diskspace Required:  151918308
+01:05.724: INFO:    |Initialize       >>> Diskspace Available to user: 28068507648
+01:05.731: INFO:    WindowsUpdate>>CWindowsUpdateMgr::Initialize: CoCreateInstance.CLSID_UpdateSession: HResult 0x00000000
+01:05.732: INFO:    WindowsUpdate>>CWindowsUpdateMgr::Initialize: PutClientApplicationID: HResult 0x00000000
+01:05.736: INFO:    WindowsUpdate>>CWindowsUpdateMgr::Initialize: CreateUpdateSearcher: HResult 0x00000000
+01:05.737: INFO:    WindowsUpdate>>CWindowsUpdateMgr::Initialize: CreateUpdateDownloader: HResult 0x00000000
+01:05.739: INFO:    WindowsUpdate>>CWindowsUpdateMgr::Initialize: CreateUpdateInstaller: HResult 0x00000000
+01:05.740: INFO:    WindowsUpdate>>WindowsUpdateMgr::Initialize: State Change: SS_INITIALIZED.
+01:05.741: INFO:    WindowsUpdate>>Creating thread to PauseAU.
+01:05.742: INFO:    WindowsUpdate>>PauseAUThread: Creating CLSID_AutomaticUpdates.
+01:05.745: INFO:    WindowsUpdate>>PauseAUThread: Created CLSID_AutomaticUpdates. HResult:0x00000000
+01:05.746: INFO:    WindowsUpdate>>PauseAUThread: Successfully paused Automatic Updates.
+01:05.748: INFO:    WindowsUpdate>>Pause thread completed.
+01:05.750: INFO:    |Initialize       >>> CStateInitialize::OnInitialize: Windows Update Manager Initialization Result: 0x00000000
+01:05.752: INFO:    |Initialize       >>> CInstallationState::_ExitState: Preparing to Leave State.
+01:05.753: INFO:    |Initialize       >>> CInstallationState::_ExitState: Setting Progress 100.
+01:05.754: INFO:    |Initialize       >>> CInstallationState::_SetProgress: Post Set Progress Message Succeeded.
+01:05.755: INFO:    |Initialize       >>> CInstallationState::_ExitState: Posting Exit Phase Message.
+01:05.756: INFO:    |Initialize       >>> CInstallationState::_ExitState: Post Exit Phase Message Succeeded.
+01:05.757: INFO:    |Initialize       >>> CPageProgress::DlgProc: Received WM_PR_SETPROGRESS, 64, 0
+01:05.758: INFO:    |Initialize       >>> CPageProgress::_UpdateDisplay: Actual Phase: 1
+01:05.765: INFO:    |Initialize       >>> CPageProgress::DlgProc: Received WM_PR_EXITPHASE, 0, 0
+01:05.769: INFO:    |Initialize       >>> CPageProgress::_UpdateDisplay: Actual Phase: 1
+01:05.770: INFO:    |Initialize       >>> <[END]--------------------------------
+01:05.771: INFO:    |Initialize       >>> CPageProgress::_ChangeState: Original Phase: 1
+01:05.772: INFO:    |Uninstall Prev.  >>> >[BEGIN]------------------------------
+01:05.773: INFO:    |Uninstall Prev.  >>> CPageProgress::_UpdateDisplay: Actual Phase: 2
+01:05.774: INFO:    |Uninstall Prev.  >>> SKIP[FALSE]>>Looking for skip clauses
+01:05.775: INFO:    |Uninstall Prev.  >>> SKIP[FALSE]>> Adding [FALSE] Condition: !_psdStateData->GetIsInitSuccessful()
+01:05.776: INFO:    |Uninstall Prev.  >>> SKIP[FALSE]>> Adding [TRUE ] Condition: !g_pApp->GetState()->AreWeDoingUninstall()
+01:05.776: INFO:    |Uninstall Prev.  >>> SKIP[TRUE ]>>Result: SKIPPING This Phase
+01:05.777: INFO:    |Uninstall Prev.  >>> CInstallationState::_ExitState: Preparing to Leave State.
+01:05.778: INFO:    |Uninstall Prev.  >>> CInstallationState::_ExitState: Setting Progress 100.
+01:05.779: INFO:    |Uninstall Prev.  >>> CInstallationState::_SetProgress: Post Set Progress Message Succeeded.
+01:05.780: INFO:    |Uninstall Prev.  >>> CInstallationState::_ExitState: Posting Exit Phase Message.
+01:05.781: INFO:    |Uninstall Prev.  >>> CInstallationState::_ExitState: Post Exit Phase Message Succeeded.
+01:05.783: INFO:    |Uninstall Prev.  >>> CPageProgress::DlgProc: Received WM_PR_SETPROGRESS, 64, 0
+01:05.785: INFO:    |Uninstall Prev.  >>> CPageProgress::_UpdateDisplay: Actual Phase: 2
+01:05.788: INFO:    |Uninstall Prev.  >>> CPageProgress::DlgProc: Received WM_PR_EXITPHASE, 0, 0
+01:05.790: INFO:    |Uninstall Prev.  >>> CPageProgress::_UpdateDisplay: Actual Phase: 2
+01:05.791: INFO:    |Uninstall Prev.  >>> <[END]--------------------------------
+01:05.793: INFO:    |Uninstall Prev.  >>> CPageProgress::_ChangeState: Original Phase: 2
+01:05.794: INFO:    |WU Download      >>> >[BEGIN]------------------------------
+01:05.795: INFO:    |WU Download      >>> CPageProgress::_UpdateDisplay: Actual Phase: 3
+01:05.798: INFO:    |WU Download      >>> SKIP[FALSE]>>Looking for skip clauses
+01:05.799: INFO:    |WU Download      >>> SKIP[FALSE]>> Adding [FALSE] Condition: !_psdStateData->GetIsInitSuccessful()
+01:05.800: INFO:    |WU Download      >>> SKIP[FALSE]>> Adding [TRUE ] Condition: !g_pApp->GetState()->GetOptShouldUpdate()
+01:05.801: INFO:    |WU Download      >>> SKIP[TRUE ]>> Adding [FALSE] Condition: g_pApp->GetState()->GetOptIEAKMode()==IEAK_BRANDING
+01:05.802: INFO:    |WU Download      >>> SKIP[TRUE ]>> Adding [FALSE] Condition: g_pApp->GetState()->AreWeDoingUninstall()
+01:05.803: INFO:    |WU Download      >>> SKIP[TRUE ]>>Result: SKIPPING This Phase
+01:05.804: INFO:    |WU Download      >>> CInstallationState::_ExitState: Preparing to Leave State.
+01:05.805: INFO:    |WU Download      >>> CInstallationState::_ExitState: Setting Progress 100.
+01:05.807: INFO:    |WU Download      >>> CInstallationState::_SetProgress: Post Set Progress Message Succeeded.
+01:05.807: INFO:    |WU Download      >>> CInstallationState::_ExitState: Posting Exit Phase Message.
+01:05.808: INFO:    |WU Download      >>> CInstallationState::_ExitState: Post Exit Phase Message Succeeded.
+01:05.809: INFO:    |WU Download      >>> CPageProgress::DlgProc: Received WM_PR_SETPROGRESS, 64, 0
+01:05.810: INFO:    |WU Download      >>> CPageProgress::_UpdateDisplay: Actual Phase: 3
+01:05.811: INFO:    |WU Download      >>> CPageProgress::DlgProc: Received WM_PR_EXITPHASE, 0, 0
+01:05.812: INFO:    |WU Download      >>> CPageProgress::_UpdateDisplay: Actual Phase: 3
+01:05.813: INFO:    |WU Download      >>> <[END]--------------------------------
+01:05.814: INFO:    |WU Download      >>> CPageProgress::_ChangeState: Original Phase: 3
+01:05.815: INFO:    |Inst. Pre-Upd.   >>> >[BEGIN]------------------------------
+01:05.817: INFO:    |Inst. Pre-Upd.   >>> CPageProgress::_UpdateDisplay: Actual Phase: 4
+01:05.817: INFO:    |Inst. Pre-Upd.   >>> SKIP[FALSE]>>Looking for skip clauses
+01:05.818: INFO:    |Inst. Pre-Upd.   >>> SKIP[FALSE]>> Adding [FALSE] Condition: !_psdStateData->GetIsInitSuccessful()
+01:05.819: INFO:    |Inst. Pre-Upd.   >>> SKIP[FALSE]>> Adding [TRUE ] Condition: !g_pApp->GetState()->GetOptShouldUpdate()
+01:05.822: INFO:    |Inst. Pre-Upd.   >>> SKIP[TRUE ]>> Adding [TRUE ] Condition: g_pApp->GetState()->GetResultPreIEUpdateState()!=WU_COULD_DOWNLOAD
+01:05.823: INFO:    |Inst. Pre-Upd.   >>> SKIP[TRUE ]>> Adding [FALSE] Condition: g_pApp->GetState()->GetOptIEAKMode()==IEAK_BRANDING
+01:05.824: INFO:    |Inst. Pre-Upd.   >>> SKIP[TRUE ]>> Adding [FALSE] Condition: g_pApp->GetState()->AreWeDoingUninstall()
+01:05.825: INFO:    |Inst. Pre-Upd.   >>> SKIP[TRUE ]>>Result: SKIPPING This Phase
+01:05.826: INFO:    |Inst. Pre-Upd.   >>> CInstallationState::_ExitState: Preparing to Leave State.
+01:05.827: INFO:    |Inst. Pre-Upd.   >>> CInstallationState::_ExitState: Setting Progress 100.
+01:05.828: INFO:    |Inst. Pre-Upd.   >>> CInstallationState::_SetProgress: Post Set Progress Message Succeeded.
+01:05.829: INFO:    |Inst. Pre-Upd.   >>> CInstallationState::_ExitState: Posting Exit Phase Message.
+01:05.832: INFO:    |Inst. Pre-Upd.   >>> CInstallationState::_ExitState: Post Exit Phase Message Succeeded.
+01:05.833: INFO:    |Inst. Pre-Upd.   >>> CPageProgress::DlgProc: Received WM_PR_SETPROGRESS, 64, 0
+01:05.835: INFO:    |Inst. Pre-Upd.   >>> CPageProgress::_UpdateDisplay: Actual Phase: 4
+01:05.836: INFO:    |Inst. Pre-Upd.   >>> CPageProgress::DlgProc: Received WM_PR_EXITPHASE, 0, 0
+01:05.837: INFO:    |Inst. Pre-Upd.   >>> CPageProgress::_UpdateDisplay: Actual Phase: 4
+01:05.838: INFO:    |Inst. Pre-Upd.   >>> <[END]--------------------------------
+01:05.839: INFO:    |Inst. Pre-Upd.   >>> CPageProgress::_ChangeState: Original Phase: 4
+01:05.840: INFO:    |Running MRT      >>> >[BEGIN]------------------------------
+01:05.841: INFO:    |Running MRT      >>> CPageProgress::_UpdateDisplay: Actual Phase: 5
+01:05.843: INFO:    |Running MRT      >>> SKIP[FALSE]>>Looking for skip clauses
+01:05.844: INFO:    |Running MRT      >>> SKIP[FALSE]>> Adding [FALSE] Condition: !_psdStateData->GetIsInitSuccessful()
+01:05.846: INFO:    |Running MRT      >>> SKIP[FALSE]>> Adding [TRUE ] Condition: !g_pApp->GetState()->GetOptShouldUpdate()
+01:05.847: INFO:    |Running MRT      >>> SKIP[TRUE ]>> Adding [FALSE] Condition: g_pApp->GetState()->GetOptIEAKMode()==IEAK_BRANDING
+01:05.848: INFO:    |Running MRT      >>> SKIP[TRUE ]>> Adding [FALSE] Condition: g_pApp->GetState()->AreWeDoingUninstall()
+01:05.849: INFO:    |Running MRT      >>> SKIP[TRUE ]>> Adding [FALSE] Condition: g_pApp->GetState()->GetCBSBasedInstall()
+01:05.850: INFO:    |Running MRT      >>> SKIP[TRUE ]>> Adding [FALSE] Condition: !g_pApp->GetState()->GetPrerequisiteSatisfied()
+01:05.851: INFO:    |Running MRT      >>> SKIP[TRUE ]>>Result: SKIPPING This Phase
+01:05.852: INFO:    |Running MRT      >>> CInstallationState::_ExitState: Preparing to Leave State.
+01:05.853: INFO:    |Running MRT      >>> CInstallationState::_ExitState: Setting Progress 100.
+01:05.854: INFO:    |Running MRT      >>> CInstallationState::_SetProgress: Post Set Progress Message Succeeded.
+01:05.855: INFO:    |Running MRT      >>> CInstallationState::_ExitState: Posting Exit Phase Message.
+01:05.856: INFO:    |Running MRT      >>> CInstallationState::_ExitState: Post Exit Phase Message Succeeded.
+01:05.858: INFO:    |Running MRT      >>> CPageProgress::DlgProc: Received WM_PR_SETPROGRESS, 64, 0
+01:05.858: INFO:    |Running MRT      >>> CPageProgress::_UpdateDisplay: Actual Phase: 5
+01:05.861: INFO:    |Running MRT      >>> CPageProgress::DlgProc: Received WM_PR_EXITPHASE, 0, 0
+01:05.862: INFO:    |Running MRT      >>> CPageProgress::_UpdateDisplay: Actual Phase: 5
+01:05.864: INFO:    |Running MRT      >>> <[END]--------------------------------
+01:05.865: INFO:    |Running MRT      >>> CPageProgress::_ChangeState: Original Phase: 5
+01:05.875: INFO:    |IEAK Before      >>> >[BEGIN]------------------------------
+01:05.876: INFO:    |IEAK Before      >>> CPageProgress::_UpdateDisplay: Actual Phase: 6
+01:05.877: INFO:    |IEAK Before      >>> SKIP[FALSE]>>Looking for skip clauses
+01:05.878: INFO:    |IEAK Before      >>> SKIP[FALSE]>> Adding [FALSE] Condition: !_psdStateData->GetIsInitSuccessful()
+01:05.879: INFO:    |IEAK Before      >>> SKIP[FALSE]>> Adding [TRUE ] Condition: g_pApp->GetState()->GetOptIEAKMode()!=IEAK_PACKAGE
+01:05.880: INFO:    |IEAK Before      >>> SKIP[TRUE ]>> Adding [FALSE] Condition: g_pApp->GetState()->AreWeDoingUninstall()
+01:05.881: INFO:    |IEAK Before      >>> SKIP[TRUE ]>> Adding [FALSE] Condition: !g_pApp->GetState()->GetPrerequisiteSatisfied()
+01:05.885: INFO:    |IEAK Before      >>> SKIP[TRUE ]>>Result: SKIPPING This Phase
+01:05.886: INFO:    |IEAK Before      >>> CInstallationState::_ExitState: Preparing to Leave State.
+01:05.887: INFO:    |IEAK Before      >>> CInstallationState::_ExitState: Setting Progress 100.
+01:05.888: INFO:    |IEAK Before      >>> CInstallationState::_SetProgress: Post Set Progress Message Succeeded.
+01:05.889: INFO:    |IEAK Before      >>> CInstallationState::_ExitState: Posting Exit Phase Message.
+01:05.891: INFO:    |IEAK Before      >>> CInstallationState::_ExitState: Post Exit Phase Message Succeeded.
+01:05.893: INFO:    |IEAK Before      >>> CPageProgress::DlgProc: Received WM_PR_SETPROGRESS, 64, 0
+01:05.895: INFO:    |IEAK Before      >>> CPageProgress::_UpdateDisplay: Actual Phase: 6
+01:05.896: INFO:    |IEAK Before      >>> CPageProgress::DlgProc: Received WM_PR_EXITPHASE, 0, 0
+01:05.897: INFO:    |IEAK Before      >>> CPageProgress::_UpdateDisplay: Actual Phase: 6
+01:05.899: INFO:    |IEAK Before      >>> <[END]--------------------------------
+01:05.900: INFO:    |IEAK Before      >>> CPageProgress::_ChangeState: Original Phase: 6
+01:05.901: INFO:    |Inst. IE         >>> >[BEGIN]------------------------------
+01:05.902: INFO:    |Inst. IE         >>> CPageProgress::_UpdateDisplay: Actual Phase: 7
+01:05.909: INFO:    |Inst. IE         >>> SKIP[FALSE]>>Looking for skip clauses
+01:05.910: INFO:    |Inst. IE         >>> SKIP[FALSE]>> Adding [FALSE] Condition: !_psdStateData->GetIsInitSuccessful()
+01:05.912: INFO:    |Inst. IE         >>> SKIP[FALSE]>> Adding [FALSE] Condition: g_pApp->GetState()->GetOptIEAKMode()==IEAK_BRANDING
+01:05.913: INFO:    |Inst. IE         >>> SKIP[FALSE]>> Adding [FALSE] Condition: g_pApp->GetState()->AreWeDoingUninstall()
+01:05.914: INFO:    |Inst. IE         >>> SKIP[FALSE]>> Adding [FALSE] Condition: !g_pApp->GetState()->GetPrerequisiteSatisfied()
+01:05.915: INFO:    |Inst. IE         >>> SKIP[FALSE]>>Result: RUNNING This Phase
+01:05.917: INFO:    Released Package Installer Mutex
+01:05.919: INFO:    |Inst. IE         >>> Waiting for Internet Explorer installation to complete...
+01:05.949: INFO:    Process 49 created for 'update.exe /quiet /norestart /er  /log:C:\windows', starting in path 'y:\250bda7aa6b67251247dfe6510e5\update'
+01:33.792: INFO:    Process 'update.exe /quiet /norestart /er  /log:C:\windows' exited with exit code 3010
+01:33.794: INFO:    |Inst. IE         >>> CPageProgress::DlgProc: Received WM_PM_EXECUTION_COMPLETE, 0, 2
+01:33.797: INFO:    Acquired Package Installer Mutex
+01:33.799: INFO:    |Inst. IE         >>> Internet Explorer installation completed successfully, exitresult=0x00000000, exitcode=0x00000bc2
+01:33.802: INFO:    |Inst. IE         >>> Setting registry to check if Internet Explorer is the default browser on first run: SUCCESS.
+01:33.803: INFO:    |Inst. IE         >>> CInstallationState::_ExitState: Preparing to Leave State.
+01:33.804: INFO:    |Inst. IE         >>> CInstallationState::_ExitState: Setting Progress 100.
+01:33.806: INFO:    |Inst. IE         >>> CInstallationState::_SetProgress: Post Set Progress Message Succeeded.
+01:33.807: INFO:    |Inst. IE         >>> CInstallationState::_ExitState: Posting Exit Phase Message.
+01:33.809: INFO:    |Inst. IE         >>> CInstallationState::_ExitState: Post Exit Phase Message Succeeded.
+01:33.810: INFO:    |Inst. IE         >>> CPageProgress::DlgProc: Received WM_PR_SETPROGRESS, 64, 0
+01:33.811: INFO:    |Inst. IE         >>> CPageProgress::_UpdateDisplay: Actual Phase: 7
+01:33.814: INFO:    |Inst. IE         >>> CPageProgress::DlgProc: Received WM_PR_EXITPHASE, 0, 0
+01:33.815: INFO:    |Inst. IE         >>> CPageProgress::_UpdateDisplay: Actual Phase: 7
+01:33.816: INFO:    |Inst. IE         >>> <[END]--------------------------------
+01:33.818: INFO:    |Inst. IE         >>> CPageProgress::_ChangeState: Original Phase: 7
+01:33.819: INFO:    |Inst. Lang Pack  >>> >[BEGIN]------------------------------
+01:33.821: INFO:    |Inst. Lang Pack  >>> CPageProgress::_UpdateDisplay: Actual Phase: 8
+01:33.829: INFO:    |Inst. Lang Pack  >>> SKIP[FALSE]>>Looking for skip clauses
+01:33.830: INFO:    |Inst. Lang Pack  >>> SKIP[FALSE]>> Adding [FALSE] Condition: !_psdStateData->GetIsInitSuccessful()
+01:33.831: INFO:    |Inst. Lang Pack  >>> SKIP[FALSE]>> Adding [FALSE] Condition: g_pApp->GetState()->GetOptIEAKMode()==IEAK_BRANDING
+01:33.832: INFO:    |Inst. Lang Pack  >>> SKIP[FALSE]>> Adding [FALSE] Condition: g_pApp->GetState()->AreWeDoingUninstall()
+01:33.833: INFO:    |Inst. Lang Pack  >>> SKIP[FALSE]>> Adding [FALSE] Condition: !g_pApp->GetState()->GetPrerequisiteSatisfied()
+01:33.834: INFO:    |Inst. Lang Pack  >>> SKIP[FALSE]>> Adding [TRUE ] Condition: g_pApp->GetState()->GetCBSBasedInstall()==FALSE
+01:33.835: INFO:    |Inst. Lang Pack  >>> SKIP[TRUE ]>> Adding [TRUE ] Condition: g_pApp->GetState()->GetInstallLanguagePack()==FALSE
+01:33.836: INFO:    |Inst. Lang Pack  >>> SKIP[TRUE ]>> Adding [FALSE] Condition: g_pApp->GetState()->GetResultCouldInstallIE()==FALSE
+01:33.838: INFO:    |Inst. Lang Pack  >>> SKIP[TRUE ]>>Result: SKIPPING This Phase
+01:33.839: INFO:    |Inst. Lang Pack  >>> CInstallationState::_ExitState: Preparing to Leave State.
+01:33.840: INFO:    |Inst. Lang Pack  >>> CInstallationState::_ExitState: Setting Progress 100.
+01:33.841: INFO:    |Inst. Lang Pack  >>> CInstallationState::_SetProgress: Post Set Progress Message Succeeded.
+01:33.842: INFO:    |Inst. Lang Pack  >>> CInstallationState::_ExitState: Posting Exit Phase Message.
+01:33.845: INFO:    |Inst. Lang Pack  >>> CInstallationState::_ExitState: Post Exit Phase Message Succeeded.
+01:33.847: INFO:    |Inst. Lang Pack  >>> CPageProgress::DlgProc: Received WM_PR_SETPROGRESS, 64, 0
+01:33.848: INFO:    |Inst. Lang Pack  >>> CPageProgress::_UpdateDisplay: Actual Phase: 8
+01:33.849: INFO:    |Inst. Lang Pack  >>> CPageProgress::DlgProc: Received WM_PR_EXITPHASE, 0, 0
+01:33.851: INFO:    |Inst. Lang Pack  >>> CPageProgress::_UpdateDisplay: Actual Phase: 8
+01:33.852: INFO:    |Inst. Lang Pack  >>> <[END]--------------------------------
+01:33.854: INFO:    |Inst. Lang Pack  >>> CPageProgress::_ChangeState: Original Phase: 8
+01:33.855: INFO:    |IEAK After IE    >>> >[BEGIN]------------------------------
+01:33.857: INFO:    |IEAK After IE    >>> CPageProgress::_UpdateDisplay: Actual Phase: 9
+01:33.858: INFO:    |IEAK After IE    >>> SKIP[FALSE]>>Looking for skip clauses
+01:33.859: INFO:    |IEAK After IE    >>> SKIP[FALSE]>> Adding [FALSE] Condition: !_psdStateData->GetIsInitSuccessful()
+01:33.860: INFO:    |IEAK After IE    >>> SKIP[FALSE]>> Adding [TRUE ] Condition: g_pApp->GetState()->GetOptIEAKMode()!=IEAK_PACKAGE
+01:33.864: INFO:    |IEAK After IE    >>> SKIP[TRUE ]>> Adding [FALSE] Condition: g_pApp->GetState()->AreWeDoingUninstall()
+01:33.866: INFO:    |IEAK After IE    >>> SKIP[TRUE ]>> Adding [FALSE] Condition: !g_pApp->GetState()->GetPrerequisiteSatisfied()
+01:33.868: INFO:    |IEAK After IE    >>> SKIP[TRUE ]>>Result: SKIPPING This Phase
+01:33.869: INFO:    |IEAK After IE    >>> CInstallationState::_ExitState: Preparing to Leave State.
+01:33.870: INFO:    |IEAK After IE    >>> CInstallationState::_ExitState: Setting Progress 100.
+01:33.872: INFO:    |IEAK After IE    >>> CInstallationState::_SetProgress: Post Set Progress Message Succeeded.
+01:33.873: INFO:    |IEAK After IE    >>> CInstallationState::_ExitState: Posting Exit Phase Message.
+01:33.876: INFO:    |IEAK After IE    >>> CInstallationState::_ExitState: Post Exit Phase Message Succeeded.
+01:33.877: INFO:    |IEAK After IE    >>> CPageProgress::DlgProc: Received WM_PR_SETPROGRESS, 64, 0
+01:33.878: INFO:    |IEAK After IE    >>> CPageProgress::_UpdateDisplay: Actual Phase: 9
+01:33.880: INFO:    |IEAK After IE    >>> CPageProgress::DlgProc: Received WM_PR_EXITPHASE, 0, 0
+01:33.881: INFO:    |IEAK After IE    >>> CPageProgress::_UpdateDisplay: Actual Phase: 9
+01:33.882: INFO:    |IEAK After IE    >>> <[END]--------------------------------
+01:33.884: INFO:    |IEAK After IE    >>> CPageProgress::_ChangeState: Original Phase: 9
+01:33.886: INFO:    |Inst. Post-Upd.  >>> >[BEGIN]------------------------------
+01:33.887: INFO:    |Inst. Post-Upd.  >>> CPageProgress::_UpdateDisplay: Actual Phase: 10
+01:33.889: INFO:    |Inst. Post-Upd.  >>> SKIP[FALSE]>>Looking for skip clauses
+01:33.890: INFO:    |Inst. Post-Upd.  >>> SKIP[FALSE]>> Adding [FALSE] Condition: !_psdStateData->GetIsInitSuccessful()
+01:33.894: INFO:    |Inst. Post-Upd.  >>> SKIP[FALSE]>> Adding [TRUE ] Condition: !g_pApp->GetState()->GetOptShouldUpdate()
+01:33.895: INFO:    |Inst. Post-Upd.  >>> SKIP[TRUE ]>> Adding [FALSE] Condition: !g_pApp->GetState()->GetResultCouldInstallIE()
+01:33.896: INFO:    |Inst. Post-Upd.  >>> SKIP[TRUE ]>> Adding [TRUE ] Condition: g_pApp->GetState()->GetResultPostIEUpdateState()!=WU_COULD_DOWNLOAD
+01:33.897: INFO:    |Inst. Post-Upd.  >>> SKIP[TRUE ]>> Adding [FALSE] Condition: g_pApp->GetState()->GetOptIEAKMode()==IEAK_BRANDING
+01:33.898: INFO:    |Inst. Post-Upd.  >>> SKIP[TRUE ]>> Adding [FALSE] Condition: g_pApp->GetState()->AreWeDoingUninstall()
+01:33.899: INFO:    |Inst. Post-Upd.  >>> SKIP[TRUE ]>> Adding [FALSE] Condition: !g_pApp->GetState()->GetPrerequisiteSatisfied()
+01:33.901: INFO:    |Inst. Post-Upd.  >>> SKIP[TRUE ]>>Result: SKIPPING This Phase
+01:33.902: INFO:    |Inst. Post-Upd.  >>> CInstallationState::_ExitState: Preparing to Leave State.
+01:33.904: INFO:    |Inst. Post-Upd.  >>> CInstallationState::_ExitState: Setting Progress 100.
+01:33.905: INFO:    |Inst. Post-Upd.  >>> CInstallationState::_SetProgress: Post Set Progress Message Succeeded.
+01:33.907: INFO:    |Inst. Post-Upd.  >>> CInstallationState::_ExitState: Posting Exit Phase Message.
+01:33.908: INFO:    |Inst. Post-Upd.  >>> CInstallationState::_ExitState: Post Exit Phase Message Succeeded.
+01:33.910: INFO:    |Inst. Post-Upd.  >>> CPageProgress::DlgProc: Received WM_PR_SETPROGRESS, 64, 0
+01:33.912: INFO:    |Inst. Post-Upd.  >>> CPageProgress::_UpdateDisplay: Actual Phase: 10
+01:33.913: INFO:    |Inst. Post-Upd.  >>> CPageProgress::DlgProc: Received WM_PR_EXITPHASE, 0, 0
+01:33.914: INFO:    Setting Windows Update Registry Keys: LookingForUpdates=0x00 - ForcePostUpdateDownload=0x00 - ForcePostUpdateInstall=0x00
+01:33.915: INFO:    |Inst. Post-Upd.  >>> CPageProgress::_UpdateDisplay: Actual Phase: 10
+01:33.916: INFO:    |Inst. Post-Upd.  >>> <[END]--------------------------------
+01:33.917: INFO:    |Inst. Post-Upd.  >>> CPageProgress::_ChangeState: Original Phase: 10
+01:33.919: INFO:    |IEAK After IEUPD >>> >[BEGIN]------------------------------
+01:33.920: INFO:    |IEAK After IEUPD >>> CPageProgress::_UpdateDisplay: Actual Phase: 11
+01:33.921: INFO:    |IEAK After IEUPD >>> SKIP[FALSE]>>Looking for skip clauses
+01:33.923: INFO:    |IEAK After IEUPD >>> SKIP[FALSE]>> Adding [FALSE] Condition: !_psdStateData->GetIsInitSuccessful()
+01:33.924: INFO:    |IEAK After IEUPD >>> SKIP[FALSE]>> Adding [TRUE ] Condition: g_pApp->GetState()->GetOptIEAKMode()!=IEAK_PACKAGE
+01:33.925: INFO:    |IEAK After IEUPD >>> SKIP[TRUE ]>> Adding [FALSE] Condition: g_pApp->GetState()->AreWeDoingUninstall()
+01:33.927: INFO:    |IEAK After IEUPD >>> SKIP[TRUE ]>> Adding [FALSE] Condition: !g_pApp->GetState()->GetPrerequisiteSatisfied()
+01:33.928: INFO:    |IEAK After IEUPD >>> SKIP[TRUE ]>>Result: SKIPPING This Phase
+01:33.929: INFO:    |IEAK After IEUPD >>> CInstallationState::_ExitState: Preparing to Leave State.
+01:33.931: INFO:    |IEAK After IEUPD >>> CInstallationState::_ExitState: Setting Progress 100.
+01:33.932: INFO:    |IEAK After IEUPD >>> CInstallationState::_SetProgress: Post Set Progress Message Succeeded.
+01:33.933: INFO:    |IEAK After IEUPD >>> CInstallationState::_ExitState: Posting Exit Phase Message.
+01:33.935: INFO:    |IEAK After IEUPD >>> CInstallationState::_ExitState: Post Exit Phase Message Succeeded.
+01:33.936: INFO:    |IEAK After IEUPD >>> CPageProgress::DlgProc: Received WM_PR_SETPROGRESS, 64, 0
+01:33.938: INFO:    |IEAK After IEUPD >>> CPageProgress::_UpdateDisplay: Actual Phase: 11
+01:33.939: INFO:    |IEAK After IEUPD >>> CPageProgress::DlgProc: Received WM_PR_EXITPHASE, 0, 0
+01:33.940: INFO:    |IEAK After IEUPD >>> CPageProgress::_UpdateDisplay: Actual Phase: 11
+01:33.945: INFO:    |IEAK After IEUPD >>> <[END]--------------------------------
+01:33.947: INFO:    |IEAK After IEUPD >>> CPageProgress::_ChangeState: Original Phase: 11
+01:33.963: INFO:    |IEAK Finalize    >>> >[BEGIN]------------------------------
+01:33.964: INFO:    |IEAK Finalize    >>> CPageProgress::_UpdateDisplay: Actual Phase: 12
+01:33.965: INFO:    |IEAK Finalize    >>> SKIP[FALSE]>>Looking for skip clauses
+01:33.967: INFO:    |IEAK Finalize    >>> SKIP[FALSE]>> Adding [FALSE] Condition: !_psdStateData->GetIsInitSuccessful()
+01:33.968: INFO:    |IEAK Finalize    >>> SKIP[FALSE]>> Adding [TRUE ] Condition: g_pApp->GetState()->GetOptIEAKMode()==IEAK_NONE
+01:33.970: INFO:    |IEAK Finalize    >>> SKIP[TRUE ]>> Adding [FALSE] Condition: g_pApp->GetState()->AreWeDoingUninstall()
+01:33.972: INFO:    |IEAK Finalize    >>> SKIP[TRUE ]>> Adding [FALSE] Condition: !g_pApp->GetState()->GetPrerequisiteSatisfied()
+01:33.973: INFO:    |IEAK Finalize    >>> SKIP[TRUE ]>>Result: SKIPPING This Phase
+01:33.974: INFO:    |IEAK Finalize    >>> CInstallationState::_ExitState: Preparing to Leave State.
+01:33.975: INFO:    |IEAK Finalize    >>> CInstallationState::_ExitState: Setting Progress 100.
+01:33.976: INFO:    |IEAK Finalize    >>> CInstallationState::_SetProgress: Post Set Progress Message Succeeded.
+01:33.977: INFO:    |IEAK Finalize    >>> CInstallationState::_ExitState: Posting Exit Phase Message.
+01:33.979: INFO:    |IEAK Finalize    >>> CInstallationState::_ExitState: Post Exit Phase Message Succeeded.
+01:33.980: INFO:    |IEAK Finalize    >>> CPageProgress::DlgProc: Received WM_PR_SETPROGRESS, 64, 0
+01:33.981: INFO:    |IEAK Finalize    >>> CPageProgress::_UpdateDisplay: Actual Phase: 12
+01:33.982: INFO:    |IEAK Finalize    >>> CPageProgress::DlgProc: Received WM_PR_EXITPHASE, 0, 0
+01:33.983: INFO:    |IEAK Finalize    >>> CPageProgress::_UpdateDisplay: Actual Phase: 12
+01:33.985: INFO:    |IEAK Finalize    >>> <[END]--------------------------------
+01:33.987: INFO:    |IEAK Finalize    >>> CPageProgress::_ChangeState: Original Phase: 12
+01:33.988: INFO:    |Finalize         >>> >[BEGIN]------------------------------
+01:33.989: INFO:    |Finalize         >>> CPageProgress::_UpdateDisplay: Actual Phase: 13
+01:33.997: INFO:    |Finalize         >>> SKIP[FALSE]>>Looking for skip clauses
+01:33.998: INFO:    |Finalize         >>> SKIP[FALSE]>>Result: RUNNING This Phase
+01:34.000: INFO:    |Finalize         >>> CInstallationState::_ExitState: Preparing to Leave State.
+01:34.003: INFO:    |Finalize         >>> CInstallationState::_ExitState: Setting Progress 100.
+01:34.005: INFO:    |Finalize         >>> CInstallationState::_SetProgress: Post Set Progress Message Succeeded.
+01:34.006: INFO:    |Finalize         >>> CInstallationState::_ExitState: Posting Exit Phase Message.
+01:34.008: INFO:    |Finalize         >>> CInstallationState::_ExitState: Post Exit Phase Message Succeeded.
+01:34.009: INFO:    |Finalize         >>> CPageProgress::DlgProc: Received WM_PR_SETPROGRESS, 64, 0
+01:34.010: INFO:    |Finalize         >>> CPageProgress::_UpdateDisplay: Actual Phase: 13
+01:34.011: INFO:    |Finalize         >>> CPageProgress::DlgProc: Received WM_PR_EXITPHASE, 0, 0
+01:34.012: INFO:    |Finalize         >>> CPageProgress::_UpdateDisplay: Actual Phase: 13
+01:34.013: INFO:    |Finalize         >>> <[END]--------------------------------
+01:34.014: INFO:    |Finalize         >>> CPageProgress::_ChangeState: Original Phase: 13
+01:35.119: INFO:    Disabling active setup.
+01:35.120: INFO:    Added command to re-enable active setup after install and reboot.
+01:41.635: WARNING: Message to User: It is strongly recommended that you choose "Restart Now" to allow Setup to finish. Some applications may not function correctly until your system is restarted. Are you sure you want to restart later?
+01:44.316: INFO:    REBOOT: required.
+01:44.318: INFO:    REBOOT: User selected to reboot later.
+01:44.321: INFO:    Installer return value: hr=0x00000000
+01:44.451: INFO:    Setup exit code: 0x00000000.
+01:44.452: INFO:    Installer Process exit code: 0x00000bc2.

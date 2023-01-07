@@ -1,0 +1,16 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\Interface\\{A5CA5F7F-1847-4D87-9C5B-918509F7511D}
+
+#arch=win32
+
+[] 1650919630
+#time=1d858e5a2537af4
+@="IMonikerProp"
+
+[NumMethods] 1650919630
+#time=1d858e5a253713a
+@="4"
+
+[ProxyStubClsid32] 1650919630
+#time=1d858e5a2537fcc
+@="{79EAC9F1-BAF9-11CE-8C82-00AA004BA90B}"

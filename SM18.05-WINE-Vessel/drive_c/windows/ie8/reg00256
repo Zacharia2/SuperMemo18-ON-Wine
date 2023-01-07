@@ -1,0 +1,20 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\CLSID\\{FBF23B40-E3F0-101B-8488-00AA003E56F8}
+
+#arch=win32
+
+[] 1650919627
+#time=1d858e5a0ea3374
+@="Internet Shortcut"
+
+[InprocServer32] 1650919627
+#time=1d858e5a0dc0c2c
+@="C:\\windows\\system32\\ieframe.dll"
+"ThreadingModel"="Apartment"
+
+[ProgId] 1650919627
+#time=1d858e5a0dc19c4
+@="InternetShortcut"
+
+[shellex\\MayChangeDefaultMenu] 1650919627
+#time=1d858e5a0ea387e

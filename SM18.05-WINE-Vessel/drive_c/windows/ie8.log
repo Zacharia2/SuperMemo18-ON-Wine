@@ -1,0 +1,857 @@
+[ie8.log]
+0.063: ================================================================================
+0.063: 2022/04/26 04:55:53.056 (local)
+0.065: y:\250bda7aa6b67251247dfe6510e5\update\update.exe (version 6.3.15.0)
+0.072: Hotfix started with following command line: /quiet /norestart /er /log:C:\windows 
+0.075: In Function GetReleaseSet, line 1211, RegQueryValueEx failed with error 0x2
+0.076: In Function GetReleaseSet, line 1240, RegQueryValueEx failed with error 0x2
+0.080: IECUSTOM: Scanning for proper registry permissions...
+6.014: IECUSTOM: Scanning for proper registry permissions...
+6.064: IECUSTOM: Scanning for proper registry permissions...
+8.732: In Function TestVolatileFlag, line 11825, RegOpenKeyEx failed with error 0x2
+8.732: In Function TestVolatileFlag, line 11857, RegOpenKeyEx failed with error 0x2
+8.734: DoInstallation: CleanPFR failed: 0x2 
+8.735: In Function GetReleaseSet, line 1211, RegQueryValueEx failed with error 0x2
+8.735: In Function GetReleaseSet, line 1240, RegQueryValueEx failed with error 0x2
+8.742: SetProductTypes: InfProductBuildType=(null)
+8.744: SetAltOsLoaderPath: No section uses DirId 65701; done.
+8.751: RegisterDll: Executing command line: "C:\windows\system32\regsvr32.exe" /s "C:\windows\system32\licdll.dll" ...
+9.845: RegisterDll: Exit code=0x00000003
+9.845: RegisterDll: Executing command line: "C:\windows\system32\regsvr32.exe" /s "C:\windows\system32\regwizc.dll" ...
+10.892: RegisterDll: Exit code=0x00000003
+10.898: IncludeDirectoryIdFromInfSection: No DirId found for: DontRemoveOnUninstall.System32.DirId
+10.898: IncludeDirectoryIdFromInfSection: No DirId found for: DontRemoveOnUninstall.System32.Mui.DirId
+10.898:  SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Windows XP Service Pack is not Present 
+10.898: Condition Check for Line 1 of XPSP.ExtendedConditional returned FALSE 
+10.900: DoInstallation: FetchSourceURL for y:\250bda7aa6b67251247dfe6510e5\update\update.inf failed
+10.905: CreateUninstall = 1,Directory = C:\windows\ie8 
+10.912: BuildCabinetManifest: update.url absent
+10.913: Starting AnalyzeComponents
+10.913: AnalyzePhaseZero used 0 ticks
+10.915: No c:\windows\INF\updtblk.inf file.
+10.915: OEM file scan used 0 ticks
+11.119: AnalyzePhaseOne: used 204 ticks
+11.119: AnalyzeComponents: Hotpatch analysis disabled; skipping.
+11.119: AnalyzeComponents: Hotpatching is disabled.
+11.183: AnalyzePhaseTwo used 64 ticks
+11.183: AnalyzePhaseThree used 0 ticks
+11.183: AnalyzePhaseFive used 0 ticks
+11.187: AnalyzePhaseSix used 4 ticks
+11.187: AnalyzeComponents used 274 ticks
+11.187: Downloading 0 files
+11.187: bPatchMode = FALSE
+11.187: Inventory complete: ReturnStatus=0, 286 ticks
+11.188: Num Ticks for invent : 288
+11.189: Allocation size of drive C: is 4096 bytes, free space = 28066967552 bytes
+11.197: AnalyzeDiskUsage:  Skipping EstimateDiskUsageForUninstall.
+11.197: Drive C: free 26766MB req: 104MB w/uninstall: NOT CALCULATED.
+11.199: CabinetBuild complete
+11.199: Num Ticks for Cabinet build : 11
+11.200: ProcessDynamicStrings:  RegQueryValueEx failed to read value:  0x2
+11.200: ProcessDynamicStrings:  InstallPathRegistryKey for SOFTWARE\Microsoft\Internet Explorer,BrandGUID failed
+11.200: ProcessDynamicStrings:  CustomStringTable for DownloadedProgramFiles failed to find the string.
+11.200: ProcessDynamicStrings:  CustomStringTable for IEVersionUpdate failed to find the string.
+11.200: ProcessDynamicStrings:  CustomStringTable for SystemTools failed to find the string.
+11.273: FileInUse:: Detection disabled.
+11.294: FFileFound: FindFirstFile failed :0x3
+11.294: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.297: FFileFound: FindFirstFile failed :0x3
+11.297: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.300: FFileFound: FindFirstFile failed :0x3
+11.300: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.303: FFileFound: FindFirstFile failed :0x3
+11.303: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.308: FFileFound: FindFirstFile failed :0x3
+11.308: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.312: FFileFound: FindFirstFile failed :0x3
+11.312: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.315: FFileFound: FindFirstFile failed :0x3
+11.315: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.318: FFileFound: FindFirstFile failed :0x3
+11.318: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.322: FFileFound: FindFirstFile failed :0x3
+11.322: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.325: FFileFound: FindFirstFile failed :0x3
+11.325: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.329: FFileFound: FindFirstFile failed :0x3
+11.329: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.332: FFileFound: FindFirstFile failed :0x3
+11.332: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.337: FFileFound: FindFirstFile failed :0x3
+11.337: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.339: FFileFound: FindFirstFile failed :0x3
+11.339: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.342: FFileFound: FindFirstFile failed :0x3
+11.342: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.344: FFileFound: FindFirstFile failed :0x3
+11.344: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.348: FFileFound: FindFirstFile failed :0x3
+11.348: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.351: FFileFound: FindFirstFile failed :0x3
+11.351: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.357: FFileFound: FindFirstFile failed :0x3
+11.357: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.360: FFileFound: FindFirstFile failed :0x3
+11.360: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.364: FFileFound: FindFirstFile failed :0x3
+11.364: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.369: FFileFound: FindFirstFile failed :0x3
+11.369: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.373: FFileFound: FindFirstFile failed :0x3
+11.373: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.376: FFileFound: FindFirstFile failed :0x3
+11.376: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.379: FFileFound: FindFirstFile failed :0x3
+11.379: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.382: FFileFound: FindFirstFile failed :0x3
+11.382: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.385: FFileFound: FindFirstFile failed :0x3
+11.385: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.391: FFileFound: FindFirstFile failed :0x3
+11.391: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.394: FFileFound: FindFirstFile failed :0x3
+11.394: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.400: FFileFound: FindFirstFile failed :0x3
+11.400: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.403: FFileFound: FindFirstFile failed :0x3
+11.403: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.407: FFileFound: FindFirstFile failed :0x3
+11.407: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.410: FFileFound: FindFirstFile failed :0x3
+11.410: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.416: FFileFound: FindFirstFile failed :0x3
+11.416: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.419: FFileFound: FindFirstFile failed :0x3
+11.419: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.421: FFileFound: FindFirstFile failed :0x3
+11.421: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.425: FFileFound: FindFirstFile failed :0x3
+11.425: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.432: FFileFound: FindFirstFile failed :0x3
+11.432: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.434: FFileFound: FindFirstFile failed :0x3
+11.434: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.436: FFileFound: FindFirstFile failed :0x3
+11.436: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.440: FFileFound: FindFirstFile failed :0x3
+11.440: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.444: FFileFound: FindFirstFile failed :0x3
+11.444: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.449: FFileFound: FindFirstFile failed :0x3
+11.449: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.453: FFileFound: FindFirstFile failed :0x3
+11.453: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.455: FFileFound: FindFirstFile failed :0x3
+11.455: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.458: FFileFound: FindFirstFile failed :0x3
+11.458: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.462: FFileFound: FindFirstFile failed :0x3
+11.462: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.464: FFileFound: FindFirstFile failed :0x3
+11.464: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.468: FFileFound: FindFirstFile failed :0x3
+11.468: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.471: FFileFound: FindFirstFile failed :0x3
+11.471: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.474: FFileFound: FindFirstFile failed :0x3
+11.474: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.477: FFileFound: FindFirstFile failed :0x3
+11.477: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.482: FFileFound: FindFirstFile failed :0x3
+11.482: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.485: FFileFound: FindFirstFile failed :0x3
+11.485: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.488: FFileFound: FindFirstFile failed :0x3
+11.488: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.492: FFileFound: FindFirstFile failed :0x3
+11.492: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.495: FFileFound: FindFirstFile failed :0x3
+11.495: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.498: FFileFound: FindFirstFile failed :0x3
+11.498: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.502: FFileFound: FindFirstFile failed :0x3
+11.502: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.506: FFileFound: FindFirstFile failed :0x3
+11.506: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.510: FFileFound: FindFirstFile failed :0x3
+11.510: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.513: FFileFound: FindFirstFile failed :0x3
+11.513: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.516: FFileFound: FindFirstFile failed :0x3
+11.516: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.519: FFileFound: FindFirstFile failed :0x3
+11.519: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.525: FFileFound: FindFirstFile failed :0x3
+11.525: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.528: FFileFound: FindFirstFile failed :0x3
+11.528: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.531: FFileFound: FindFirstFile failed :0x3
+11.531: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.535: FFileFound: FindFirstFile failed :0x3
+11.535: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.538: FFileFound: FindFirstFile failed :0x3
+11.538: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.543: FFileFound: FindFirstFile failed :0x3
+11.543: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.546: FFileFound: FindFirstFile failed :0x3
+11.546: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.549: FFileFound: FindFirstFile failed :0x3
+11.549: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.552: FFileFound: FindFirstFile failed :0x3
+11.552: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.556: FFileFound: FindFirstFile failed :0x3
+11.556: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.559: FFileFound: FindFirstFile failed :0x3
+11.559: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.563: FFileFound: FindFirstFile failed :0x3
+11.563: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.565: FFileFound: FindFirstFile failed :0x3
+11.565: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.569: FFileFound: FindFirstFile failed :0x3
+11.569: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.573: FFileFound: FindFirstFile failed :0x3
+11.573: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.575: FFileFound: FindFirstFile failed :0x3
+11.575: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.579: FFileFound: FindFirstFile failed :0x3
+11.579: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.582: FFileFound: FindFirstFile failed :0x3
+11.582: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.585: FFileFound: FindFirstFile failed :0x3
+11.585: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.592: FFileFound: FindFirstFile failed :0x3
+11.592: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.595: FFileFound: FindFirstFile failed :0x3
+11.595: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.598: FFileFound: FindFirstFile failed :0x3
+11.598: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.604: FFileFound: FindFirstFile failed :0x3
+11.604: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.607: FFileFound: FindFirstFile failed :0x3
+11.607: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.610: FFileFound: FindFirstFile failed :0x3
+11.610: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.614: FFileFound: FindFirstFile failed :0x3
+11.614: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.619: FFileFound: FindFirstFile failed :0x3
+11.619: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.622: FFileFound: FindFirstFile failed :0x3
+11.622: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.625: FFileFound: FindFirstFile failed :0x3
+11.625: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.629: FFileFound: FindFirstFile failed :0x3
+11.629: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.632: FFileFound: FindFirstFile failed :0x3
+11.632: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.635: FFileFound: FindFirstFile failed :0x3
+11.635: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.638: FFileFound: FindFirstFile failed :0x3
+11.638: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.641: FFileFound: FindFirstFile failed :0x3
+11.641: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.644: FFileFound: FindFirstFile failed :0x3
+11.644: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.650: FFileFound: FindFirstFile failed :0x3
+11.650: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.653: FFileFound: FindFirstFile failed :0x3
+11.653: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.656: FFileFound: FindFirstFile failed :0x3
+11.656: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.659: FFileFound: FindFirstFile failed :0x3
+11.659: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.663: FFileFound: FindFirstFile failed :0x3
+11.663: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.670: FFileFound: FindFirstFile failed :0x3
+11.670: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.674: FFileFound: FindFirstFile failed :0x3
+11.674: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.677: FFileFound: FindFirstFile failed :0x3
+11.677: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.680: FFileFound: FindFirstFile failed :0x3
+11.680: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.683: FFileFound: FindFirstFile failed :0x3
+11.683: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.689: FFileFound: FindFirstFile failed :0x3
+11.689: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.695: FFileFound: FindFirstFile failed :0x3
+11.695: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.698: FFileFound: FindFirstFile failed :0x3
+11.698: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.701: FFileFound: FindFirstFile failed :0x3
+11.701: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.704: FFileFound: FindFirstFile failed :0x3
+11.704: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.709: FFileFound: FindFirstFile failed :0x3
+11.709: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.713: FFileFound: FindFirstFile failed :0x3
+11.713: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.717: FFileFound: FindFirstFile failed :0x3
+11.717: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.720: FFileFound: FindFirstFile failed :0x3
+11.720: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.724: FFileFound: FindFirstFile failed :0x3
+11.724: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.727: FFileFound: FindFirstFile failed :0x3
+11.727: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.731: FFileFound: FindFirstFile failed :0x3
+11.731: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.735: FFileFound: FindFirstFile failed :0x3
+11.735: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.738: FFileFound: FindFirstFile failed :0x3
+11.738: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.743: FFileFound: FindFirstFile failed :0x3
+11.743: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.746: FFileFound: FindFirstFile failed :0x3
+11.746: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.748: FFileFound: FindFirstFile failed :0x3
+11.748: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.749: FFileFound: FindFirstFile failed :0x3
+11.749: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.750: FFileFound: FindFirstFile failed :0x3
+11.750: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.751: FFileFound: FindFirstFile failed :0x3
+11.751: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.752: FFileFound: FindFirstFile failed :0x3
+11.752: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.753: FFileFound: FindFirstFile failed :0x3
+11.753: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.754: FFileFound: FindFirstFile failed :0x3
+11.754: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.754: FFileFound: FindFirstFile failed :0x3
+11.754: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.755: FFileFound: FindFirstFile failed :0x3
+11.755: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.756: FFileFound: FindFirstFile failed :0x3
+11.756: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.758: FFileFound: FindFirstFile failed :0x3
+11.758: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.759: FFileFound: FindFirstFile failed :0x3
+11.759: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.760: FFileFound: FindFirstFile failed :0x3
+11.760: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.763: FFileFound: FindFirstFile failed :0x3
+11.763: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.764: FFileFound: FindFirstFile failed :0x3
+11.764: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.764: FFileFound: FindFirstFile failed :0x3
+11.764: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.765: FFileFound: FindFirstFile failed :0x3
+11.765: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.766: FFileFound: FindFirstFile failed :0x3
+11.766: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.767: FFileFound: FindFirstFile failed :0x3
+11.767: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.767: FFileFound: FindFirstFile failed :0x3
+11.767: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.768: FFileFound: FindFirstFile failed :0x3
+11.768: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.769: FFileFound: FindFirstFile failed :0x3
+11.769: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.770: FFileFound: FindFirstFile failed :0x3
+11.770: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.771: FFileFound: FindFirstFile failed :0x3
+11.771: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.774: FFileFound: FindFirstFile failed :0x3
+11.774: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.776: FFileFound: FindFirstFile failed :0x3
+11.776: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.777: FFileFound: FindFirstFile failed :0x3
+11.777: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.777: FFileFound: FindFirstFile failed :0x3
+11.777: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.778: FFileFound: FindFirstFile failed :0x3
+11.778: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.779: FFileFound: FindFirstFile failed :0x3
+11.779: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.780: FFileFound: FindFirstFile failed :0x3
+11.780: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.781: FFileFound: FindFirstFile failed :0x3
+11.781: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.782: FFileFound: FindFirstFile failed :0x3
+11.782: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.782: FFileFound: FindFirstFile failed :0x3
+11.782: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.783: FFileFound: FindFirstFile failed :0x3
+11.783: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.784: FFileFound: FindFirstFile failed :0x3
+11.784: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.784: FFileFound: FindFirstFile failed :0x3
+11.784: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.785: FFileFound: FindFirstFile failed :0x3
+11.785: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.790: FFileFound: FindFirstFile failed :0x3
+11.790: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.798: FFileFound: FindFirstFile failed :0x3
+11.798: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.800: FFileFound: FindFirstFile failed :0x3
+11.800: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.803: FFileFound: FindFirstFile failed :0x3
+11.803: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.808: FFileFound: FindFirstFile failed :0x3
+11.808: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.811: FFileFound: FindFirstFile failed :0x3
+11.811: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.815: FFileFound: FindFirstFile failed :0x3
+11.815: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.818: FFileFound: FindFirstFile failed :0x3
+11.818: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.824: FFileFound: FindFirstFile failed :0x3
+11.824: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.826: FFileFound: FindFirstFile failed :0x3
+11.826: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.828: FFileFound: FindFirstFile failed :0x3
+11.828: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.831: FFileFound: FindFirstFile failed :0x3
+11.831: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.836: FFileFound: FindFirstFile failed :0x3
+11.836: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.838: FFileFound: FindFirstFile failed :0x3
+11.838: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.841: FFileFound: FindFirstFile failed :0x3
+11.841: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.845: FFileFound: FindFirstFile failed :0x3
+11.845: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.847: FFileFound: FindFirstFile failed :0x3
+11.847: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.852: FFileFound: FindFirstFile failed :0x3
+11.852: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.854: FFileFound: FindFirstFile failed :0x3
+11.854: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.856: FFileFound: FindFirstFile failed :0x3
+11.856: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.859: FFileFound: FindFirstFile failed :0x3
+11.859: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.862: FFileFound: FindFirstFile failed :0x3
+11.862: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.865: FFileFound: FindFirstFile failed :0x3
+11.865: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.871: FFileFound: FindFirstFile failed :0x3
+11.871: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.874: FFileFound: FindFirstFile failed :0x3
+11.874: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.876: FFileFound: FindFirstFile failed :0x3
+11.876: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.884: FFileFound: FindFirstFile failed :0x3
+11.884: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.887: FFileFound: FindFirstFile failed :0x3
+11.887: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.898: FFileFound: FindFirstFile failed :0x3
+11.898: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.900: FFileFound: FindFirstFile failed :0x3
+11.900: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.903: FFileFound: FindFirstFile failed :0x3
+11.903: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.905: FFileFound: FindFirstFile failed :0x3
+11.905: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.909: FFileFound: FindFirstFile failed :0x3
+11.909: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.922: FFileFound: FindFirstFile failed :0x3
+11.922: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.928: FFileFound: FindFirstFile failed :0x3
+11.928: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.941: FFileFound: FindFirstFile failed :0x3
+11.941: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.944: FFileFound: FindFirstFile failed :0x3
+11.944: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.951: FFileFound: FindFirstFile failed :0x3
+11.951: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.961: FFileFound: FindFirstFile failed :0x3
+11.961: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.964: FFileFound: FindFirstFile failed :0x3
+11.964: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.967: FFileFound: FindFirstFile failed :0x3
+11.967: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.971: FFileFound: FindFirstFile failed :0x3
+11.971: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.974: FFileFound: FindFirstFile failed :0x3
+11.974: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.979: FFileFound: FindFirstFile failed :0x3
+11.979: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.982: FFileFound: FindFirstFile failed :0x3
+11.982: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+11.985: FFileFound: FindFirstFile failed :0x3
+11.985: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.001: FFileFound: FindFirstFile failed :0x3
+12.001: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.003: FFileFound: FindFirstFile failed :0x3
+12.003: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.006: FFileFound: FindFirstFile failed :0x3
+12.006: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.012: FFileFound: FindFirstFile failed :0x3
+12.012: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.014: FFileFound: FindFirstFile failed :0x3
+12.014: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.015: FFileFound: FindFirstFile failed :0x3
+12.015: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.016: FFileFound: FindFirstFile failed :0x3
+12.016: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.018: FFileFound: FindFirstFile failed :0x3
+12.018: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.019: FFileFound: FindFirstFile failed :0x3
+12.019: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.022: FFileFound: FindFirstFile failed :0x3
+12.022: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.023: FFileFound: FindFirstFile failed :0x3
+12.023: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.024: FFileFound: FindFirstFile failed :0x3
+12.024: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.026: FFileFound: FindFirstFile failed :0x3
+12.026: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.027: FFileFound: FindFirstFile failed :0x3
+12.027: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.028: FFileFound: FindFirstFile failed :0x3
+12.028: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.030: FFileFound: FindFirstFile failed :0x3
+12.030: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.031: FFileFound: FindFirstFile failed :0x3
+12.031: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.032: FFileFound: FindFirstFile failed :0x3
+12.032: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.033: FFileFound: FindFirstFile failed :0x3
+12.033: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.034: FFileFound: FindFirstFile failed :0x3
+12.034: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.036: FFileFound: FindFirstFile failed :0x3
+12.036: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.037: FFileFound: FindFirstFile failed :0x3
+12.037: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.038: FFileFound: FindFirstFile failed :0x3
+12.038: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.042: FFileFound: FindFirstFile failed :0x3
+12.042: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.043: FFileFound: FindFirstFile failed :0x3
+12.043: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.044: FFileFound: FindFirstFile failed :0x3
+12.044: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.045: FFileFound: FindFirstFile failed :0x3
+12.045: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.046: FFileFound: FindFirstFile failed :0x3
+12.046: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.047: FFileFound: FindFirstFile failed :0x3
+12.047: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.048: FFileFound: FindFirstFile failed :0x3
+12.048: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.049: FFileFound: FindFirstFile failed :0x3
+12.049: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.050: FFileFound: FindFirstFile failed :0x3
+12.050: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.054: FFileFound: FindFirstFile failed :0x3
+12.054: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.055: FFileFound: FindFirstFile failed :0x3
+12.055: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.056: FFileFound: FindFirstFile failed :0x3
+12.056: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+12.056: Num Ticks for Backup : 857
+13.743: Num Ticks for creating uninst inf : 1687
+13.746: Registering Uninstall Program for -> ie8, ie8 , 0x0
+13.792: Copied file:  C:\windows\system32\spmsg.dll
+13.797: PFE2: Failed to connect to server; error=0x0
+13.805: GetCatVersion:  Failed to retrieve version information from C:\windows\system32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\Tmp.0.ie8.cat with error 0x57
+13.809: GetCatVersion:  Failed to retrieve version information from C:\windows\Tmp.0.ie8.cat with error 0x80092004
+13.842: Copied file:  C:\windows\system32\DllCache\admparse.dll.mui
+13.843: Copied file:  C:\windows\system32\DllCache\advpack.dll.mui
+13.844: Copied file:  C:\windows\system32\DllCache\desktop.ini
+13.844: Copied file:  C:\windows\system32\DllCache\desktop.ini
+13.844: Copied file:  C:\windows\system32\DllCache\ExtExport.exe
+13.844: Copied file:  C:\windows\system32\DllCache\hmmapi.dll.mui
+13.844: Copied file:  C:\windows\system32\DllCache\html.iec
+13.844: Copied file:  C:\windows\system32\DllCache\html.iec.mui
+13.845: Copied file:  C:\windows\system32\DllCache\icardie.dll
+13.845: Copied file:  C:\windows\system32\DllCache\icardie.dll.mui
+13.845: Copied file:  C:\windows\system32\DllCache\ie4uinit.exe.mui
+13.845: Copied file:  C:\windows\system32\DllCache\ie4uinit.exe.mui
+13.845: Copied file:  C:\windows\system32\DllCache\ie8props.propdesc
+13.845: Copied file:  C:\windows\system32\DllCache\ieakeng.dll.mui
+13.845: Copied file:  C:\windows\system32\DllCache\ieakmmc.chm
+13.845: Copied file:  C:\windows\system32\DllCache\ieaksie.dll.mui
+13.845: Copied file:  C:\windows\system32\DllCache\ieakui.dll.mui
+13.845: Copied file:  C:\windows\system32\DllCache\ieapfltr.dat
+13.846: Copied file:  C:\windows\system32\DllCache\ieapfltr.dll
+13.846: Copied file:  C:\windows\system32\DllCache\iecompat.dll
+13.846: Copied file:  C:\windows\system32\DllCache\iedkcs32.dll.mui
+13.846: Copied file:  C:\windows\system32\DllCache\iedkcs32.dll.mui
+13.846: Copied file:  C:\windows\system32\DllCache\iedvtool.dll
+13.846: Copied file:  C:\windows\system32\DllCache\iedvtool.dll.mui
+13.846: Copied file:  C:\windows\system32\DllCache\ieeula.chm
+13.846: Copied file:  C:\windows\system32\DllCache\ieframe.dll
+13.846: Copied file:  C:\windows\system32\DllCache\ieframe.dll.mui
+13.846: Copied file:  C:\windows\system32\DllCache\ieframe.dll.mui
+13.847: Copied file:  C:\windows\system32\DllCache\iepeers.dll.mui
+13.847: Copied file:  C:\windows\system32\DllCache\ieproxy.dll
+13.847: Copied file:  C:\windows\system32\DllCache\iernonce.dll.mui
+13.847: Copied file:  C:\windows\system32\DllCache\iertutil.dll
+13.847: Copied file:  C:\windows\system32\DllCache\IERtUtil.dll.mui
+13.847: Copied file:  C:\windows\system32\DllCache\iesetup.dll.mui
+13.847: Copied file:  C:\windows\system32\DllCache\iesupp.chm
+13.847: Copied file:  C:\windows\system32\DllCache\ieui.dll
+13.847: Copied file:  C:\windows\system32\DllCache\ieui.dll.mui
+13.847: Copied file:  C:\windows\system32\DllCache\ieuinit.inf
+13.847: Copied file:  C:\windows\system32\DllCache\iexplore.chm
+13.848: Copied file:  C:\windows\system32\DllCache\iexplore.exe.mui
+13.848: Copied file:  C:\windows\system32\DllCache\iexplore.exe.mui
+13.848: Copied file:  C:\windows\system32\DllCache\inetcorp.iem
+13.848: Copied file:  C:\windows\system32\DllCache\inetcpl.cpl.mui
+13.848: Copied file:  C:\windows\system32\DllCache\inetres.adm
+13.848: Copied file:  C:\windows\system32\DllCache\inetset.iem
+13.848: Copied file:  C:\windows\system32\DllCache\inseng.dll.mui
+13.848: Copied file:  C:\windows\system32\DllCache\install.ins
+13.848: Copied file:  C:\windows\system32\DllCache\jscript.dll.mui
+13.848: Copied file:  C:\windows\system32\DllCache\jsdbgui.dll
+13.848: Copied file:  C:\windows\system32\DllCache\jsdbgui.dll.mui
+13.848: Copied file:  C:\windows\system32\DllCache\jsdebuggeride.dll
+13.849: Copied file:  C:\windows\system32\DllCache\jsdebuggeride.dll.mui
+13.849: Copied file:  C:\windows\system32\DllCache\JSProfilerCore.dll
+13.849: Copied file:  C:\windows\system32\DllCache\JSProfilerCore.dll.mui
+13.849: Copied file:  C:\windows\system32\DllCache\jsprofilerui.dll
+13.849: Copied file:  C:\windows\system32\DllCache\jsprofilerui.dll.mui
+13.849: Copied file:  C:\windows\system32\DllCache\licmgr10.dll.mui
+13.849: Copied file:  C:\windows\system32\DllCache\msfeeds.dll
+13.850: Copied file:  C:\windows\system32\DllCache\msfeeds.mof
+13.850: Copied file:  C:\windows\system32\DllCache\msfeedsbs.dll
+13.850: Copied file:  C:\windows\system32\DllCache\msfeedsbs.dll.mui
+13.850: Copied file:  C:\windows\system32\DllCache\msfeedsbs.mof
+13.850: Copied file:  C:\windows\system32\DllCache\msfeedssync.exe
+13.850: Copied file:  C:\windows\system32\DllCache\mshta.exe.mui
+13.850: Copied file:  C:\windows\system32\DllCache\mshta.exe.mui
+13.850: Copied file:  C:\windows\system32\DllCache\mshtml.dll.mui
+13.850: Copied file:  C:\windows\system32\DllCache\mshtmler.dll.mui
+13.850: Copied file:  C:\windows\system32\DllCache\msrating.dll.mui
+13.850: Copied file:  C:\windows\system32\DllCache\msrating.dll.mui
+13.851: Copied file:  C:\windows\system32\DllCache\occache.dll.mui
+13.851: Copied file:  C:\windows\system32\DllCache\pdm.dll
+13.851: Copied file:  C:\windows\system32\DllCache\ticrf.rat
+13.851: Copied file:  C:\windows\system32\DllCache\urlmon.dll.mui
+13.851: Copied file:  C:\windows\system32\DllCache\vbscript.dll.mui
+13.851: Copied file:  C:\windows\system32\DllCache\webcheck.dll.mui
+13.851: Copied file:  C:\windows\system32\DllCache\Windows Feed Discovered.wav
+13.851: Copied file:  C:\windows\system32\DllCache\Windows Information Bar.wav
+13.852: Copied file:  C:\windows\system32\DllCache\Windows Navigation Start.wav
+13.852: Copied file:  C:\windows\system32\DllCache\Windows Pop-up Blocked.wav
+13.852: Copied file:  C:\windows\system32\DllCache\WinFXDocObj.exe
+13.852: Copied file:  C:\windows\system32\DllCache\WinFXDocObj.exe.mui
+13.852: Copied file:  C:\windows\system32\DllCache\wininet.dll.mui
+13.852: Copied file:  C:\windows\system32\DllCache\xpshims.dll
+13.852: Copied file:  C:\windows\system32\DllCache\admparse.dll
+13.854: Copied file:  C:\windows\system32\DllCache\advpack.dll
+13.857: Copied file:  C:\windows\system32\DllCache\browseui.dll
+13.860: Copied file:  C:\windows\system32\DllCache\corpol.dll
+13.861: Copied file:  C:\windows\system32\DllCache\dxtmsft.dll
+13.864: Copied file:  C:\windows\system32\DllCache\dxtrans.dll
+13.867: Copied file:  C:\windows\system32\DllCache\hmmapi.dll
+13.868: Copied file:  C:\windows\system32\DllCache\ie4uinit.exe
+13.870: Copied file:  C:\windows\system32\DllCache\ieakeng.dll
+13.872: Copied file:  C:\windows\system32\DllCache\ieaksie.dll
+13.874: Copied file:  C:\windows\system32\DllCache\ieakui.dll
+13.875: Copied file:  C:\windows\system32\DllCache\iedkcs32.dll
+13.878: Copied file:  C:\windows\system32\DllCache\iepeers.dll
+13.879: Copied file:  C:\windows\system32\DllCache\iernonce.dll
+13.881: Copied file:  C:\windows\system32\DllCache\iesetup.dll
+13.882: Copied file:  C:\windows\system32\DllCache\iexplore.exe
+13.886: Copied file:  C:\windows\system32\DllCache\imgutil.dll
+13.888: Copied file:  C:\windows\system32\DllCache\inetcpl.cpl
+13.892: Copied file:  C:\windows\system32\DllCache\inseng.dll
+13.893: Copied file:  C:\windows\system32\DllCache\jscript.dll
+13.898: Copied file:  C:\windows\system32\DllCache\jsproxy.dll
+13.900: Copied file:  C:\windows\system32\DllCache\licmgr10.dll
+13.901: Copied file:  C:\windows\system32\DllCache\mshta.exe
+13.903: Copied file:  C:\windows\system32\DllCache\mshtml.dll
+13.913: Copied file:  C:\windows\system32\DllCache\mshtml.tlb
+13.918: Copied file:  C:\windows\system32\DllCache\mshtmled.dll
+13.920: Copied file:  C:\windows\system32\DllCache\mshtmler.dll
+13.921: Copied file:  C:\windows\system32\DllCache\msls31.dll
+13.923: Copied file:  C:\windows\system32\DllCache\msrating.dll
+13.925: Copied file:  C:\windows\system32\DllCache\mstime.dll
+13.927: Copied file:  C:\windows\system32\DllCache\occache.dll
+13.930: Copied file:  C:\windows\system32\DllCache\pngfilt.dll
+13.932: Copied file:  C:\windows\system32\DllCache\shdocvw.dll
+13.936: Copied file:  C:\windows\system32\DllCache\shlwapi.dll
+13.938: Copied file:  C:\windows\system32\DllCache\sqmapi.dll
+13.939: Copied file:  C:\windows\system32\DllCache\tdc.ocx
+13.941: Copied file:  C:\windows\system32\DllCache\url.dll
+13.943: Copied file:  C:\windows\system32\DllCache\urlmon.dll
+13.947: Copied file:  C:\windows\system32\DllCache\vbscript.dll
+13.949: Copied file:  C:\windows\system32\DllCache\VGX.dll
+13.952: Copied file:  C:\windows\system32\DllCache\webcheck.dll
+13.954: Copied file:  C:\windows\system32\DllCache\wininet.dll
+13.958: Copied file:  C:\windows\%DownloadedProgramFiles%\desktop.ini
+13.960: Copied file:  C:\windows\help\ieakmmc.chm
+13.965: Copied file:  C:\windows\help\ieeula.chm
+13.968: Copied file:  C:\windows\help\iesupp.chm
+13.970: Copied file:  C:\windows\help\iexplore.chm
+13.972: Copied file:  C:\windows\inf\inetres.adm
+13.978: Copied file:  C:\windows\inf\IEM\0409\inetcorp.iem
+13.980: Copied file:  C:\windows\inf\IEM\0409\inetset.iem
+13.982: Copied file:  C:\Program Files\Internet Explorer\ExtExport.exe
+13.984: Copied file:  C:\Program Files\Internet Explorer\hmmapi.dll
+13.986: Copied file:  C:\Program Files\Internet Explorer\ie8props.propdesc
+13.987: Copied file:  C:\Program Files\Internet Explorer\iecompat.dll
+13.990: Copied file:  C:\Program Files\Internet Explorer\iedvtool.dll
+13.993: Copied file:  C:\Program Files\Internet Explorer\ieproxy.dll
+13.995: Copied file:  C:\Program Files\Internet Explorer\iexplore.exe
+13.997: Copied file:  C:\Program Files\Internet Explorer\iexplore.exe.mui
+13.999: Copied file:  C:\Program Files\Internet Explorer\jsdbgui.dll
+14.001: Copied file:  C:\Program Files\Internet Explorer\jsdebuggeride.dll
+14.002: Copied file:  C:\Program Files\Internet Explorer\JSProfilerCore.dll
+14.006: Copied file:  C:\Program Files\Internet Explorer\jsprofilerui.dll
+14.008: Copied file:  C:\Program Files\Internet Explorer\pdm.dll
+14.010: Copied file:  C:\Program Files\Internet Explorer\sqmapi.dll
+14.011: Copied file:  C:\Program Files\Internet Explorer\xpshims.dll
+14.013: Copied file:  C:\Program Files\Internet Explorer\en-US\hmmapi.dll.mui
+14.014: Copied file:  C:\Program Files\Internet Explorer\en-US\iedvtool.dll.mui
+14.015: Copied file:  C:\Program Files\Internet Explorer\en-US\iexplore.exe.mui
+14.017: Copied file:  C:\Program Files\Internet Explorer\en-US\jsdbgui.dll.mui
+14.019: Copied file:  C:\Program Files\Internet Explorer\en-US\jsdebuggeride.dll.mui
+14.020: Copied file:  C:\Program Files\Internet Explorer\en-US\JSProfilerCore.dll.mui
+14.021: Copied file:  C:\Program Files\Internet Explorer\en-US\jsprofilerui.dll.mui
+14.025: Copied file:  C:\Program Files\Internet Explorer\SIGNUP\install.ins
+14.027: Copied file:  C:\windows\Media\Windows Feed Discovered.wav
+14.029: Copied file:  C:\windows\Media\Windows Information Bar.wav
+14.030: Copied file:  C:\windows\Media\Windows Navigation Start.wav
+14.032: Copied file:  C:\windows\Media\Windows Pop-up Blocked.wav
+14.033: Copied file:  C:\Program Files\Common Files\Microsoft Shared\VGX\VGX.dll
+14.038: Copied file:  C:\windows\Offline Web Pages\desktop.ini
+14.041: Copied file:  C:\windows\system32\admparse.dll
+14.045: FFileFound: FindFirstFile failed :0x3
+14.045: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+14.046: Copied file:  C:\windows\system32\advpack.dll
+14.059: Copied file:  C:\windows\system32\advpack.dll.mui
+14.062: Copied file:  C:\windows\system32\corpol.dll
+14.066: Copied file:  C:\windows\system32\dxtmsft.dll
+14.073: Copied file:  C:\windows\system32\dxtrans.dll
+14.078: Copied file:  C:\windows\system32\html.iec
+14.083: Copied file:  C:\windows\system32\icardie.dll
+14.090: Copied file:  C:\windows\system32\ie4uinit.exe
+14.095: Copied file:  C:\windows\system32\ie4uinit.exe.mui
+14.098: Copied file:  C:\windows\system32\IE8Eula.rtf
+14.103: Copied file:  C:\windows\system32\ieakeng.dll
+14.110: Copied file:  C:\windows\system32\ieaksie.dll
+14.114: Copied file:  C:\windows\system32\ieakui.dll
+14.119: Copied file:  C:\windows\system32\ieapfltr.dat
+14.131: Copied file:  C:\windows\system32\ieapfltr.dll
+14.136: Copied file:  C:\windows\system32\iedkcs32.dll
+14.140: Copied file:  C:\windows\system32\iedkcs32.dll.mui
+14.143: FFileFound: FindFirstFile failed :0x3
+14.143: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+14.144: Copied file:  C:\windows\system32\ieframe.dll
+14.188: Copied file:  C:\windows\system32\ieframe.dll.mui
+14.193: Copied file:  C:\windows\system32\iepeers.dll
+14.201: Copied file:  C:\windows\system32\iernonce.dll
+14.206: Copied file:  C:\windows\system32\iertutil.dll
+14.215: Copied file:  C:\windows\system32\iesetup.dll
+14.219: Copied file:  C:\windows\system32\ieui.dll
+14.227: Copied file:  C:\windows\system32\ieuinit.inf
+14.231: Copied file:  C:\windows\system32\imgutil.dll
+14.235: FFileFound: FindFirstFile failed :0x3
+14.235: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+14.237: Copied file:  C:\windows\system32\inetcpl.cpl
+14.254: FFileFound: FindFirstFile failed :0x3
+14.254: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+14.255: Copied file:  C:\windows\system32\jsproxy.dll
+14.265: Copied file:  C:\windows\system32\licmgr10.dll
+14.270: Copied file:  C:\windows\system32\msfeeds.dll
+14.277: Copied file:  C:\windows\system32\msfeedsbs.dll
+14.280: Copied file:  C:\windows\system32\msfeedssync.exe
+14.282: FFileFound: FindFirstFile failed :0x3
+14.282: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+14.284: Copied file:  C:\windows\system32\mshta.exe
+14.294: Copied file:  C:\windows\system32\mshta.exe.mui
+14.296: FFileFound: FindFirstFile failed :0x3
+14.296: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+14.297: Copied file:  C:\windows\system32\mshtml.tlb
+14.313: Copied file:  C:\windows\system32\mshtmled.dll
+14.319: Copied file:  C:\windows\system32\mshtmler.dll
+14.323: FFileFound: FindFirstFile failed :0x3
+14.323: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+14.324: Copied file:  C:\windows\system32\msls31.dll
+14.341: Copied file:  C:\windows\system32\msrating.dll
+14.345: Copied file:  C:\windows\system32\msrating.dll.mui
+14.348: Copied file:  C:\windows\system32\mstime.dll
+14.354: Copied file:  C:\windows\system32\occache.dll
+14.360: Copied file:  C:\windows\system32\pngfilt.dll
+14.366: Copied file:  C:\windows\system32\tdc.ocx
+14.371: Copied file:  C:\windows\system32\ticrf.rat
+14.375: FFileFound: FindFirstFile failed :0x3
+14.375: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+14.376: Copied file:  C:\windows\system32\url.dll
+14.384: FFileFound: FindFirstFile failed :0x3
+14.384: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+14.385: Copied file:  C:\windows\system32\vbscript.dll
+14.401: Copied file:  C:\windows\system32\webcheck.dll
+14.406: Copied file:  C:\windows\system32\WinFXDocObj.exe
+14.409: FFileFound: FindFirstFile failed :0x3
+14.409: IsThisAnOEMFile: FFileFound failed for c:\windows\repair\setup.log :STATUS_SETUP_LOG_NOT_FOUND
+14.413: Copied file:  C:\windows\system32\wininet.dll
+14.430: Copied file:  C:\windows\system32\en-US\admparse.dll.mui
+14.431: Copied file:  C:\windows\system32\en-US\html.iec.mui
+14.432: Copied file:  C:\windows\system32\en-US\icardie.dll.mui
+14.433: Copied file:  C:\windows\system32\en-US\ie4uinit.exe.mui
+14.435: Copied file:  C:\windows\system32\en-US\ieakeng.dll.mui
+14.436: Copied file:  C:\windows\system32\en-US\ieaksie.dll.mui
+14.437: Copied file:  C:\windows\system32\en-US\ieakui.dll.mui
+14.439: Copied file:  C:\windows\system32\en-US\iedkcs32.dll.mui
+14.440: Copied file:  C:\windows\system32\en-US\ieframe.dll.mui
+14.445: Copied file:  C:\windows\system32\en-US\iepeers.dll.mui
+14.446: Copied file:  C:\windows\system32\en-US\iernonce.dll.mui
+14.447: Copied file:  C:\windows\system32\en-US\IERtUtil.dll.mui
+14.449: Copied file:  C:\windows\system32\en-US\iesetup.dll.mui
+14.450: Copied file:  C:\windows\system32\en-US\ieui.dll.mui
+14.451: Copied file:  C:\windows\system32\en-US\inetcpl.cpl.mui
+14.453: Copied file:  C:\windows\system32\en-US\inseng.dll.mui
+14.454: Copied file:  C:\windows\system32\en-US\jscript.dll.mui
+14.456: Copied file:  C:\windows\system32\en-US\licmgr10.dll.mui
+14.457: Copied file:  C:\windows\system32\en-US\msfeedsbs.dll.mui
+14.461: Copied file:  C:\windows\system32\en-US\mshta.exe.mui
+14.462: Copied file:  C:\windows\system32\en-US\mshtml.dll.mui
+14.464: Copied file:  C:\windows\system32\en-US\mshtmler.dll.mui
+14.466: Copied file:  C:\windows\system32\en-US\msrating.dll.mui
+14.467: Copied file:  C:\windows\system32\en-US\occache.dll.mui
+14.469: Copied file:  C:\windows\system32\en-US\urlmon.dll.mui
+14.470: Copied file:  C:\windows\system32\en-US\vbscript.dll.mui
+14.471: Copied file:  C:\windows\system32\en-US\webcheck.dll.mui
+14.473: Copied file:  C:\windows\system32\en-US\WinFXDocObj.exe.mui
+14.475: Copied file:  C:\windows\system32\en-US\wininet.dll.mui
+14.477: Copied file:  C:\windows\WBEM\msfeeds.mof
+14.479: Copied file:  C:\windows\WBEM\msfeedsbs.mof
+14.480: DoInstallation: Installing assemblies with source root path: y:\250bda7aa6b67251247dfe6510e5\
+14.480: Num Ticks for Copying files : 737
+19.434: Num Ticks for Reg update and deleting 0 size files : 4954	
+19.438: Starting process:  C:\windows\system32\cmd.exe /d /q /c copy y:\250bda7aa6b67251247dfe6510e5\\update\update.exe.manifest C:\windows\ie8\spuninst\spuninst.exe.manifest 2>nul 1>nul
+20.389:  Return Code = 0 
+20.389: Starting process:  C:\windows\system32\regsvr32.exe /u /s C:\windows\system32\browsewm.dll
+21.441:  Return Code = 3 
+21.441: Starting process:  C:\windows\system32\regsvr32.exe /u /s C:\windows\system32\cdfview.dll
+22.394:  Return Code = 3 
+22.394: Starting process:  C:\windows\system32\regsvr32.exe /u /s C:\windows\system32\danim.dll
+23.458:  Return Code = 3 
+23.458: Starting process:  C:\windows\system32\regsvr32.exe /u /s C:\windows\system32\datime.dll
+24.468:  Return Code = 3 
+24.468: Starting process:  C:\windows\system32\regsvr32.exe /u /s C:\windows\system32\lmrt.dll
+25.494:  Return Code = 3 
+25.494: Starting process:  C:\windows\system32\spupdsvc.exe /install
+25.630:  Return Code = 0 
+25.645: GetCatVersion:  Failed to retrieve version information from C:\windows\system32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\ie8.cat with error 0x80092004
+25.651: GetCatVersion:  Failed to retrieve version information from C:\windows\ie8.cat with error 0x80092004
+25.715: IECUSTOM: Info: [SetIEInstalledDate LIB] SetIEInstalledDate() Setting IE Installed Date
+25.715: IECUSTOM: Info: [SetIEInstalledDate LIB] On 32-bit OS: Setting IE Installed Date value
+25.715: IECUSTOM: Info: [IESetup LIB] Calling CAdjustPrivilege constructor arg: SeRestorePrivilege
+25.716: IECUSTOM: Info: [RegisterIEPKEYs LIB] RegisterIEPKEYs() Registering custom IE PKEYs
+25.718: IECUSTOM: Info: [RegisterIEPKEYs LIB] RegisterIEPKEYs() Successfully CoInitialized
+25.719: IECUSTOM: Info: [RegisterIEPKEYs LIB] RegisterIEPKEYs() Registering property schema at C:\Program Files\Internet Explorer\ie8props.propdesc
+25.722: IECUSTOM: Info: [RegisterIEPKEYs LIB] RegisterIEPKEYs() Successfully registered property schema at C:\Program Files\Internet Explorer\ie8props.propdesc
+25.743: IECUSTOM: FixIEAccessAtInstall Target ieaccess.inf files's complete path: C:\windows\inf\ieaccess.inf
+25.758: IECUSTOM: FixIEAccessAtInstall Back-up ieaccess.inf complete path: C:\windows\ie8\ieaccess.inf
+25.762: IECUSTOM: FixIEAccess Successfully fixed ieaccess.inf
+25.763: IECUSTOM: [PDM Setup]Installing msdbg2.dll
+25.763: IECUSTOM: [PDM Setup]Install - Installing msdbg2.dll unconditionally
+25.763: IECUSTOM: [PDM Setup]GetBinWithPath: Bin Path = C:\windows\system32\msdbg2.dll.
+25.765: IECUSTOM: [PDM Setup]RegisterBin: LoadLibrary C:\windows\system32\msdbg2.dll succeeded. Result=3f0e0000
+25.765: IECUSTOM: [PDM Setup]RegisterBin: GetProcAddress for DllRegisterServer succeeded. Result=3f10b398
+26.500: IECUSTOM: [PDM Setup]RegisterBin: DllRegisterServer on C:\windows\system32\msdbg2.dll succeeded.
+26.500: IECUSTOM: [PDM Setup]Successfully Installed msdbg2.dll.
+26.500: DoInstallation: A reboot is required because RebootRequired=1 was specified in the inf.
+26.500: DoInstallation: A reboot is required because the ProcessesToRunAfterReboot inf section was non-empty.
+26.500: In Function SetVolatileFlag, line 11741, RegOpenKeyEx failed with error 0x2
+26.500: In Function SetVolatileFlag, line 11758, RegOpenKeyEx failed with error 0x2
+26.501: UpdateSpUpdSvcInf: Source [ProcessesToRunAfterReboot.RebootNotRequired] section is empty; nothing to do.
+26.509: CleanupTrustedInfFile: GetFileAttributes for C:\windows\system32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\update.cat failed: 0x2
+26.509: RebootNecessary = 1,WizardInput = 1 , DontReboot = 1, ForceRestart = 0

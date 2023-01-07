@@ -1,0 +1,16 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\Interface\\{D57C7288-D4AD-4768-BE02-9D969532D960}
+
+#arch=win32
+
+[] 1650919626
+#time=1d858e5a018b042
+@="IFileOpenDialog"
+
+[NumMethods] 1650919626
+#time=1d858e5a018a192
+@="29"
+
+[ProxyStubClsid32] 1650919626
+#time=1d858e5a018b7ae
+@="{B8DA6310-E19B-11D0-933C-00A0C90DCAA9}"

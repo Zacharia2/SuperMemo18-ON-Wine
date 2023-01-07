@@ -1,0 +1,21 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\Interface\\{55136806-B2DE-11D1-B9F2-00A0C98BC547}
+
+#arch=win32
+
+[] 1650919625
+#time=1d858e59f67f16c
+@="DShellNameSpaceEvents"
+
+[ProxyStubClsid] 1650919625
+#time=1d858e59f67da7e
+@="{00020424-0000-0000-C000-000000000046}"
+
+[ProxyStubClsid32] 1650919625
+#time=1d858e59f67e83e
+@="{00020424-0000-0000-C000-000000000046}"
+
+[TypeLib] 1650919625
+#time=1d858e59f67fcc0
+@="{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}"
+"Version"="1.1"

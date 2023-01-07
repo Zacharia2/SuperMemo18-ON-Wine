@@ -1,0 +1,9 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Microsoft\\Internet Explorer\\Default Behaviors
+
+#arch=win32
+
+[] 1650919633
+#time=1d858e5a42122f0
+"TIME"="CLSID:476C391C-3E0D-11D2-B948-00C04FA32195"
+"VML"="CLSID:10072CEC-8CC1-11D1-986E-00A0C955B42E"

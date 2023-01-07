@@ -1,0 +1,13 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\CLSID\\{DF2FCE13-25EC-45BB-9D4C-CECD47C2430C}
+
+#arch=win32
+
+[] 1650919630
+#time=1d858e5a2564c34
+@="CUri"
+
+[InprocServer32] 1650919630
+#time=1d858e5a2565616
+@="C:\\windows\\system32\\urlmon.dll"
+"ThreadingModel"="Apartment"

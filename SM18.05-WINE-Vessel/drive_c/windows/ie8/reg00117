@@ -1,0 +1,21 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\CLSID\\{607FD4E8-0A03-11D1-AB1D-00C04FC9B304}
+
+#arch=win32
+
+[] 1650919633
+#time=1d858e5a4104a02
+@="CoICOFilter Class"
+
+[InprocServer32] 1650919628
+#time=1d858e5a132718e
+@="C:\\windows\\system32\\mshtml.dll"
+"ThreadingModel"="Apartment"
+
+[ProgId] 1650919633
+#time=1d858e5a41067f8
+@="ICOFilter.CoICOFilter.1"
+
+[VersionIndependentProgId] 1650919633
+#time=1d858e5a410769e
+@="ICOFilter.CoICOFilter"

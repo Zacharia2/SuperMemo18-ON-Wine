@@ -1,0 +1,21 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\Interface\\{AE24FDAD-03C6-11D1-8B76-0080C744F389}
+
+#arch=win32
+
+[] 1650919628
+#time=1d858e5a17daf0a
+@="IWebBridge"
+
+[ProxyStubClsid] 1650919628
+#time=1d858e5a17d99ca
+@="{00020424-0000-0000-C000-000000000046}"
+
+[ProxyStubClsid32] 1650919628
+#time=1d858e5a17da690
+@="{00020424-0000-0000-C000-000000000046}"
+
+[TypeLib] 1650919628
+#time=1d858e5a17db7c0
+@="{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}"
+"Version"="4.0"
