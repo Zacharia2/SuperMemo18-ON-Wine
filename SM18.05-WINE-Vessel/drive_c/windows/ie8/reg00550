@@ -1,0 +1,21 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\Interface\\{3050F561-98B5-11CF-BB82-00AA00BDCE0B}
+
+#arch=win32
+
+[] 1650919628
+#time=1d858e5a160469a
+@="DispHTMLHeadElement"
+
+[ProxyStubClsid] 1650919628
+#time=1d858e5a16015ee
+@="{00020424-0000-0000-C000-000000000046}"
+
+[ProxyStubClsid32] 1650919628
+#time=1d858e5a1602458
+@="{00020424-0000-0000-C000-000000000046}"
+
+[TypeLib] 1650919628
+#time=1d858e5a1607016
+@="{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}"
+"Version"="4.0"

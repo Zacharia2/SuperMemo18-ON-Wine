@@ -1,0 +1,51 @@
+((PICS-version 1.1)
+ (rating-system "http://www.ticrf.org.tw/chinese/html/06-rating-1.htm")
+ (rating-service "http://www.ticrf.org.tw/chinese/html/06-rating-v11.htm")
+ (name "台灣網站分級推廣基金會TICRF分級服務")
+ (description "台灣網站分級推廣基金會TICRF是行政院新聞局與台灣網路業者捐助之非營利團體，本基金會依照董事會決議提報行政院新聞局同意，採行兩級制，據此建構此分級服務，並逐步推動網站自我分級，達到建立安全的上網環境。")
+
+ (category 
+  (transmit-as "l")
+  (name "網站內容語言之使用")
+   (label
+   (name "18歲以下者可單獨閱讀或由家長陪伴閱讀之容許語言")
+   (description "一般性語言，略顯輕蔑或經修飾過之粗鄙字眼。")
+   (value 0) )
+  (label
+   (name "18歲以下者不可閱讀之明顯粗俗語言使用")
+   (description "以語言描述強姦、性行為等情節，用語明顯粗暴未經修飾，表現淫穢與性暗示。")
+   (value 3) ))
+ (category 
+  (transmit-as "s")
+  (name "性與裸露之圖文或多媒體")
+  (label
+   (name "完全無裸露及在父母陪伴之下可觀看")
+   (description "裸露之藝術作品或教學素材，不致引發性聯想之胸部、臀部裸露或著衣之愛撫。")
+   (value 0) )
+  (label
+   (name "明顯的性活動，18歲以下者不可觀看")
+   (description "性器官接觸，或直接明白裸露性器官以暗示性行為。")
+   (value 3) ))
+
+ (category 
+  (transmit-as "v")
+  (name "暴力與流血之圖文或多媒體")
+  (label
+   (name "完全無暴力或可由父母陪同觀看之虛構暴力及運動暴力")
+   (description "漫畫情節之暴力打鬥，運動場上之暴力衝突，具教育目的醫療行為或戰爭場面。")
+   (value 0) )
+  (label
+   (name "表現強烈之暴力，18歲以下者未不可觀看")
+   (description "變態暴力情節、強迫性行為等誤導性內容。")
+   (value 3) ))
+ (category 
+  (transmit-as "o")
+  (name "其他")
+  (label 
+   (name "在父母陪同下可閱讀之其他內容")
+         (description "自殺、輕生等情節或涉及靈異之超自然現象描述。")
+         (value 0) )
+  (label 
+   (name "18歲以下者不可閱讀之其他內容")
+        (description "鼓勵仇視不同族群或價值觀的團體，鼓勵抽煙與酗酒，毒品及藥物濫用，怪力亂神引起情緒不安之內容，無人管理之聊天室。")
+         (value 3) )))

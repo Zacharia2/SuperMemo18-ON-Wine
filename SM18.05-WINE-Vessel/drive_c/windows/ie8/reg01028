@@ -1,0 +1,16 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\Interface\\{10339516-2894-11D2-9039-00C04F8EEB3E}
+
+#arch=win32
+
+[] 1650919626
+#time=1d858e5a0138ea0
+@="ICommDlgBrowser2"
+
+[NumMethods] 1650919626
+#time=1d858e5a01382de
+@="9"
+
+[ProxyStubClsid32] 1650919626
+#time=1d858e5a01393e6
+@="{B8DA6310-E19B-11D0-933C-00A0C90DCAA9}"

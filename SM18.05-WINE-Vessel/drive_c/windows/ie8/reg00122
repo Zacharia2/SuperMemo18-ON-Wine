@@ -1,0 +1,29 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\CLSID\\{64AB4BB7-111E-11D1-8F79-00C04FC2FBE1}
+
+#arch=win32
+
+[] 1650919625
+#time=1d858e59f6cd2a4
+@="Microsoft Shell UI Helper"
+
+[InprocServer32] 1650919627
+#time=1d858e5a0e42bf0
+@="C:\\windows\\system32\\ieframe.dll"
+"ThreadingModel"="Apartment"
+
+[ProgId] 1650919625
+#time=1d858e59f6cadec
+@="Shell.UIHelper.1"
+
+[TypeLib] 1650919625
+#time=1d858e59f6cbe18
+@="{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}"
+
+[Version] 1650919625
+#time=1d858e59f6cca70
+@="1.1"
+
+[VersionIndependentProgId] 1650919625
+#time=1d858e59f6cd6d2
+@="Shell.UIHelper"

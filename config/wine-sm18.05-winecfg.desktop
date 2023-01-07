@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=wine-sm18.05-winecfg
+Exec=env WINEARCH=win32 WINEPREFIX="/opt/SM18-Wine32/" /opt/SM18-Wine32/Wine-x86_64.AppImage winecfg
+Type=Application
+Categories=Education;
+StartupNotify=true
+Comment=打开supermemo18-wine的配置窗口。
+Path=/opt/SM18-Wine32/
+Icon=/opt/SM18-Wine32/drive_c/SuperMemo/smicon.png
+StartupWMClass=Wine-x86_64.AppImage

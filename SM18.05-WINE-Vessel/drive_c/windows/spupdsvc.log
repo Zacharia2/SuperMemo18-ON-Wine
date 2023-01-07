@@ -1,0 +1,72 @@
+[spupdsvc.log]
+0.000: ================================================================================
+0.000: 2022/04/26 04:56:18.595 (local)
+0.000: [spupdsvc] Installing service
+0.001: ================================================================================
+0.001: 2022/04/26 04:58:06.033 (local)
+0.018: SpUpdServiceStart: entered.
+0.018: SpUpdServiceStart: starting..
+0.021: In Function IsRebootedAfterServiceInstall, line 386, RegOpenKeyEx failed with error 0x2
+0.022: [PerformInfInstructions] Running - C:\windows\system32\reg.exe ADD "HKLM\Software\Clients\StartMenuInternet\IEXPLORE.EXE\DefaultIcon" /ve /d "C:\Program Files\Internet Explorer\iexplore.exe,-7" /f ...
+0.022: [RunProcess] called with C:\windows\system32\reg.exe ADD "HKLM\Software\Clients\StartMenuInternet\IEXPLORE.EXE\DefaultIcon" /ve /d "C:\Program Files\Internet Explorer\iexplore.exe,-7" /f
+0.022: [IsPointsToExecutable] called with C:\windows\system32\reg.exe ADD "HKLM\Software\Clients\StartMenuInternet\IEXPLORE.EXE\DefaultIcon" /ve /d "C:\Program Files\Internet Explorer\iexplore.exe,-7" /f
+0.022: [IsPointsToExecutable] checking for the presence of C:\windows\system32\reg.exe
+0.022: [IsPointsToExecutable] C:\windows\system32\reg.exe exists in C:\windows\system32
+0.022: [RunProcess] calling CreateProcess for C:\windows\system32\reg.exe ADD "HKLM\Software\Clients\StartMenuInternet\IEXPLORE.EXE\DefaultIcon" /ve /d "C:\Program Files\Internet Explorer\iexplore.exe,-7" /f
+0.045: [RunProcess] CreateProcess Succeeded
+1.692: [PerformInfInstructions] Done. Return code: 0
+1.692: [PerformInfInstructions] Running - C:\windows\system32\reg.exe DELETE "HKLM\SOFTWARE\Microsoft\Active Setup\Installed Components" /v "NoIE4StubProcessing" /f ...
+1.692: [RunProcess] called with C:\windows\system32\reg.exe DELETE "HKLM\SOFTWARE\Microsoft\Active Setup\Installed Components" /v "NoIE4StubProcessing" /f
+1.692: [IsPointsToExecutable] called with C:\windows\system32\reg.exe DELETE "HKLM\SOFTWARE\Microsoft\Active Setup\Installed Components" /v "NoIE4StubProcessing" /f
+1.692: [IsPointsToExecutable] checking for the presence of C:\windows\system32\reg.exe
+1.692: [IsPointsToExecutable] C:\windows\system32\reg.exe exists in C:\windows\system32
+1.692: [RunProcess] calling CreateProcess for C:\windows\system32\reg.exe DELETE "HKLM\SOFTWARE\Microsoft\Active Setup\Installed Components" /v "NoIE4StubProcessing" /f
+1.714: [RunProcess] CreateProcess Succeeded
+4.171: [RunProcess] Process spawned returned error. Process: C:\windows\system32\reg.exe DELETE "HKLM\SOFTWARE\Microsoft\Active Setup\Installed Components" /v "NoIE4StubProcessing" /f, Exitcode: 0x1
+4.172: [PerformInfInstructions] Done. Return code: 0
+4.172: [PerformInfInstructions] Running - C:\windows\system32\reg.exe DELETE "HKLM\SOFTWARE\Microsoft\Internet Explorer\Setup" /v "IEPendingReboot" /f ...
+4.172: [RunProcess] called with C:\windows\system32\reg.exe DELETE "HKLM\SOFTWARE\Microsoft\Internet Explorer\Setup" /v "IEPendingReboot" /f
+4.172: [IsPointsToExecutable] called with C:\windows\system32\reg.exe DELETE "HKLM\SOFTWARE\Microsoft\Internet Explorer\Setup" /v "IEPendingReboot" /f
+4.172: [IsPointsToExecutable] checking for the presence of C:\windows\system32\reg.exe
+4.172: [IsPointsToExecutable] C:\windows\system32\reg.exe exists in C:\windows\system32
+4.172: [RunProcess] calling CreateProcess for C:\windows\system32\reg.exe DELETE "HKLM\SOFTWARE\Microsoft\Internet Explorer\Setup" /v "IEPendingReboot" /f
+4.192: [RunProcess] CreateProcess Succeeded
+5.726: [RunProcess] Process spawned returned error. Process: C:\windows\system32\reg.exe DELETE "HKLM\SOFTWARE\Microsoft\Internet Explorer\Setup" /v "IEPendingReboot" /f, Exitcode: 0x1
+5.727: [PerformInfInstructions] Done. Return code: 0
+5.727: [PerformInfInstructions] Running - C:\windows\system32\reg.exe DELETE "HKLM\SOFTWARE\Microsoft\Internet Explorer\Setup" /v "InstallStarted" /f ...
+5.727: [RunProcess] called with C:\windows\system32\reg.exe DELETE "HKLM\SOFTWARE\Microsoft\Internet Explorer\Setup" /v "InstallStarted" /f
+5.727: [IsPointsToExecutable] called with C:\windows\system32\reg.exe DELETE "HKLM\SOFTWARE\Microsoft\Internet Explorer\Setup" /v "InstallStarted" /f
+5.727: [IsPointsToExecutable] checking for the presence of C:\windows\system32\reg.exe
+5.727: [IsPointsToExecutable] C:\windows\system32\reg.exe exists in C:\windows\system32
+5.728: [RunProcess] calling CreateProcess for C:\windows\system32\reg.exe DELETE "HKLM\SOFTWARE\Microsoft\Internet Explorer\Setup" /v "InstallStarted" /f
+5.745: [RunProcess] CreateProcess Succeeded
+7.356: [RunProcess] Process spawned returned error. Process: C:\windows\system32\reg.exe DELETE "HKLM\SOFTWARE\Microsoft\Internet Explorer\Setup" /v "InstallStarted" /f, Exitcode: 0x1
+7.356: [PerformInfInstructions] Done. Return code: 0
+7.356: [PerformInfInstructions] Running - C:\windows\system32\regsvr32.exe /s "C:\Program Files\Internet Explorer\ieproxy.dll" ...
+7.356: [RunProcess] called with C:\windows\system32\regsvr32.exe /s "C:\Program Files\Internet Explorer\ieproxy.dll"
+7.356: [IsPointsToExecutable] called with C:\windows\system32\regsvr32.exe /s "C:\Program Files\Internet Explorer\ieproxy.dll"
+7.356: [IsPointsToExecutable] checking for the presence of C:\windows\system32\regsvr32.exe
+7.356: [IsPointsToExecutable] C:\windows\system32\regsvr32.exe exists in C:\windows\system32
+7.357: [RunProcess] calling CreateProcess for C:\windows\system32\regsvr32.exe /s "C:\Program Files\Internet Explorer\ieproxy.dll"
+7.378: [RunProcess] CreateProcess Succeeded
+9.526: [PerformInfInstructions] Done. Return code: 0
+9.527: [PerformInfInstructions] Running - C:\windows\system32\regsvr32.exe /s /i /n C:\windows\system32\ieframe.dll ...
+9.527: [RunProcess] called with C:\windows\system32\regsvr32.exe /s /i /n C:\windows\system32\ieframe.dll
+9.527: [IsPointsToExecutable] called with C:\windows\system32\regsvr32.exe /s /i /n C:\windows\system32\ieframe.dll
+9.527: [IsPointsToExecutable] checking for the presence of C:\windows\system32\regsvr32.exe
+9.527: [IsPointsToExecutable] C:\windows\system32\regsvr32.exe exists in C:\windows\system32
+9.527: [RunProcess] calling CreateProcess for C:\windows\system32\regsvr32.exe /s /i /n C:\windows\system32\ieframe.dll
+9.547: [RunProcess] CreateProcess Succeeded
+10.946: [PerformInfInstructions] Done. Return code: 0
+10.946: [PerformInfInstructions] Running - C:\windows\system32\regsvr32.exe /s C:\windows\system32\actxprxy.dll ...
+10.946: [RunProcess] called with C:\windows\system32\regsvr32.exe /s C:\windows\system32\actxprxy.dll
+10.946: [IsPointsToExecutable] called with C:\windows\system32\regsvr32.exe /s C:\windows\system32\actxprxy.dll
+10.946: [IsPointsToExecutable] checking for the presence of C:\windows\system32\regsvr32.exe
+10.946: [IsPointsToExecutable] C:\windows\system32\regsvr32.exe exists in C:\windows\system32
+10.946: [RunProcess] calling CreateProcess for C:\windows\system32\regsvr32.exe /s C:\windows\system32\actxprxy.dll
+10.961: [RunProcess] CreateProcess Succeeded
+13.078: [PerformInfInstructions] Done. Return code: 0
+13.079: [PerformInfInstructions] SetupFindFirstLine returned error 0xe0000102 for section ProcessesToRunAfterReboot
+13.079: [ProcessPostBootInf] Deleted C:\windows\system32\spupdsvc.inf at the end of ProcessPostBootInf
+13.092: [SpUpdServiceStart] Deleted Service, job done. Returning the Main Thread 
+13.095: [SpUpdServiceStart] setting service to stopped

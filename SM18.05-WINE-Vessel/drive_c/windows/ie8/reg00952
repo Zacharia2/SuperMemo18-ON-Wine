@@ -1,0 +1,21 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\Interface\\{FECEAAA2-8405-11CF-8BA1-00AA00476DA6}
+
+#arch=win32
+
+[] 1650919628
+#time=1d858e5a16ebc34
+@="IOmHistory"
+
+[ProxyStubClsid] 1650919628
+#time=1d858e5a16ea1c2
+@="{00020424-0000-0000-C000-000000000046}"
+
+[ProxyStubClsid32] 1650919628
+#time=1d858e5a16eb22a
+@="{00020424-0000-0000-C000-000000000046}"
+
+[TypeLib] 1650919628
+#time=1d858e5a16ec63e
+@="{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}"
+"Version"="4.0"

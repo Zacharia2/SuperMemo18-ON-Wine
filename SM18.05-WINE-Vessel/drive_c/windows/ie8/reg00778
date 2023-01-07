@@ -1,0 +1,16 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\Interface\\{5CD52983-9449-11D2-963A-00C04F79ADF0}
+
+#arch=win32
+
+[] 1650919626
+#time=1d858e5a0144dc2
+@="IResolveShellLink"
+
+[NumMethods] 1650919626
+#time=1d858e5a01443fe
+@="4"
+
+[ProxyStubClsid32] 1650919626
+#time=1d858e5a0145308
+@="{B8DA6310-E19B-11D0-933C-00A0C90DCAA9}"

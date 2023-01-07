@@ -1,0 +1,28 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\xbmfile
+
+#arch=win32
+
+[] 1650919633
+#time=1d858e5a42cd6f4
+@="XBM Image"
+
+[CLSID] 1650919633
+#time=1d858e5a42cc3bc
+@="{25336920-03F9-11CF-8FD0-00AA00686F13}"
+
+[shell\\open\\command] 1650919633
+#time=1d858e5a42cf94a
+@="\"C:\\Program Files\\Internet Explorer\\iexplore.exe\" -nohome"
+
+[shell\\open\\ddeexec] 1650919633
+#time=1d858e5a42d2172
+@="\"file:%1\",,-1,,,,,"
+
+[shell\\open\\ddeexec\\Application] 1650919633
+#time=1d858e5a42d17c2
+@="IExplore"
+
+[shell\\open\\ddeexec\\Topic] 1650919633
+#time=1d858e5a42d26a4
+@="WWW_OpenURL"

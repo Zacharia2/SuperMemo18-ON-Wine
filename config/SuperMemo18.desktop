@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=SuperMemo 18 
+Exec=env WINEARCH=win32 WINEPREFIX="/opt/SM18-Wine32/" /opt/SM18-Wine32/Wine-x86_64.AppImage /opt/SM18-Wine32/drive_c/SuperMemo/sm18.exe
+Type=Application
+Categories=Education;
+StartupNotify=true
+Comment=组织你的知识，以尽可能快的速度学习.
+Path=/opt/SM18-Wine32/drive_c/SuperMemo
+Icon=/opt/SM18-Wine32/drive_c/SuperMemo/smicon.png
+StartupWMClass=sm18.exe

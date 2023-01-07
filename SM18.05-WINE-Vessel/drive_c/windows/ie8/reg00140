@@ -1,0 +1,13 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\CLSID\\{79EAC9E3-BAF9-11CE-8C82-00AA004BA90B}
+
+#arch=win32
+
+[] 1650919630
+#time=1d858e5a254b5c2
+@="ftp: Asynchronous Pluggable Protocol Handler"
+
+[InprocServer32] 1650919630
+#time=1d858e5a254bf18
+@="C:\\windows\\system32\\urlmon.dll"
+"ThreadingModel"="Apartment"

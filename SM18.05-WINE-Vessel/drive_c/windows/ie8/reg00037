@@ -1,0 +1,36 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\CLSID\\{25336920-03F9-11CF-8FD0-00AA00686F13}
+
+#arch=win32
+
+[] 1650919633
+#time=1d858e5a41f6f28
+@="HTML Document"
+
+[BrowseInPlace] 1650919633
+#time=1d858e5a41f402a
+
+[DefaultIcon] 1650919633
+#time=1d858e5a41f4b9c
+@=str(2):"C:\\Program Files\\Internet Explorer\\iexplore.exe,1"
+
+[EnablePlugin\\.css] 1650919633
+#time=1d858e5a41f7dce
+@="PointPlus plugin"
+
+[InprocServer32] 1650919628
+#time=1d858e5a13169d8
+@="C:\\windows\\system32\\mshtml.dll"
+"ThreadingModel"="Apartment"
+
+[MiscStatus] 1650919633
+#time=1d858e5a41f58f8
+@="2228625"
+
+[ProgId] 1650919628
+#time=1d858e5a13179a0
+@="htmlfile"
+
+[Version] 1650919628
+#time=1d858e5a1318b66
+@="6.0"

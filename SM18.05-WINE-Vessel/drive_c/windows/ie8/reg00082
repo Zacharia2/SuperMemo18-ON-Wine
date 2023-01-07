@@ -1,0 +1,13 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\CLSID\\{3DD53D40-7B8B-11D0-B013-00AA0059CE02}
+
+#arch=win32
+
+[] 1650919630
+#time=1d858e5a2559e10
+@="CDL: Asynchronous Pluggable Protocol Handler"
+
+[InprocServer32] 1650919630
+#time=1d858e5a255a7d4
+@="C:\\windows\\system32\\urlmon.dll"
+"ThreadingModel"="Apartment"

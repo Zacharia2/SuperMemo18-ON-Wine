@@ -1,0 +1,533 @@
+
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[IEAccess.Install.WinXP]
+AddReg=IEAccess.InstallXP.AddReg
+
+[IEAccess.Uninstall.WinXP]
+ProfileItems=BrowserDelXP,BrowserDelXP64
+AddReg=IEAccess.UninstallXP.AddReg
+
+[IEAccess.InstallXP.AddReg]
+HKCU,"Software\Microsoft\Internet Explorer\Main","Check_Associations",,"yes"
+
+[IEAccess.UninstallXP.AddReg]
+HKCU,"Software\Microsoft\Internet Explorer\Main","Check_Associations",,"No"
+
+[DefaultInstall.WinXP]
+ComponentName="IE UserData NT"
+ComponentVersion=6.0
+ProfileItems=BrowserDelXP,BrowserDelXP64
+RegisterOCXs=MSIE4RegisterOCX
+AddReg=AddReg.IEMain, AddReg.IEOther, AddReg.InetSettings, AddReg.Misc, AddReg.International.XP, AddReg.XPandW2K3
+DelReg=Remove.Reg,!MUICache.DelReg, DelReg.XPandW2K3
+BackupReg=UserRegBackup
+PreRollBack=UserDataUninstall.NT
+RunPostSetupCommands=SetReg:1
+NoBackupPlatform="NT5.1"
+
+[DefaultInstall.Vista]
+ComponentName="IE UserData NT"
+ComponentVersion=6.0
+ProfileItems=BrowserDelXP,BrowserDelXP64
+RegisterOCXs=MSIE4RegisterOCX
+AddReg=AddReg.IEMain, AddReg.IEOther, AddReg.InetSettings, AddReg.Misc, AddReg.International.Vista, AddReg.Vista
+DelReg=Remove.Reg,!MUICache.DelReg
+BackupReg=UserRegBackup
+PreRollBack=UserDataUninstall.NT
+RunPostSetupCommands=SetReg:1
+NoBackupPlatform="NT5.1"
+
+[DefaultInstall.W2k3]
+ComponentName="IE UserData NT"
+ComponentVersion=6.0
+ProfileItems=BrowserDelXP,BrowserDelXP64
+RegisterOCXs=MSIE4RegisterOCX
+AddReg=AddReg.IEMain, AddReg.IEOther, AddReg.InetSettings, AddReg.Misc, AddReg.International.W2K3, AddReg.XPandW2K3, AddReg.W2K3
+DelReg=Remove.Reg,!MUICache.DelReg, DelReg.XPandW2K3
+BackupReg=UserRegBackup
+PreRollBack=UserDataUninstall.NT
+RunPostSetupCommands=SetReg:1
+NoBackupPlatform="NT5.1"
+
+[SoundInstall.NT]
+ComponentName="IE UserData NT"
+ComponentVersion=6.0
+AddReg=AddReg.Sounds
+NoBackupPlatform="NT5.1"
+
+[AddReg.XPandW2K3]
+HKCU,"Software\Microsoft\Internet Explorer\InternetRegistry",,%REG_KEYONLY%,
+HKCU,"Software\Microsoft\Internet Explorer\LowRegistry",,%REG_KEYONLY%,
+HKCU,"Software\Microsoft\Internet Explorer\SearchUrl",,%REG_KEYONLY%,
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings","PrivDiscUiShown",%REG_DWORD_CLOBBER%,01,00,00,00
+HKCU,"Software\Microsoft\Internet Explorer\Main","UseClearType",2,"yes"
+HKCU,"software\Microsoft\Windows\Shell","BagMRU Size",%REG_DWORD_CLOBBER%,5000
+HKCU,"Software\Microsoft\Windows\ShellNoRoam","BagMRU Size",%REG_DWORD_CLOBBER%,5000
+
+[AddReg.W2K3]
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains\msn.com\runonce","http",0x10003,0x2 
+
+[AddReg.Vista]
+HKCU,"Software\Microsoft\Internet Explorer\Main","UseClearType",2,"no"
+
+
+[DelReg.XPandW2K3]
+HKCU,"Software\Microsoft\Internet Explorer\Main","RunOnceHasShown"
+HKCU,"Software\Microsoft\Internet Explorer\Main","RunOnceLastShown"
+HKCU,"Software\Microsoft\Internet Explorer\Main","RunOnceComplete"
+
+[AddReg.Sounds]
+; Sound Events for Browser
+HKCU,"AppEvents\Schemes\Apps\Explorer\ActivatingDocument",,,
+HKCU,"AppEvents\EventLabels\ActivatingDocument",,,"%SND_NAVIGATEEND%"
+HKCU,"AppEvents\EventLabels\ActivatingDocument","DispFileName",%REG_EXSZ_NOCLOBBER%,"@ieframe.dll,-10321"
+HKCU,"AppEvents\Schemes\Apps\Explorer\MoveMenuItem",,,
+HKCU,"AppEvents\EventLabels\MoveMenuItem",,,"%SND_MOVEMENUITEM%"
+HKCU,"AppEvents\EventLabels\MoveMenuItem","DispFileName",%REG_EXSZ_NOCLOBBER%,"@ieframe.dll,-10322"
+
+; Navigate sound
+HKCU,"AppEvents\EventLabels\Navigating",,,"%SND_NAVIGATESTART%"
+HKCU,"AppEvents\EventLabels\Navigating","DispFileName",%REG_EXSZ_NOCLOBBER%,"@ieframe.dll,-10320"
+HKCU,"AppEvents\Schemes\Apps\Explorer\Navigating",,,
+HKCU,"AppEvents\Schemes\Apps\Explorer\Navigating\.current",,%REG_EXSZ_NOCLOBBER%,"%25%\media\%WINDOWS_NAVIGATESTART%.wav"
+HKCU,"AppEvents\Schemes\Apps\Explorer\Navigating\.default",,%REG_EXSZ_CLOBBER%,"%25%\media\%WINDOWS_NAVIGATESTART%.wav"
+
+; Blocked pop-up sound
+HKCU,"AppEvents\EventLabels\BlockedPopup",,,"%SND_BLOCKEDPOPUP%"
+HKCU,"AppEvents\EventLabels\BlockedPopup","DispFileName",%REG_EXSZ_NOCLOBBER%,"@ieframe.dll,-10325"
+HKCU,"AppEvents\Schemes\Apps\Explorer\BlockedPopup",,,
+HKCU,"AppEvents\Schemes\Apps\Explorer\BlockedPopup\.current",,%REG_EXSZ_NOCLOBBER%,"%25%\media\%WINDOWS_BLOCKEDPOPUP%.wav"
+HKCU,"AppEvents\Schemes\Apps\Explorer\BlockedPopup\.default",,%REG_EXSZ_CLOBBER%,"%25%\media\%WINDOWS_BLOCKEDPOPUP%.wav"
+
+; Information bar sound
+HKCU,"AppEvents\EventLabels\SecurityBand",,,"%SND_SECBAND%"
+HKCU,"AppEvents\EventLabels\SecurityBand","DispFileName",%REG_EXSZ_NOCLOBBER%,"@ieframe.dll,-10326"
+HKCU,"AppEvents\Schemes\Apps\Explorer\SecurityBand",,,
+HKCU,"AppEvents\Schemes\Apps\Explorer\SecurityBand\.current",,%REG_EXSZ_NOCLOBBER%,"%25%\media\%WINDOWS_INFOBAND%.wav"
+HKCU,"AppEvents\Schemes\Apps\Explorer\SecurityBand\.default",,%REG_EXSZ_CLOBBER%,"%25%\media\%WINDOWS_INFOBAND%.wav"
+
+
+; Sound Events for Comctl32
+HKCU,"AppEvents\Schemes\Apps\.Default\CCSelect",,,
+HKCU,"AppEvents\Schemes\Apps\.Default\ShowBand",,,
+HKCU,"AppEvents\EventLabels\CCSelect",,,"%SND_SELECT%"
+HKCU,"AppEvents\EventLabels\CCSelect","DispFileName",%REG_EXSZ_NOCLOBBER%,"@ieframe.dll,-10323"
+HKCU,"AppEvents\EventLabels\ShowBand",,,"%SND_SHOWBAND%"
+HKCU,"AppEvents\EventLabels\ShowBand","DispFileName",%REG_EXSZ_CLOBBER%,"@ieframe.dll,-10324"
+
+; Sounds for Feed Discovery
+HKCU,"AppEvents\EventLabels\FeedDiscovered",,,"%SND_FEEDDISC%"
+HKCU,"AppEvents\EventLabels\FeedDiscovered","DispFileName",%REG_EXSZ_NOCLOBBER%,"@ieframe.dll,-17315"
+HKCU,"AppEvents\Schemes\Apps\Explorer\FeedDiscovered",,,
+HKCU,"AppEvents\Schemes\Apps\Explorer\FeedDiscovered\.current",,%REG_EXSZ_NOCLOBBER%,"%25%\media\%WINDOWS_FEEDDISC%.wav"
+HKCU,"AppEvents\Schemes\Apps\Explorer\FeedDiscovered\.default",,%REG_EXSZ_CLOBBER%,"%25%\media\%WINDOWS_FEEDDISC%.wav"
+
+; Sounds for Search Discovery
+HKCU,"AppEvents\EventLabels\SearchProviderDiscovered",,,"%SND_SEARCHDISC%"
+HKCU,"AppEvents\EventLabels\SearchProviderDiscovered","DispFileName",%REG_EXSZ_NOCLOBBER%,"@ieframe.dll,-12513"
+HKCU,"AppEvents\Schemes\Apps\Explorer\SearchProviderDiscovered",,,
+
+[MSIE4RegisterOCX]
+%11%\wininet.dll,NI,HKCU
+%11%\urlmon.dll,NI,HKCU
+%11%\inetcpl.cpl,NI,HKCUSoft.NoClobber
+%11%\browseui.dll,NI,U
+%11%\webcheck.dll,NI,U
+
+;******************************************
+; IE Hardening setup, called by iodver.cpp
+;******************************************
+[IEHardenAdmin]
+AddReg=IEHarden.Reg
+RegisterOCXs=IEHardenRegisterDll
+
+[IEHardenUser]
+AddReg=IEHarden.Reg
+RegisterOCXs=IEHardenRegisterDll
+
+[IESoftenAdmin]
+DelReg=IEHarden.Reg
+RegisterOCXs=IESoftenRegisterDll
+
+[IESoftenUser]
+DelReg=IEHarden.Reg
+RegisterOCXs=IESoftenRegisterDll
+
+[IEHarden.Reg]
+HKCU,"%PATH_ZONEMAP%","IEHarden",0x10001,0x1
+
+[IEHardenMachine]
+RegisterOCXs=IEHardenMachineRegisterDll
+
+[IESoftenMachine]
+RegisterOCXs=IESoftenMachineRegisterDll
+
+[IEHardenRegisterDll]
+; First register with default settings, then harden/soften as needed
+%11%\urlmon.dll,NI,HKCU
+
+%11%\urlmon.dll,NI,HKCUHard
+%11%\inetcpl.cpl,NI,HKCUHard
+%11%\wininet.dll,NI,HKCUHard
+
+[IESoftenRegisterDll]
+; First register with default settings, then harden/soften as needed
+%11%\urlmon.dll,NI,HKCU
+
+%11%\urlmon.dll,NI,HKCUSoft
+%11%\inetcpl.cpl,NI,HKCUSoft
+%11%\wininet.dll,NI,HKCUSoft
+
+[IEHardenMachineRegisterDll]
+%11%\urlmon.dll,NI,HKLMHard
+%11%\inetcpl.cpl,NI,HKLMHard
+
+[IESoftenMachineRegisterDll]
+%11%\urlmon.dll,NI,HKLMSoft
+%11%\inetcpl.cpl,NI,HKLMSoft
+
+[UserDataUninstall.Win]
+RequiredEngine=Setupapi
+RunPostSetupCommands = Post.mshtml:1
+DelReg=International.cleanup
+
+[UserDataUninstall.NT]
+RunPostSetupCommands = Post.mshtml:1
+DelReg=International.cleanup
+
+[BackupCryptoKeys.Win]
+RequiredEngine=Setupapi
+ComponentName="IE UserData"
+ComponentVersion=6.0
+BackupReg = CryptoKeys
+
+[BackupCryptoKeys.NT]
+ComponentName="IE UserData NT"
+ComponentVersion=6.0
+BackupReg = CryptoKeys
+NoBackupPlatform="NT5.1"
+
+[DelCryptoKeys]
+DelReg = CryptoKeys
+
+[UserRegBackup]
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings","AllowCookies"
+HKCU,"Software\Microsoft\Internet Explorer\Toolbar","BrandBitmap"
+HKCU,"Software\Microsoft\Internet Explorer\Toolbar","SmBrandBitmap"
+HKCU,"Software\Microsoft\Internet Explorer\Toolbar","BackBitmap"
+HKCU,"Software\Microsoft\Internet Explorer\Toolbar","BitmapMode"
+HKCU,"Software\Microsoft\Internet Explorer\Toolbar","UseTheme"
+
+[CryptoKeys]
+HKCU,"Software\Microsoft\Cryptography\UserKeys"
+HKCU,"Software\Microsoft\SystemCertificates"
+HKCU,"Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing"
+HKCU,"Software\Policies\Microsoft\SystemCertificates"
+
+[BrowserDelXP]
+Name            =%SHORTCUT_IEXPLORE%,0x00000003
+
+[BrowserDelXP64]
+Name            =%SHORTCUT_IEXPLORE_32%,0x00000003
+
+[SetReg]
+rundll32 advpack.dll,LaunchINFSectionEx %11%\ieuinit.inf,Install,,36
+
+[Post.mshtml]
+rundll32 advpack.dll,LaunchINFSectionEx %11%\ieuinit.inf,Install,,260
+
+[AddReg.IEMain]
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Anchor Underline",2,"yes"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Cache_Update_Frequency",2,"Once_Per_Session"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Display Inline Images",2,"yes"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Do404Search",3,1,0,0,0                  ;this should be a dword value
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Local Page",,"%11%\blank.htm"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Save_Session_History_On_Exit",,"no"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Show_FullURL",2,"no"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Show_StatusBar",2,"yes"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Show_ToolBar",2,"yes"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Show_URLinStatusBar",2,"yes"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Show_URLToolBar",2,"yes"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Main","Use_DlgBox_Colors",2,"yes"
+HKCU,"Software\Microsoft\Internet Explorer\Main","Search Page",2,"%SEARCH_PAGE_URL%"
+; IE7 MSHTML Default Advanced Settings
+HKCU,"Software\Microsoft\Internet Explorer\Main","XMLHTTP",%REG_DWORD_NOCLOBBER%,0x1
+HKCU,"Software\Microsoft\Internet Explorer\Main","NoUpdateCheck",0x10001,0x1
+
+[AddReg.IEOther]
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Security","Sending_Security",2,"Medium"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Security","Viewing_Security",2,"Low"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Services","",2,""
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Settings","Anchor Color Visited",2,"128,0,128"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Settings","Anchor Color",2,"0,0,255"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Settings","Background Color",2,"192,192,192"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Settings","Text Color",2,"0,0,0"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Settings","Use Anchor Hover Color",2,"No"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\TypedURLs","url1",2,"%START_PAGE%"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\URLSearchHooks","{CFBFAE00-17A6-11D0-99CB-00C04FD64497}",,""
+; default popup blocker settings
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\New Windows","PopupMgr",%REG_SZ_NOCLOBBER%,"yes"
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\New Windows","PlaySound",%REG_DWORD_NOCLOBBER%,1
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\New Windows","UseSecBand",%REG_DWORD_NOCLOBBER%,1
+
+[AddReg.InetSettings]
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings", "EmailName",2,"IEUser@"
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings","AutoConfigProxy",,"wininet.dll"
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings","MimeExclusionListForCache",,"multipart/mixed multipart/x-mixed-replace multipart/x-byteranges "
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings","WarnOnPost",3,1,0,0,0
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings","UseSchannelDirectly",3,01,00,00,00
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings","EnableHttp1_1",%REG_DWORD_NOCLOBBER%,1
+; IE6 30335 - disable scripting in restricted zones
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4","1400",%REG_DWORD_CLOBBER%,0x03
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4","1C00",%REG_DWORD_CLOBBER%,0x00
+; Update wininet backup UserAgent settings on upgrade
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings","User Agent",%REG_SZ_CLOBBER%,"Mozilla/4.0 (compatible; MSIE 8.0; Win32)"
+; "Always send URLs as UTF-8" should be initialized
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings","UrlEncoding",%REG_DWORD_NOCLOBBER%,0x0
+
+[AddReg.Misc]
+;document window settings
+HKCU,"SOFTWARE\Microsoft\Internet Explorer\Document Windows","Maximized",2,"no"
+HKCU,"Software\Microsoft\Internet Explorer\Document Windows","height",3,00,00,00,00
+HKCU,"Software\Microsoft\Internet Explorer\Document Windows","width",3,00,00,00,80
+HKCU,"Software\Microsoft\Internet Explorer\Document Windows","x",3,00,00,00,80
+HKCU,"Software\Microsoft\Internet Explorer\Document Windows","y",3,00,00,00,00
+
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\NewShortcutHandlers","{FBF23B40-E3F0-101B-8488-00AA003E56F8}",,""
+
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings","SecureProtocols",%REG_DWORD_CLOBBER%,A0,00,00,00
+
+; make sure DragFullWindows is off, use no clobber to keep previous
+HKCU,"Control Panel\Desktop","DragFullWindows",2,"0"
+; write no-clobber blank International key for Wininet
+HKCU,"Software\Microsoft\Internet Explorer\International",,2,""
+
+; Windows SE 144016: Prepopulation of Trusted zones.
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains\microsoft.com\*.update","http",0x10003,0x2
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\EscDomains\microsoft.com\*.update","https",0x10003,0x2
+
+; Attention: Any change to default fonts, please update <root>\inetcore\manifests\Microsoft-Windows-IE-HTMLRendering.man as well.  
+; Because 1.	Manifest works for Guest on Vista but not on XP. 2. INF works for Guest on XP but not on Vista. 
+;    One option is using INF to install default value to HKLM; write IE code to copy them as needed to HKCU at runtime. 
+;    But the code is messy, let’s go with the INF + manifest option though it's not that beautiful.
+; IE6 17968
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\3","IEPropFontName",%REG_SZ_NOCLOBBER%,"Times New Roman"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\3","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Courier New"
+
+; default fonts for scripts that are missing default
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\9","IEPropFontName",%REG_SZ_NOCLOBBER%,"Simplified Arabic"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\9","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Simplified Arabic Fixed"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\7","IEPropFontName",%REG_SZ_NOCLOBBER%,"Sylfaen"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\7","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Sylfaen"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\11","IEPropFontName",%REG_SZ_NOCLOBBER%,"Vrinda"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\11","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Vrinda"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\28","IEPropFontName",%REG_SZ_NOCLOBBER%,"Euphemia"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\28","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Euphemia"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\29","IEPropFontName",%REG_SZ_NOCLOBBER%,"Plantagenet Cherokee"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\29","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Plantagenet Cherokee"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\26","IEPropFontName",%REG_SZ_NOCLOBBER%,"Simsun"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\26","IEFixedFontName",%REG_SZ_NOCLOBBER%,"NSimsun"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\6","IEPropFontName",%REG_SZ_NOCLOBBER%,"Times New Roman"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\6","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Courier New"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\10","IEPropFontName",%REG_SZ_NOCLOBBER%,"Mangal"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\10","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Mangal"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\27","IEPropFontName",%REG_SZ_NOCLOBBER%,"Nyala"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\27","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Nyala"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\22","IEPropFontName",%REG_SZ_NOCLOBBER%,"Sylfaen"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\22","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Sylfaen"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\5","IEPropFontName",%REG_SZ_NOCLOBBER%,"Times New Roman"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\5","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Courier New"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\13","IEPropFontName",%REG_SZ_NOCLOBBER%,"Shruti"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\13","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Shruti"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\12","IEPropFontName",%REG_SZ_NOCLOBBER%,"Raavi"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\12","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Raavi"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\8","IEPropFontName",%REG_SZ_NOCLOBBER%,"David"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\8","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Miriam Fixed"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\24","IEPropFontName",%REG_SZ_NOCLOBBER%,"MS PGothic"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\24","IEFixedFontName",%REG_SZ_NOCLOBBER%,"MS Gothic"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\25","IEPropFontName",%REG_SZ_NOCLOBBER%,"PMingLiu"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\25","IEFixedFontName",%REG_SZ_NOCLOBBER%,"MingLiu"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\17","IEPropFontName",%REG_SZ_NOCLOBBER%,"Tunga"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\17","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Tunga"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\37","IEPropFontName",%REG_SZ_NOCLOBBER%,"DaunPenh"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\37","IEFixedFontName",%REG_SZ_NOCLOBBER%,"DaunPenh"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\23","IEPropFontName",%REG_SZ_NOCLOBBER%,"Gulim"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\23","IEFixedFontName",%REG_SZ_NOCLOBBER%,"GulimChe"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\20","IEPropFontName",%REG_SZ_NOCLOBBER%,"DokChampa"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\20","IEFixedFontName",%REG_SZ_NOCLOBBER%,"DokChampa"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\4","IEPropFontName",%REG_SZ_NOCLOBBER%,"Times New Roman"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\4","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Courier New"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\18","IEPropFontName",%REG_SZ_NOCLOBBER%,"Kartika"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\18","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Kartika"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\39","IEPropFontName",%REG_SZ_NOCLOBBER%,"Mongolian Baiti"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\39","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Mongolian Baiti"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\14","IEPropFontName",%REG_SZ_NOCLOBBER%,"Kalinga"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\14","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Kalinga"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\34","IEPropFontName",%REG_SZ_NOCLOBBER%,"Iskoola Pota"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\34","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Iskoola Pota"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\35","IEPropFontName",%REG_SZ_NOCLOBBER%,"Estrangelo Edessa"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\35","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Estrangelo Edessa"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\15","IEPropFontName",%REG_SZ_NOCLOBBER%,"Latha"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\15","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Latha"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\16","IEPropFontName",%REG_SZ_NOCLOBBER%,"Gautami"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\16","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Gautami"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\38","IEPropFontName",%REG_SZ_NOCLOBBER%,"MV Boli"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\38","IEFixedFontName",%REG_SZ_NOCLOBBER%,"MV Boli"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\19","IEPropFontName",%REG_SZ_NOCLOBBER%,"Tahoma"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\19","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Tahoma"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\21","IEPropFontName",%REG_SZ_NOCLOBBER%,"Microsoft Himalaya"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\21","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Microsoft Himalaya"
+
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\30","IEPropFontName",%REG_SZ_NOCLOBBER%,"Microsoft Yi Baiti"
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts\30","IEFixedFontName",%REG_SZ_NOCLOBBER%,"Microsoft Yi Baiti"
+
+; Attention: Any change to CodePointToFontMap, please update <root>\inetcore\manifests\Microsoft-Windows-IE-HTMLRendering.man as well. 
+[AddReg.International.XP]
+HKCU,"Software\Microsoft\Internet Explorer\International","CodePointToFontMap",1,22,00,00,00,54,00,69,00,6d,00,65,00,73,00,20,00,4e,00,65,00,77,00,20,00,52,00,6f,00,6d,00,61,00,6e,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,69,00,63,00,72,00,6f,00,73,00,6f,00,66,00,74,00,20,00,53,00,61,00,6e,00,73,00,20,00,53,00,65,00,72,00,69,00,66,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4c,00,75,00,63,00,69,00,64,00,61,00,20,00,53,00,61,00,6e,00,73,00,20,00,55,00,6e,00,69,00,63,00,6f,00,64,00,65,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,53,00,79,00,6c,00,66,00,61,00,65,00,6e,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,45,00,73,00,74,00,72,00,61,00,6e,00,67,00,65,00,6c,00,6f,00,20,00,45,00,64,00,65,00,73,00,73,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,56,00,20,00,42,00,6f,00,6c,00,69,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,61,00,6e,00,67,00,61,00,6c,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,56,00,72,00,69,00,6e,00,64,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,52,00,61,00,61,00,76,00,69,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,53,00,68,00,72,00,75,00,74,00,69,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4b,00,61,00,6c,00,69,00,6e,00,67,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4c,00,61,00,74,00,68,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,47,00,61,00,75,00,74,00,61,00,6d,00,69,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,54,00,75,00,6e,00,67,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4b,00,61,00,72,00,74,00,69,00,6b,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,49,00,73,00,6b,00,6f,00,6f,00,6c,00,61,00,20,00,50,00,6f,00,74,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,54,00,61,00,68,00,6f,00,6d,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,44,00,6f,00,6b,00,43,00,68,00,61,00,6d,00,70,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,53,00,69,00,6d,00,53,00,75,00,6e,00,2d,00,31,00,38,00,30,00,33,00,30,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,42,00,61,00,74,00,61,00,6e,00,67,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4e,00,79,00,61,00,6c,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,50,00,6c,00,61,00,6e,00,74,00,61,00,67,00,65,00,6e,00,65,00,74,00,20,00,43,00,68,00,65,00,72,00,6f,00,6b,00,65,00,65,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,45,00,75,00,70,00,68,00,65,00,6d,00,69,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,44,00,61,00,75,00,6e,00,50,00,65,00,6e,00,68,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,53,00,20,00,4d,00,69,00,6e,00,63,00,68,00,6f,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,50,00,4d,00,69,00,6e,00,67,00,4c,00,69,00,75,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,65,00,69,00,72,00,79,00,6f,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,53,00,69,00,6d,00,53,00,75,00,6e,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,69,00,6e,00,67,00,4c,00,69,00,55,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,50,00,4d,00,69,00,6e,00,67,00,4c,00,69,00,55,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,50,00,61,00,6c,00,61,00,74,00,69,00,6e,00,6f,00,20,00,4c,00,69,00,6e,00,6f,00,74,00,79,00,70,00,65,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,54,00,72,00,61,00,64,00,69,00,74,00,69,00,6f,00,6e,00,61,00,6c,00,20,00,41,00,72,00,61,00,62,00,69,00,63,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,53,00,69,00,6d,00,70,00,6c,00,69,00,66,00,69,00,65,00,64,00,20,00,41,00,72,00,61,00,62,00,69,00,63,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,69,00,6e,00,67,00,4c,00,69,00,55,00,2d,00,45,00,78,00,74,00,42,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,5a,00,00,00,20,00,00,00,7f,00,00,00,00,a0,00,00,00,7f,01,00,00,00,80,01,00,00,af,02,00,00,01,b0,02,00,00,ff,02,00,00,02,00,03,00,00,6f,03,00,00,01,70,03,00,00,7a,03,00,00,02,7b,03,00,00,cf,03,00,00,00,d0,03,00,00,2f,05,00,00,01,30,05,00,00,8f,05,00,00,03,b0,05,00,00,ff,06,00,00,00,00,07,00,00,4f,07,00,00,04,80,07,00,00,bf,07,00,00,05,00,09,00,00,7f,09,00,00,06,80,09,00,00,ff,09,00,00,07,00,0a,00,00,7f,0a,00,00,08,80,0a,00,00,ff,0a,00,00,09,00,0b,00,00,7f,0b,00,00,0a,80,0b,00,00,ff,0b,00,00,0b,00,0c,00,00,7f,0c,00,00,0c,80,0c,00,00,ff,0c,00,00,0d,00,0d,00,00,7f,0d,00,00,0e,80,0d,00,00,ff,0d,00,00,0f,00,0e,00,00,7f,0e,00,00,10,80,0e,00,00,ff,0e,00,00,11,00,0f,00,00,ff,0f,00,00,12,a0,10,00,00,ff,10,00,00,03,00,11,00,00,ff,11,00,00,13,00,12,00,00,9f,13,00,00,14,a0,13,00,00,ff,13,00,00,15,00,14,00,00,7f,16,00,00,16,80,17,00,00,ff,17,00,00,17,00,18,00,00,af,18,00,00,12,e0,19,00,00,ff,19,00,00,17,00,1e,00,00,9f,1e,00,00,01,a0,1e,00,00,ff,1e,00,00,00,00,1f,00,00,ff,1f,00,00,01,00,20,00,00,3e,20,00,00,02,3f,20,00,00,5f,20,00,00,18,60,20,00,00,6f,20,00,00,00,70,20,00,00,9f,20,00,00,18,a0,20,00,00,cf,20,00,00,01,00,21,00,00,38,21,00,00,18,50,21,00,00,f1,22,00,00,18,00,23,00,00,06,23,00,00,02,07,23,00,00,07,23,00,00,19,08,23,00,00,0f,23,00,00,02,10,23,00,00,1f,23,00,00,18,20,23,00,00,3f,24,00,00,02,40,24,00,00,5f,24,00,00,1a,60,24,00,00,6f,26,00,00,18,70,26,00,00,ff,26,00,00,04,00,27,00,00,bf,27,00,00,18,80,2e,00,00,ff,2e,00,00,1b,00,2f,00,00,df,2f,00,00,1a,f0,2f,00,00,ff,2f,00,00,1b,00,30,00,00,20,30,00,00,18,21,30,00,00,2f,30,00,00,1b,30,30,00,00,37,30,00,00,18,3e,30,00,00,3f,30,00,00,12,40,30,00,00,ff,30,00,00,18,00,31,00,00,2f,31,00,00,1b,30,31,00,00,8f,31,00,00,13,90,31,00,00,9f,31,00,00,1c,f0,31,00,00,ff,31,00,00,18,00,32,00,00,1f,32,00,00,13,20,32,00,00,43,32,00,00,18,60,32,00,00,7f,32,00,00,13,80,32,00,00,ff,33,00,00,18,00,34,00,00,bf,4d,00,00,12,00,4e,00,00,ff,9f,00,00,1b,00,a0,00,00,cf,a4,00,00,12,00,ac,00,00,af,d7,00,00,13,00,f9,00,00,ff,fa,00,00,1d,00,fb,00,00,0f,fb,00,00,1e,10,fb,00,00,17,fb,00,00,03,18,fb,00,00,e7,fb,00,00,00,e8,fb,00,00,fb,fb,00,00,12,fc,fb,00,00,ff,fb,00,00,00,00,fc,00,00,f0,fd,00,00,1f,f2,fd,00,00,f2,fd,00,00,00,00,fe,00,00,0f,fe,00,00,1b,30,fe,00,00,6f,fe,00,00,1b,70,fe,00,00,7f,fe,00,00,20,80,fe,00,00,ff,fe,00,00,00,00,ff,00,00,e5,ff,00,00,18,e6,ff,00,00,e6,ff,00,00,13,e7,ff,00,00,ef,ff,00,00,18,f0,ff,00,00,ff,ff,00,00,00,00,00,02,00,df,a6,02,00,21,00,f8,02,00,1f,fa,02,00,21
+
+[AddReg.International.Vista]
+HKCU,"Software\Microsoft\Internet Explorer\International","CodePointToFontMap",3,27,00,00,00,54,00,69,00,6d,00,65,00,73,00,20,00,4e,00,65,00,77,00,20,00,52,00,6f,00,6d,00,61,00,6e,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,53,00,79,00,6c,00,66,00,61,00,65,00,6e,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,45,00,73,00,74,00,72,00,61,00,6e,00,67,00,65,00,6c,00,6f,00,20,00,45,00,64,00,65,00,73,00,73,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,56,00,20,00,42,00,6f,00,6c,00,69,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,61,00,6e,00,67,00,61,00,6c,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,56,00,72,00,69,00,6e,00,64,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,52,00,61,00,61,00,76,00,69,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,53,00,68,00,72,00,75,00,74,00,69,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4b,00,61,00,6c,00,69,00,6e,00,67,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4c,00,61,00,74,00,68,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,47,00,61,00,75,00,74,00,61,00,6d,00,69,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,54,00,75,00,6e,00,67,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4b,00,61,00,72,00,74,00,69,00,6b,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,49,00,73,00,6b,00,6f,00,6f,00,6c,00,61,00,20,00,50,00,6f,00,74,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,54,00,61,00,68,00,6f,00,6d,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,44,00,6f,00,6b,00,43,00,68,00,61,00,6d,00,70,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,69,00,63,00,72,00,6f,00,73,00,6f,00,66,00,74,00,20,00,48,00,69,00,6d,00,61,00,6c,00,61,00,79,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,42,00,61,00,74,00,61,00,6e,00,67,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4e,00,79,00,61,00,6c,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,50,00,6c,00,61,00,6e,00,74,00,61,00,67,00,65,00,6e,00,65,00,74,00,20,00,43,00,68,00,65,00,72,00,6f,00,6b,00,65,00,65,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,45,00,75,00,70,00,68,00,65,00,6d,00,69,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,44,00,61,00,75,00,6e,00,50,00,65,00,6e,00,68,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,6f,00,6e,00,67,00,6f,00,6c,00,69,00,61,00,6e,00,20,00,42,00,61,00,69,00,74,00,69,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4c,00,75,00,63,00,69,00,64,00,61,00,20,00,53,00,61,00,6e,00,73,00,20,00,55,00,6e,00,69,00,63,00,6f,00,64,00,65,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,53,00,20,00,4d,00,69,00,6e,00,63,00,68,00,6f,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,43,00,61,00,6d,00,62,00,72,00,69,00,61,00,20,00,4d,00,61,00,74,00,68,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,69,00,63,00,72,00,6f,00,73,00,6f,00,66,00,74,00,20,00,53,00,61,00,6e,00,73,00,20,00,53,00,65,00,72,00,69,00,66,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,50,00,4d,00,69,00,6e,00,67,00,4c,00,69,00,75,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,65,00,69,00,72,00,79,00,6f,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,53,00,69,00,6d,00,53,00,75,00,6e,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,69,00,63,00,72,00,6f,00,73,00,6f,00,66,00,74,00,20,00,59,00,61,00,48,00,65,00,69,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,61,00,6c,00,67,00,75,00,6e,00,20,00,47,00,6f,00,74,00,68,00,69,00,63,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,69,00,63,00,72,00,6f,00,73,00,6f,00,66,00,74,00,20,00,59,00,69,00,20,00,42,00,61,00,69,00,74,00,69,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,69,00,6e,00,67,00,4c,00,69,00,55,00,5f,00,48,00,4b,00,53,00,43,00,53,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,50,00,4d,00,69,00,6e,00,67,00,4c,00,69,00,55,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,50,00,61,00,6c,00,61,00,74,00,69,00,6e,00,6f,00,20,00,4c,00,69,00,6e,00,6f,00,74,00,79,00,70,00,65,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,41,00,72,00,61,00,62,00,69,00,63,00,20,00,54,00,79,00,70,00,65,00,73,00,65,00,74,00,74,00,69,00,6e,00,67,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,53,00,69,00,6d,00,70,00,6c,00,69,00,66,00,69,00,65,00,64,00,20,00,41,00,72,00,61,00,62,00,69,00,63,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,69,00,6e,00,67,00,4c,00,69,00,55,00,2d,00,45,00,78,00,74,00,42,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,a5,00,00,00,20,00,00,00,7f,00,00,00,00,a0,00,00,00,2f,05,00,00,00,30,05,00,00,8f,05,00,00,01,90,05,00,00,ff,06,00,00,00,00,07,00,00,4f,07,00,00,02,50,07,00,00,7f,07,00,00,00,80,07,00,00,bf,07,00,00,03,00,09,00,00,7f,09,00,00,04,80,09,00,00,ff,09,00,00,05,00,0a,00,00,7f,0a,00,00,06,80,0a,00,00,ff,0a,00,00,07,00,0b,00,00,7f,0b,00,00,08,80,0b,00,00,ff,0b,00,00,09,00,0c,00,00,7f,0c,00,00,0a,80,0c,00,00,ff,0c,00,00,0b,00,0d,00,00,7f,0d,00,00,0c,80,0d,00,00,ff,0d,00,00,0d,00,0e,00,00,7f,0e,00,00,0e,80,0e,00,00,ff,0e,00,00,0f,00,0f,00,00,ff,0f,00,00,10,a0,10,00,00,ff,10,00,00,01,00,11,00,00,ff,11,00,00,11,00,12,00,00,9f,13,00,00,12,a0,13,00,00,ff,13,00,00,13,00,14,00,00,7f,16,00,00,14,80,17,00,00,ff,17,00,00,15,00,18,00,00,af,18,00,00,16,e0,19,00,00,ff,19,00,00,15,00,1d,00,00,ff,1f,00,00,00,00,20,00,00,2e,20,00,00,17,2f,20,00,00,2f,20,00,00,16,30,20,00,00,51,20,00,00,18,57,20,00,00,57,20,00,00,19,5e,20,00,00,5e,20,00,00,00,61,20,00,00,61,20,00,00,19,62,20,00,00,6f,20,00,00,00,70,20,00,00,70,20,00,00,18,71,20,00,00,71,20,00,00,1a,72,20,00,00,8f,20,00,00,18,90,20,00,00,cf,20,00,00,00,d0,20,00,00,ff,20,00,00,19,00,21,00,00,38,21,00,00,18,39,21,00,00,4f,21,00,00,19,50,21,00,00,8f,21,00,00,18,90,21,00,00,ea,21,00,00,17,eb,21,00,00,ff,21,00,00,19,00,22,00,00,f1,22,00,00,17,f2,22,00,00,ff,22,00,00,19,00,23,00,00,04,23,00,00,17,05,23,00,00,06,23,00,00,18,07,23,00,00,07,23,00,00,1b,08,23,00,00,0f,23,00,00,17,10,23,00,00,1f,23,00,00,18,20,23,00,00,28,23,00,00,17,29,23,00,00,2a,23,00,00,19,9b,23,00,00,ad,23,00,00,1c,ae,23,00,00,b7,23,00,00,19,b8,23,00,00,ce,23,00,00,18,d0,23,00,00,db,23,00,00,1b,dc,23,00,00,ff,23,00,00,19,00,24,00,00,3f,24,00,00,17,40,24,00,00,5f,24,00,00,1c,60,24,00,00,6f,26,00,00,18,70,26,00,00,71,26,00,00,02,72,26,00,00,7f,26,00,00,1c,00,27,00,00,bf,27,00,00,18,c0,27,00,00,ff,27,00,00,19,00,29,00,00,7f,29,00,00,19,80,29,00,00,fb,29,00,00,18,fc,29,00,00,ff,2a,00,00,19,80,2d,00,00,df,2d,00,00,12,00,2e,00,00,7f,2e,00,00,00,80,2e,00,00,80,2e,00,00,1b,81,2e,00,00,81,2e,00,00,1d,83,2e,00,00,83,2e,00,00,1c,84,2e,00,00,84,2e,00,00,1b,85,2e,00,00,85,2e,00,00,1c,86,2e,00,00,88,2e,00,00,1b,89,2e,00,00,89,2e,00,00,1c,8a,2e,00,00,8a,2e,00,00,1b,8b,2e,00,00,8c,2e,00,00,1d,8d,2e,00,00,8d,2e,00,00,1b,8e,2e,00,00,94,2e,00,00,1c,95,2e,00,00,95,2e,00,00,1b,96,2e,00,00,96,2e,00,00,1c,97,2e,00,00,97,2e,00,00,1d,98,2e,00,00,9b,2e,00,00,1c,9c,2e,00,00,9d,2e,00,00,1b,9e,2e,00,00,a4,2e,00,00,1c,a5,2e,00,00,a5,2e,00,00,1b,a6,2e,00,00,a6,2e,00,00,1c,a7,2e,00,00,a7,2e,00,00,1b,a8,2e,00,00,a9,2e,00,00,1c,aa,2e,00,00,aa,2e,00,00,1b,ab,2e,00,00,ab,2e,00,00,1c,ac,2e,00,00,ac,2e,00,00,1b,ad,2e,00,00,ad,2e,00,00,1c,ae,2e,00,00,af,2e,00,00,1b,b1,2e,00,00,b2,2e,00,00,1c,b3,2e,00,00,b7,2e,00,00,1d,b9,2e,00,00,b9,2e,00,00,1c,bb,2e,00,00,bb,2e,00,00,1d,bc,2e,00,00,bc,2e,00,00,1b,bd,2e,00,00,bd,2e,00,00,1c,be,2e,00,00,be,2e,00,00,1b,bf,2e,00,00,c4,2e,00,00,1c,c5,2e,00,00,cf,2e,00,00,1b,d1,2e,00,00,d2,2e,00,00,1c,d6,2e,00,00,c7,2e,00,00,1b,d8,2e,00,00,dd,2e,00,00,1c,de,2e,00,00,ce,2e,00,00,1b,df,2e,00,00,df,2e,00,00,1c,e3,2e,00,00,c4,2e,00,00,1b,e4,2e,00,00,f2,2e,00,00,1c,00,2f,00,00,df,2f,00,00,1c,f0,2f,00,00,ff,2f,00,00,1d,00,30,00,00,20,30,00,00,18,21,30,00,00,29,30,00,00,1d,2a,30,00,00,3f,30,00,00,1e,40,30,00,00,ff,30,00,00,18,00,31,00,00,2f,31,00,00,1e,30,31,00,00,8f,31,00,00,11,90,31,00,00,9f,31,00,00,1c,a0,31,00,00,bf,31,00,00,1e,c0,31,00,00,ef,31,00,00,1b,f0,31,00,00,ff,31,00,00,18,00,32,00,00,1f,32,00,00,11,20,32,00,00,5f,32,00,00,18,60,32,00,00,7d,32,00,00,11,7e,32,00,00,7e,32,00,00,1f,7f,32,00,00,7f,32,00,00,11,80,32,00,00,ff,33,00,00,18,00,34,00,00,bf,4d,00,00,1d,00,4e,00,00,a5,9f,00,00,1d,a6,9f,00,00,b3,9f,00,00,1b,b4,9f,00,00,ff,9f,00,00,1e,00,a0,00,00,cf,a4,00,00,20,00,ac,00,00,af,d7,00,00,11,00,e0,00,00,ff,f8,00,00,21,00,f9,00,00,2f,fa,00,00,22,30,fa,00,00,ff,fa,00,00,18,00,fb,00,00,00,fb,00,00,23,01,fb,00,00,02,fb,00,00,00,03,fb,00,00,06,fb,00,00,23,14,fb,00,00,17,fb,00,00,01,18,fb,00,00,e7,fb,00,00,00,e8,fb,00,00,e9,fb,00,00,24,ea,fb,00,00,ff,fb,00,00,00,00,fc,00,00,5b,fc,00,00,24,5e,fc,00,00,62,fc,00,00,25,63,fc,00,00,f1,fc,00,00,24,f2,fc,00,00,f4,fc,00,00,25,f5,fc,00,00,32,fd,00,00,24,3c,fd,00,00,3d,fd,00,00,25,3e,fd,00,00,ff,fd,00,00,24,10,fe,00,00,1f,fe,00,00,1e,20,fe,00,00,2f,fe,00,00,00,30,fe,00,00,6f,fe,00,00,1e,70,fe,00,00,7f,fe,00,00,25,80,fe,00,00,9f,fe,00,00,00,00,ff,00,00,9f,ff,00,00,18,a0,ff,00,00,dc,ff,00,00,1e,f0,ff,00,00,ff,ff,00,00,00,00,00,02,00,df,a6,02,00,26,00,f8,02,00,1f,fa,02,00,26
+
+[AddReg.International.W2K3]
+HKCU,"Software\Microsoft\Internet Explorer\International","CodePointToFontMap",1,22,00,00,00,54,00,69,00,6d,00,65,00,73,00,20,00,4e,00,65,00,77,00,20,00,52,00,6f,00,6d,00,61,00,6e,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,69,00,63,00,72,00,6f,00,73,00,6f,00,66,00,74,00,20,00,53,00,61,00,6e,00,73,00,20,00,53,00,65,00,72,00,69,00,66,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4c,00,75,00,63,00,69,00,64,00,61,00,20,00,53,00,61,00,6e,00,73,00,20,00,55,00,6e,00,69,00,63,00,6f,00,64,00,65,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,53,00,79,00,6c,00,66,00,61,00,65,00,6e,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,45,00,73,00,74,00,72,00,61,00,6e,00,67,00,65,00,6c,00,6f,00,20,00,45,00,64,00,65,00,73,00,73,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,56,00,20,00,42,00,6f,00,6c,00,69,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,61,00,6e,00,67,00,61,00,6c,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,56,00,72,00,69,00,6e,00,64,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,52,00,61,00,61,00,76,00,69,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,53,00,68,00,72,00,75,00,74,00,69,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4b,00,61,00,6c,00,69,00,6e,00,67,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4c,00,61,00,74,00,68,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,47,00,61,00,75,00,74,00,61,00,6d,00,69,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,54,00,75,00,6e,00,67,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4b,00,61,00,72,00,74,00,69,00,6b,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,49,00,73,00,6b,00,6f,00,6f,00,6c,00,61,00,20,00,50,00,6f,00,74,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,54,00,61,00,68,00,6f,00,6d,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,44,00,6f,00,6b,00,43,00,68,00,61,00,6d,00,70,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,53,00,69,00,6d,00,53,00,75,00,6e,00,2d,00,31,00,38,00,30,00,33,00,30,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,42,00,61,00,74,00,61,00,6e,00,67,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4e,00,79,00,61,00,6c,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,50,00,6c,00,61,00,6e,00,74,00,61,00,67,00,65,00,6e,00,65,00,74,00,20,00,43,00,68,00,65,00,72,00,6f,00,6b,00,65,00,65,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,45,00,75,00,70,00,68,00,65,00,6d,00,69,00,61,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,44,00,61,00,75,00,6e,00,50,00,65,00,6e,00,68,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,53,00,20,00,4d,00,69,00,6e,00,63,00,68,00,6f,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,50,00,4d,00,69,00,6e,00,67,00,4c,00,69,00,75,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,65,00,69,00,72,00,79,00,6f,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,53,00,69,00,6d,00,53,00,75,00,6e,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,69,00,6e,00,67,00,4c,00,69,00,55,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,50,00,4d,00,69,00,6e,00,67,00,4c,00,69,00,55,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,50,00,61,00,6c,00,61,00,74,00,69,00,6e,00,6f,00,20,00,4c,00,69,00,6e,00,6f,00,74,00,79,00,70,00,65,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,54,00,72,00,61,00,64,00,69,00,74,00,69,00,6f,00,6e,00,61,00,6c,00,20,00,41,00,72,00,61,00,62,00,69,00,63,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,53,00,69,00,6d,00,70,00,6c,00,69,00,66,00,69,00,65,00,64,00,20,00,41,00,72,00,61,00,62,00,69,00,63,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4d,00,69,00,6e,00,67,00,4c,00,69,00,55,00,2d,00,45,00,78,00,74,00,42,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,5a,00,00,00,20,00,00,00,7f,00,00,00,00,a0,00,00,00,7f,01,00,00,00,80,01,00,00,af,02,00,00,01,b0,02,00,00,ff,02,00,00,02,00,03,00,00,6f,03,00,00,01,70,03,00,00,7a,03,00,00,02,7b,03,00,00,cf,03,00,00,00,d0,03,00,00,2f,05,00,00,01,30,05,00,00,8f,05,00,00,03,b0,05,00,00,ff,06,00,00,00,00,07,00,00,4f,07,00,00,04,80,07,00,00,bf,07,00,00,05,00,09,00,00,7f,09,00,00,06,80,09,00,00,ff,09,00,00,07,00,0a,00,00,7f,0a,00,00,08,80,0a,00,00,ff,0a,00,00,09,00,0b,00,00,7f,0b,00,00,0a,80,0b,00,00,ff,0b,00,00,0b,00,0c,00,00,7f,0c,00,00,0c,80,0c,00,00,ff,0c,00,00,0d,00,0d,00,00,7f,0d,00,00,0e,80,0d,00,00,ff,0d,00,00,0f,00,0e,00,00,7f,0e,00,00,10,80,0e,00,00,ff,0e,00,00,11,00,0f,00,00,ff,0f,00,00,12,a0,10,00,00,ff,10,00,00,03,00,11,00,00,ff,11,00,00,13,00,12,00,00,9f,13,00,00,14,a0,13,00,00,ff,13,00,00,15,00,14,00,00,7f,16,00,00,16,80,17,00,00,ff,17,00,00,17,00,18,00,00,af,18,00,00,12,e0,19,00,00,ff,19,00,00,17,00,1e,00,00,9f,1e,00,00,01,a0,1e,00,00,ff,1e,00,00,00,00,1f,00,00,ff,1f,00,00,01,00,20,00,00,3e,20,00,00,02,3f,20,00,00,5f,20,00,00,18,60,20,00,00,6f,20,00,00,00,70,20,00,00,9f,20,00,00,18,a0,20,00,00,cf,20,00,00,01,00,21,00,00,38,21,00,00,18,50,21,00,00,f1,22,00,00,18,00,23,00,00,06,23,00,00,02,07,23,00,00,07,23,00,00,19,08,23,00,00,0f,23,00,00,02,10,23,00,00,1f,23,00,00,18,20,23,00,00,3f,24,00,00,02,40,24,00,00,5f,24,00,00,1a,60,24,00,00,6f,26,00,00,18,70,26,00,00,ff,26,00,00,04,00,27,00,00,bf,27,00,00,18,80,2e,00,00,ff,2e,00,00,1b,00,2f,00,00,df,2f,00,00,1a,f0,2f,00,00,ff,2f,00,00,1b,00,30,00,00,20,30,00,00,18,21,30,00,00,2f,30,00,00,1b,30,30,00,00,37,30,00,00,18,3e,30,00,00,3f,30,00,00,12,40,30,00,00,ff,30,00,00,18,00,31,00,00,2f,31,00,00,1b,30,31,00,00,8f,31,00,00,13,90,31,00,00,9f,31,00,00,1c,f0,31,00,00,ff,31,00,00,18,00,32,00,00,1f,32,00,00,13,20,32,00,00,43,32,00,00,18,60,32,00,00,7f,32,00,00,13,80,32,00,00,ff,33,00,00,18,00,34,00,00,bf,4d,00,00,12,00,4e,00,00,ff,9f,00,00,1b,00,a0,00,00,cf,a4,00,00,12,00,ac,00,00,af,d7,00,00,13,00,f9,00,00,ff,fa,00,00,1d,00,fb,00,00,0f,fb,00,00,1e,10,fb,00,00,17,fb,00,00,03,18,fb,00,00,e7,fb,00,00,00,e8,fb,00,00,fb,fb,00,00,12,fc,fb,00,00,ff,fb,00,00,00,00,fc,00,00,f0,fd,00,00,1f,f2,fd,00,00,f2,fd,00,00,00,00,fe,00,00,0f,fe,00,00,1b,30,fe,00,00,6f,fe,00,00,1b,70,fe,00,00,7f,fe,00,00,20,80,fe,00,00,ff,fe,00,00,00,00,ff,00,00,e5,ff,00,00,18,e6,ff,00,00,e6,ff,00,00,13,e7,ff,00,00,ef,ff,00,00,18,f0,ff,00,00,ff,ff,00,00,00,00,00,02,00,df,a6,02,00,21,00,f8,02,00,1f,fa,02,00,21
+
+
+[Remove.Reg]
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings","WarnAlwaysOnPost"
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings","HeaderExclusionListForCache"
+HKCU,"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MenuOrder\Start Menu\&Favorites"
+HKCU,"Software\Microsoft\Internet Explorer\Main","Default Channels"
+HKCU,"Software\Microsoft\Internet Explorer\Main","Additional Channels"
+HKCU,"Software\Microsoft\Internet Explorer\Main","FavIntelliMenus"
+HKCU,"Software\Microsoft\Internet Explorer\International","Default_CodePage"
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\LMZL"
+; Alexa "what's related" shell extension
+HKCU,"Software\Microsoft\Internet Explorer\Extensions\CmdMapping","{c95fe080-8f5d-11d2-a20b-00aa003c157a}"
+
+[!MUICache.DelReg]
+HKCU,"SOFTWARE\Microsoft\Windows\ShellNoRoam\MUICache"
+
+[International.cleanup]
+; see KevinGj for details (IE5 #57310)
+HKCU,"Software\Microsoft\Internet Explorer\International","CNum_CpCache"
+HKCU,"Software\Microsoft\Internet Explorer\International","CpCache"
+HKCU,"Software\Microsoft\Internet Explorer\International","AutoDetect"
+HKCU,"Software\Microsoft\Internet Explorer\International","ResourceLocale"
+HKCU,"Software\Microsoft\Internet Explorer\International\CpMRU","Enable"
+HKCU,"Software\Microsoft\Internet Explorer\International\CpMRU","Size"
+HKCU,"Software\Microsoft\Internet Explorer\International\CpMRU","InitHits"
+HKCU,"Software\Microsoft\Internet Explorer\International\CpMRU","Factor"
+
+HKCU,"Software\Microsoft\Internet Explorer\International","CodePointToFontMap"
+; Do not keep user default font settings for scripts
+HKCU,"Software\Microsoft\Internet Explorer\International\Scripts"
+
+;--------------- mshtml hkcu backup -------------------------------------------------
+;
+; WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+;
+; The section below MUST be named 'Install' to reflect the section name inside
+; of MSHTMLs selfreg.inx -- never change it unless MSHTMLs selfreg section
+; name changes!!
+;
+; 11-29-05 - this section is called by the SetReg section.
+[Install]
+ComponentName="mshtml.Install"
+ComponentVersion=6.0
+AddReg=mshtml.addreg
+NoBackupPlatform="NT5.1"
+
+[mshtml.addreg]
+HKCU,"Software\Microsoft\Internet Explorer\Security","Safety Warning Level",,"Query"
+
+;--------------- mshtml end ----------------------------------------------------------
+
+[Strings]
+;********************************
+; Localized by old string tables
+;********************************
+
+; These are file names that are used only for file names (no longer for description)
+; in shortcuts, so are language neutral
+SHORTCUT_IEXPLORE_32      = "Internet Explorer (32-bit)"
+SHORTCUT_QUICK_IEXPLORE   = "Launch Internet Explorer Browser"
+
+;*******************************
+; Not Localized by old versions
+;*******************************
+KEY_PROGRAM_FILES         = "SOFTWARE\Microsoft\Windows\CurrentVersion"
+PATH_ZONEMAP              = "Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap"
+REG_DWORD_NOCLOBBER       = "0x00010003"
+REG_DWORD_CLOBBER         = "0x00010001"
+
+;(FLG_ADDREG_TYPE_EXPAND_SZ & FLG_ADDREG_NOCLOBBER)
+REG_EXSZ_NOCLOBBER        = "0x00020002"  
+REG_EXSZ_CLOBBER          = "0x00020000"
+
+REG_SZ_NOCLOBBER          = "0x00000002"  
+REG_SZ_CLOBBER            = "0x00000000"  
+
+;(FLG_ADDREG_KEYONLY)
+REG_KEYONLY               = "0x00000010"
+
+; file & folder names
+SHORTCUT_IEXPLORE         = "Internet Explorer"
+Browser_suite             = "Internet Explorer"
+QUICK_LAUNCH              = "Quick Launch"
+
+;navigation
+START_PAGE                = "http://go.microsoft.com/fwlink/?LinkId=69157"
+SEARCH_PAGE_URL           = "http://go.microsoft.com/fwlink/?LinkId=54896"
+
+;************************************************
+; Localized by old string tables
+; Now Localized via string indirection
+;************************************************
+; English values remain for documentation within the registry but do not require localization
+SND_NAVIGATESTART       = "Start Navigation"
+WINDOWS_NAVIGATESTART   = "Windows Navigation Start"
+SND_NAVIGATEEND         = "Complete Navigation"
+SND_MOVEMENUITEM        = "Move Menu Item"
+SND_SELECT              = "Select"
+SND_SHOWBAND            = "Show Toolbar Band"
+SND_BLOCKEDPOPUP        = "Blocked Pop-up Window"
+WINDOWS_BLOCKEDPOPUP    = "Windows Pop-up Blocked"
+SND_SECBAND             = "Information Bar"
+WINDOWS_INFOBAND        = "Windows Information Bar"
+SND_FEEDDISC            = "Feed Discovered"
+WINDOWS_FEEDDISC        = "Windows Feed Discovered"
+SND_SEARCHDISC          = "Search Provider Discovered"
+

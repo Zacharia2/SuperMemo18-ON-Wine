@@ -1,0 +1,21 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\CLSID\\{9BA05972-F6A8-11CF-A442-00A0C90A8F39}
+
+#arch=win32
+
+[] 1650919625
+#time=1d858e59f6c7282
+@="ShellWindows"
+
+[InprocServer32] 1650919627
+#time=1d858e5a0e3df24
+@="C:\\windows\\system32\\ieframe.dll"
+"ThreadingModel"="Apartment"
+
+[TypeLib] 1650919625
+#time=1d858e59f6c6558
+@="{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}"
+
+[Version] 1650919625
+#time=1d858e59f6c79c6
+@="1.1"

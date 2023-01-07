@@ -1,0 +1,24 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\CLSID\\{3050F5C8-98B5-11CF-BB82-00AA00BDCE0B}
+
+#arch=win32
+
+[] 1650919633
+#time=1d858e5a41f34a4
+@="Microsoft HTA Document 6.0"
+
+[BrowseInPlace] 1650919633
+#time=1d858e5a41f2c34
+
+[InprocServer32] 1650919628
+#time=1d858e5a1313936
+@="C:\\windows\\system32\\mshtml.dll"
+"ThreadingModel"="Apartment"
+
+[MiscStatus] 1650919633
+#time=1d858e5a41f38b4
+@="2228625"
+
+[Version] 1650919628
+#time=1d858e5a13147c8
+@="6.0"

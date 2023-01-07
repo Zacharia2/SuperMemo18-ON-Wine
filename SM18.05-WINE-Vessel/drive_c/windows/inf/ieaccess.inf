@@ -1,0 +1,4 @@
+[ShowIE]
+Commandline="%11%\ie4uinit.exe -show"
+[HideIE]
+Commandline="%11%\ie4uinit.exe -hide"

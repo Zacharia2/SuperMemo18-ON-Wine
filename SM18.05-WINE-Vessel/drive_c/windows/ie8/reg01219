@@ -1,0 +1,16 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\Interface\\{CEF04FDF-FE72-11D2-87A5-00C04F6837CF}
+
+#arch=win32
+
+[] 1650919626
+#time=1d858e5a01325b4
+@="IPersistFolder3"
+
+[NumMethods] 1650919626
+#time=1d858e5a0131a60
+@="8"
+
+[ProxyStubClsid32] 1650919626
+#time=1d858e5a0132af0
+@="{B8DA6310-E19B-11D0-933C-00A0C90DCAA9}"

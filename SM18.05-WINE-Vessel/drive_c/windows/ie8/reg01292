@@ -1,0 +1,8 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Microsoft\\Internet Explorer\\Version Vector
+
+#arch=win32
+
+[] 1650919633
+#time=1d858e5a420dfd4
+"IE"="6.0000"

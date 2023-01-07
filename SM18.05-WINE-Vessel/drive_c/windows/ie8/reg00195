@@ -1,0 +1,47 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\Machine\\Software\\Classes\\CLSID\\{AE24FDAE-03C6-11D1-8B76-0080C744F389}
+
+#arch=win32
+
+[] 1650919633
+#time=1d858e5a42066e4
+@="Microsoft Scriptlet Component"
+
+[Control] 1650919633
+#time=1d858e5a41fea20
+
+[InprocServer32] 1650919628
+#time=1d858e5a135866c
+@="C:\\windows\\system32\\mshtml.dll"
+"ThreadingModel"="Apartment"
+
+[MiscStatus] 1650919633
+#time=1d858e5a4202756
+@="0"
+
+[MiscStatus\\1] 1650919633
+#time=1d858e5a4204146
+@="131473"
+
+[ProgId] 1650919628
+#time=1d858e5a135959e
+@="ScriptBridge.ScriptBridge.1"
+
+[Programmable] 1650919633
+#time=1d858e5a420592e
+
+[ToolboxBitmap32] 1650919633
+#time=1d858e5a4206b44
+@="C:\\Program Files\\Internet Explorer\\iexplore.exe,1"
+
+[TypeLib] 1650919628
+#time=1d858e5a18e4f7c
+@="{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}"
+
+[Version] 1650919628
+#time=1d858e5a18e5fb2
+@="4.0"
+
+[VersionIndependentProgId] 1650919628
+#time=1d858e5a135a408
+@="ScriptBridge.ScriptBridge"
