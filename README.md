@@ -75,3 +75,5 @@ SuperMemo卡组与资料库软链接文件夹位置：`/home/SuperMemo卡组与�
 - [AppImage/AppImageKit：将桌面应用程序打包为AppImages，这些应用程序在基于Linux的常见操作系统上运行，例如RHEL，CentOS，openSUSE，SLED，Ubuntu，Fedora，debian及其衍生产品。在 irc.libera.chat 上加入#AppImage (github.com)](https://github.com/AppImage/AppImageKit)
 
 - [Linux常用应用清单（使Linux变得更加易用 | Linux下替代Win常用软件的应用）](https://zhuanlan.zhihu.com/p/542560170)
+
+- Deb 打包详解: https://blog.csdn.net/fengshengwei3/article/details/124271254
