@@ -31,6 +31,8 @@ makepkg -i
   - SuperMemo容器环境使用教程。（仅限Linux）
 - [docs/Instal-and-Package.md](https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/docs/Instal-and-Package.md)
   - Linux系统中从零开始安装supermemo、与封装deb安装包的流程、知识及注意事项。
+- Wrap-DEB文件夹
+  - 构建DEB安装包的配置文件，需要SM18.05-WINE-Vessel文件夹、以及SuperMemo懒人包。
 - config/winetricks-cache
   - winetricks（wine工具）安装supermemo的缓存依赖文件。用于跳过网络下载，加快安装速度。
 - config/supermemo18.verb
