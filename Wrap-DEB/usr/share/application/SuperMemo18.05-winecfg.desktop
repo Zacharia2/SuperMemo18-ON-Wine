@@ -1,10 +1,11 @@
 [Desktop Entry]
 Name=SuperMemo18.05-winecfg
-Exec=env WINEARCH=win32 WINEPREFIX="/opt/SM18.05-WINE-Vessel" sm-wine winecfg
+Exec=env WINEARCH=win32 WINEPREFIX="/usr/share/SM18.05-WINE-Vessel" sm-wine winecfg
 Type=Application
 Categories=Education;
 StartupNotify=true
 Comment=打开supermemo18-wine的配置窗口。
-Path=/opt/SM18.05-WINE-Vessel
-Icon=/opt/SM18.05-WINE-Vessel/smicon.png
+Path=/usr/share/SM18.05-WINE-Vessel
+Icon=/usr/share/SM18.05-WINE-Vessel/smicon.png
 StartupWMClass=Wine-x86_64-ubuntu.latest.AppImage
+
