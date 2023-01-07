@@ -43,7 +43,25 @@ makepkg -i
 ```
 
 
-#### 相关链接：
+## SuperMemo18.05-lazy-wine32-package.v1.4.0.deb
+
+安装: `sudo dpkg -i SuperMemo18.05-lazy-wine32-package.v1.4.0.deb`
+
+卸载: `sudo dpkg -r supermemo18.05-wine32`
+
+封装: `sudo dpkg -b Wrap-DEB SuperMemo18.05-lazy-wine32-package.v1.4.0.deb`
+
+SuperMemo卡组与资料库软链接文件夹位置：`/home/SuperMemo卡组与资料库/` 。你可以通过此链接文件夹快速交换资料。删除链接文件夹不会删除原文件。
+
+运行软件请使用开始菜单中的启动器文件: SuperMemo18.desktop。配置sm-wine容器请使用启动器：SuperMemo18.05-winecfg.desktop。
+ 
+可以使用`sm-wine`命令启动SuperMemo18-WINE32自带的wine-appimage。没有设置WINEPREFIX容器根目录变量的情况下这将会在HOME目录生成默认的.wine容器。
+ 
+软件实际所在目录：`/usr/share/SM18.05-WINE-Vessel/drive_c/SuperMemo`
+
+
+
+## 相关链接：
 
 - Installers for SuperMemo for Windows using Winetricks：https://github.com/alessivs/supermemo-wine
 
