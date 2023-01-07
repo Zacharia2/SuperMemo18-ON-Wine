@@ -1,7 +1,6 @@
 # SuperMemo18.05-WINE32
 
-
-![](https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/docs/images/%E9%A2%84%E8%A7%88%E5%9B%BE%EF%BC%9ASM18.05-WINE32.png)
+<img src="https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/docs/images/%E9%A2%84%E8%A7%88%E5%9B%BE%EF%BC%9ASM18.05-WINE32.png" style="zoom:50%">
 
 
 ## 文件说明
