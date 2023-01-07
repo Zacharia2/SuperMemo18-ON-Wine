@@ -1,3 +1,4 @@
+#!/bin/sh
 
 version=1.1.0
 product_name=yourapp_name
