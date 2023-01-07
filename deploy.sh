@@ -1,3 +1,5 @@
+#!/bin/sh
+
 dirname=$(cd `dirname $0`; pwd)
 echo $dirname
 target=appName # 你的app 名字
