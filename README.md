@@ -1,5 +1,5 @@
 # SuperMemo18-Wine32
-env WINEARCH=win32 WINEPREFIX="/home/whitefall/桌面/SuperMemo18-ON-Wine/SM18.05-WINE-Vessel/" ~/wine.AppImage /home/whitefall/桌面/SuperMemo18-ON-Wine/SM18.05-WINE-Vessel/drive_c/SuperMemo/sm18.exe
+
 ## 文件说明
 
 - [SM18.05-WINE-Vessel文件夹](https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/SM18.05-WINE-Vessel/)
