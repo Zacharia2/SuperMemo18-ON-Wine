@@ -1,7 +1,27 @@
 # SuperMemo18.05-WINE32
 
-<img src="https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/docs/images/%E9%A2%84%E8%A7%88%E5%9B%BE%EF%BC%9ASM18.05-WINE32.png" style="zoom:40%">
+<img src="https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/docs/images/%E9%A2%84%E8%A7%88%E5%9B%BE%EF%BC%9ASM18.05-WINE32.png" style="width:60%">
 
+
+## 安装步骤：
+
+如果想最快上手(无需手动配置)
+
+Debian / Ubuntu
+
+```bash
+wget https://github.com/Zacharia2/SuperMemo18-ON-Wine/releases/download/v1.4.0/SuperMemo18.05-lazy-wine32-package.v1.4.0.deb \
+&& sudo apt install ./SuperMemo18.05-lazy-wine32-package.v1.4.0.deb
+```
+
+Arch / Manjaro
+
+```bash
+mkdir -p /tmp/sm18
+cd /tmp/sm18
+wget https://raw.githubusercontent.com/Zacharia2/SuperMemo18-ON-Wine/main/PKGBUILD
+makepkg -i
+```
 
 ## 文件说明
 
@@ -20,27 +40,6 @@
 - config/wine-sm18.05-winecfg.desktop
   - SuperMemo快速启动wine容器配置的桌面图标。（打包时可以用）
 
-
-
-## 安装步骤：
-
-如果想最快上手(无需手动配置)
-
-Debian / Ubuntu
-
-```bash
-wget https://github.com/Zacharia2/SuperMemo18-ON-Wine/releases/download/v3/SuperMemo18-Wine32-dpkg-3.deb \
-&& sudo apt install ./SuperMemo18-Wine32-dpkg-3.deb
-```
-
-Arch / Manjaro
-
-```bash
-mkdir -p /tmp/sm18
-cd /tmp/sm18
-wget https://raw.githubusercontent.com/Zacharia2/SuperMemo18-ON-Wine/main/PKGBUILD
-makepkg -i
-```
 
 
 ## SuperMemo18.05-lazy-wine32-package.v1.4.0.deb
