@@ -162,9 +162,9 @@ export WINEPREFIX="/opt/SM18-Wine32/"
 
 
 
-## SuperMemo18-ON-WINE32 打包deb安装方法
+## SuperMemo18-ON-WINE32 封装DEB安装包方法
 
-我们要把它安装在/opt/SM18-Wine32目录里。
+我们希望把它安装在/opt/SM18-Wine32目录里。
 
 首先是，你已经手动安装好了以上步骤：安装更新winetricks、创建Sm18-wine容器、安装好了supermemo。这样我们就得到一个完整的SM18-Wine32容器（环境）。我们要做的就是把这个环境与系统安装的wine独立开。便于打包deb。
 
