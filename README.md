@@ -50,7 +50,7 @@ makepkg -i
 
 卸载: `sudo dpkg -r supermemo18.05-wine32`
 
-封装: `sudo dpkg -b Wrap-DEB SuperMemo18.05-lazy-wine32-package.v1.4.0.deb`
+封装: `sudo dpkg -b deb-package SuperMemo18.05-lazy-wine32-package.v1.4.0.deb`
 
 SuperMemo卡组与资料库软链接文件夹位置：`/home/SuperMemo卡组与资料库/` 。你可以通过此链接文件夹快速交换资料。删除链接文件夹不会删除原文件。
 
