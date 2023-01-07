@@ -1,12 +1,11 @@
 # SuperMemo18-Wine32
-
-![](https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/docs/images/%E9%A2%84%E8%A7%88%E5%9B%BE%EF%BC%9ASM18.05-WINE32.png)
-
-
+env WINEARCH=win32 WINEPREFIX="/home/whitefall/桌面/SuperMemo18-ON-Wine/SM18.05-WINE-Vessel/" ~/wine.AppImage /home/whitefall/桌面/SuperMemo18-ON-Wine/SM18.05-WINE-Vessel/drive_c/SuperMemo/sm18.exe
 ## 文件说明
 
-- SM18.05-WINE-Vessel
+- [SM18.05-WINE-Vessel文件夹](https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/SM18.05-WINE-Vessel/)
   - SuperMemo容器环境（无Supermemo软件包），分离软件用于保持环境整洁。
+- [SM18.05-WINE-Vessel/README.md](https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/SM18.05-WINE-Vessel/README.md)
+  - SuperMemo容器环境使用教程。（仅限Linux）
 - [docs/Instal-and-Package.md](https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/docs/Instal-and-Package.md)
   - 从零开始安装supermemo，以及打包为deb安装包教程（流程与知识及注意事项）
 - config/winetricks-cache
@@ -18,7 +17,7 @@
 - config/wine-sm18.05-winecfg.desktop
   - SuperMemo快速启动wine容器配置的桌面图标。（打包时可以用）
 
-
+![](https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/docs/images/%E9%A2%84%E8%A7%88%E5%9B%BE%EF%BC%9ASM18.05-WINE32.png)
 
 ## 安装步骤：
 
