@@ -1,4 +1,4 @@
-# Maintainer: TODO
+# Maintainer: WhiteFall <whitefall76@outlook.com>
 # Maintainer: asukaminato <asukaminato@nyan.eu.org>
 
 pkgname=supermemo-18.05
