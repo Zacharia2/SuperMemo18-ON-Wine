@@ -1,7 +1,6 @@
 # Maintainer: WhiteFall <whitefall76@outlook.com>
 # Maintainer: asukaminato <asukaminato@nyan.eu.org>
 
-
 pkgname=supermemo-18.05
 pkgver=1.4.0
 pkgrel=1
@@ -11,9 +10,9 @@ url="https://github.com/Zacharia2/SuperMemo18-ON-Wine/"
 license=('proprietary')
 depends=() # I guess there is no dep.
 options=('!strip') # appimage can't strip
-source=("${pkgname}-${pkgver}-${arch}.deb::https://github.com/Zacharia2/SuperMemo18-ON-Wine/releases/download/v3/SuperMemo18-Wine32-dpkg-3.deb")
+source=("${pkgname}-${pkgver}-${arch}.deb::https://github.com/Zacharia2/SuperMemo18-ON-Wine/releases/download/v1.4.0/SuperMemo18.05-lazy-wine32-package.v1.4.0.deb")
 
-sha512sums=('0cdea36c2ba72143b8efc4c52d617bf065f746f700157f2d0db92824795cdec6da12677638cd3f02fcb2ae61a102cbcb6a0505e417584a33fb4033ecde898560')
+sha512sums=('73255d16afca25017fa5184b553fd6b764e188408e680949b3d909995b924eb227f54ff2d2f52f52d515bea02830ead58e3807ab0ca09fa8f09213fe7698a147')
 
 package() {
         tar xpf data.tar.zst -C ${pkgdir}
