@@ -1,4 +1,5 @@
 #!/bin/sh
+# 暂时不可以用。
 
 dirname=$(cd `dirname $0`; pwd)
 echo $dirname
