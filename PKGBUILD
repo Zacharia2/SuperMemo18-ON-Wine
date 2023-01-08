@@ -1,3 +1,6 @@
+# Maintainer: TODO
+# Maintainer: asukaminato <asukaminato@nyan.eu.org>
+
 pkgname=supermemo-18.05
 pkgver=1.4.0
 pkgrel=1
@@ -12,7 +15,7 @@ source=("${pkgname}-${pkgver}-${arch}.deb::https://github.com/Zacharia2/SuperMem
 sha512sums=('ed960be944258023a4be546808235ee2358d6ecdea827974a7e4c1b94259ee15dc3a4c6c435f47a4b062622c3f4fbf442e916333e685422e39d8ecc77cf62eaa')
 
 package() {
-        tar xpf data.tar.xz -C ${pkgdir}
+        tar xpf data.tar.zst -C ${pkgdir}
         # todo: fix permission problems
         # asked in archlinuxcn-group, tell me to give up, so let it go. At least it works.
 }
