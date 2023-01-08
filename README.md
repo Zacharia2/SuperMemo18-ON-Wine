@@ -50,9 +50,22 @@ makepkg -i
 
 卸载: `sudo dpkg -r supermemo18.05-wine32`
 
-封装: `sudo dpkg -b deb-package SuperMemo18.05-lazy-wine32-package.v1.4.0.deb`
+构建: `sudo dpkg -b deb-package SuperMemo18.05-lazy-wine32-package.v1.4.0.deb`
 
-SuperMemo卡组与资料库软链接文件夹位置：`/home/SuperMemo卡组与资料库/` 。你可以通过此链接文件夹快速交换资料。删除链接文件夹不会删除原文件。
+
+我准备了一个快速访问SuperMemo的链接资料库文件夹：`/home/SuperMemo卡组与资料库`
+
+你可以把此文件夹复制到桌面使用，里面有四个链接文件夹。分别是：
+
+- SuperMemo_C盘资料库：该目录链接 C:\\SuperMemo\SuperMemo资料库，导入资料时选择C:\\SuperMemo/SuperMemo资料库目录，就可以看到文件了。
+
+- SuperMemo_C盘卡组：该目录链接 C:\\SuperMemo\systems，你可以把卡包放入此文件夹然后点击开始菜单中的启动器SuperMemo18.desktop启动supermemo，在sm中打开卡包。
+
+- SuperMemo_D盘卡组：该目录链接 D:\ ，有放在其它磁盘的同学可以使用了。
+
+- SuperMemo_E盘卡组：该目录链接 E:\\
+
+删掉链接文件夹（SuperMemo_C盘卡组、SuperMemo_C盘资料库等文件夹）不影响源文件（systems目录等）。**卸载软件后，将会删除所有文件，卸载软件前请请注意保存和备份资料。**
 
 运行软件请使用开始菜单中的启动器文件: SuperMemo18.desktop。配置sm-wine容器请使用启动器：SuperMemo18.05-winecfg.desktop。
  
