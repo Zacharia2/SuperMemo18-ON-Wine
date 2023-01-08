@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=SuperMemo18.05-winecfg
-Exec=env WINEARCH=win32 WINEPREFIX="/usr/share/SM18.05-WINE-Vessel" sm-wine winecfg
+Exec=env WINEARCH=win32 WINEPREFIX="/usr/share/SM18.05-WINE-Vessel" /usr/share/SM18.05-WINE-Vessel/Wine-x86_64-ubuntu.latest.AppImage winecfg
 Type=Application
 Categories=Education;
 StartupNotify=true
