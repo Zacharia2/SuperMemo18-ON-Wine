@@ -1,4 +1,5 @@
 #!/bin/sh
+# 暂时不可以用。没写自动化构建脚本。
 
 version=1.1.0
 product_name=yourapp_name
