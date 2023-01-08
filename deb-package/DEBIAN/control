@@ -6,8 +6,6 @@ Installed-Size:332800
 Maintainer:WhiteFall
 Description:SuperMemo On Wine.(32bit)
  运行软件请使用开始菜单中的启动器文件: SuperMemo18.desktop。配置sm-wine容器请使用启动器: SuperMemo18.05-winecfg.desktop。
- .
- SuperMemo卡组与资料库软链接文件夹位置: /home/SuperMemo卡组与资料库/ 。你可以通过此链接文件夹快速交换资料。删除链接文件夹不会删除原文件。
  . 
  可以使用sm-wine命令启动SuperMemo18-WINE32自带的wine-appimage。没有设置WINEPREFIX容器根目录变量的情况下这将会在HOME目录生成默认的.wine容器。
  . 

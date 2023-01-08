@@ -16,6 +16,7 @@ mkdir -p /usr/share/SM18.05-WINE-Vessel/drive_c/SuperMemo/SuperMemo资料库
 mkdir -p /home/SuperMemo卡组与资料库/
 # 给予SuperMemo资料库所有用户读写权限
 sudo chmod a+rw /usr/share/SM18.05-WINE-Vessel/drive_c/SuperMemo/SuperMemo资料库
+sudo chmod a+rw /home/SuperMemo卡组与资料库
 
 # 添加C盘、D盘、E盘卡包文件夹与资料库，应放到明显的位置打开。
 ln -s /usr/share/SM18.05-WINE-Vessel/drive_c/SuperMemo/systems /home/SuperMemo卡组与资料库/SuperMemo_C盘卡组
