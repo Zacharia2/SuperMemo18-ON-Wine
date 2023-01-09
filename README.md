@@ -11,7 +11,7 @@ Debian / Ubuntu
 
 ```bash
 wget https://github.com/Zacharia2/SuperMemo18-ON-Wine/releases/download/v1.4.0/SuperMemo18.05-lazy-wine32-package.v1.4.0.deb \
-&& sudo apt install ./SuperMemo18.05-lazy-wine32-package.v1.4.0.deb
+&& sudo dpkg -i ./SuperMemo18.05-lazy-wine32-package.v1.4.0.deb
 ```
 
 Arch / Manjaro
