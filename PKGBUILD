@@ -3,10 +3,10 @@
 # Contributor: Jarrett Ye <jarrett.ye@outlook.com>
 
 
-pkgname=supermemo18-git
-pkgver=18.05
+pkgname=supermemo18.05-git
+pkgver=1.4
 pkgrel=1
-pkgdesc='memory tool'
+pkgdesc='A program that makes learning fun and easy.'
 arch=('x86_64')
 url='https://supermemopedia.com/wiki/Main_Page'
 license=('proprietary')
