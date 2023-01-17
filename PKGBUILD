@@ -1,5 +1,5 @@
 # Maintainer: WhiteFall <whitefall76@outlook.com>
-# Maintainer: asukaminato <asukaminato.nyan.eu.org>
+# Maintainer: asukaminato <asukaminato@nyan.eu.org>
 # Contributor: Jarrett Ye <jarrett.ye@outlook.com>
 
 
@@ -13,7 +13,7 @@ license=('proprietary')
 depends=() # wine has some problem, so I use wine.AppImage
 sha512sums=('SKIP'
             'SKIP'
-            'SKIP')
+            '4b632d356ea230f439ae6df6c858ec33b96d9c28141b336fc8bab06f883a0e8594d8856330936787220f43a9b81b70d8b99bdde5d04dd8ec1b0d9eff96a4fbf7')
 
 source=('git+https://github.com/Zacharia2/SuperMemo18-ON-Wine.git' # wineprefix
         'git+https://github.com/L-M-Sherlock/sm18-lazy-package.git' # software
@@ -53,10 +53,10 @@ package() {
         mkdir -p $pkgdir/opt/apps/supermemo18
 
         echo "#!/bin/sh" > $pkgdir/opt/apps/supermemo18/run.sh
-        echo 'env WINEARCH=win32 WINEPREFIX=/home/$USER/.local/share/wineprefixes/SM18.05-WINE-Vessel ./wine.AppImage   --appimage-extract-and-run  /home/$USER/.local/share/wineprefixes/SM18.05-WINE-Vessel/drive_c/SuperMemo/sm18.exe' >> $pkgdir/opt/apps/supermemo18/run.sh
+        echo 'env WINEARCH=win32 WINEPREFIX=/home/$USER/.local/share/wineprefixes/SM18.05-WINE-Vessel /opt/apps/supermemo18/wine.AppImage --appimage-extract-and-run  /home/$USER/.local/share/wineprefixes/SM18.05-WINE-Vessel/drive_c/SuperMemo/sm18.exe' >> $pkgdir/opt/apps/supermemo18/run.sh
 
         echo "#!/bin/sh" > $pkgdir/opt/apps/supermemo18/config.sh
-        echo 'env WINEARCH=win32 WINEPREFIX=/home/$USER/.local/share/wineprefixes/SM18.05-WINE-Vessel ./wine.AppImage   --appimage-extract-and-run  winecfg' >> $pkgdir/opt/apps/supermemo18/config.sh
+        echo 'env WINEARCH=win32 WINEPREFIX=/home/$USER/.local/share/wineprefixes/SM18.05-WINE-Vessel /opt/apps/supermemo18/wine.AppImage --appimage-extract-and-run  winecfg' >> $pkgdir/opt/apps/supermemo18/config.sh
 
         chmod +x $pkgdir/opt/apps/supermemo18/*.sh
 
@@ -65,5 +65,4 @@ package() {
         chmod +x $pkgdir/opt/apps/supermemo18/wine.AppImage
 
         echo "done"
-        echo "if desktop file can't run, please use /opt/apps/supermemo18/run.sh, currently I don't know why it not work"
 }
