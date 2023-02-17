@@ -169,6 +169,33 @@ WINE REGISTRY Version 2
 #time=1d858e5a5e5e5e4
 "Text Color"="0,0,0"
 
+[Software\\Microsoft\\Notepad] 1676603953
+#time=1d9427e9be33a82
+"fWrap"=dword:00000001
+"iMarginBottom"=dword:000009c4
+"iMarginLeft"=dword:000007d0
+"iMarginRight"=dword:000007d0
+"iMarginTop"=dword:000009c4
+"iPointSize"=dword:0000005a
+"iWindowPosDX"=dword:000002d9
+"iWindowPosDY"=dword:00000222
+"iWindowPosX"=dword:00000000
+"iWindowPosY"=dword:00000005
+"lfCharSet"=dword:00000001
+"lfClipPrecision"=dword:00000000
+"lfEscapement"=dword:00000000
+"lfFaceName"="System"
+"lfItalic"=dword:00000000
+"lfOrientation"=dword:00000000
+"lfOutPrecision"=dword:00000000
+"lfPitchAndFamily"=dword:00000001
+"lfQuality"=dword:00000000
+"lfStrikeOut"=dword:00000000
+"lfUnderline"=dword:00000000
+"lfWeight"=dword:00000190
+"szHeader"="&f"
+"szTrailer"="\x7b2c &p \x9875"
+
 [Software\\Microsoft\\Protected Storage System Provider] 1650919636
 #time=1d858e5a619b018
 
@@ -220,17 +247,17 @@ WINE REGISTRY Version 2
 [Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced] 1650920550
 #time=1d858e7c6f9962a
 
-[Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders] 1650919631
-#time=1d858e5a2f00e0a
+[Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders] 1676603935
+#time=1d9427e91469a9c
 "Administrative Tools"="C:\\users\\miao\\Start Menu\\Programs\\Administrative Tools"
-"AppData"="C:\\users\\miao\\Application Data"
+"AppData"="C:\\users\\whitefall\\Application Data"
 "Cache"="C:\\users\\miao\\Local Settings\\Temporary Internet Files"
 "Cookies"="C:\\users\\miao\\Cookies"
-"Desktop"="C:\\users\\miao\\\x684c\x9762"
+"Desktop"="C:\\users\\whitefall\\\x684c\x9762"
 "Favorites"="C:\\users\\miao\\Favorites"
 "Fonts"="C:\\windows\\Fonts"
 "History"="C:\\users\\miao\\Local Settings\\History"
-"Local AppData"="C:\\users\\miao\\Local Settings\\Application Data"
+"Local AppData"="C:\\users\\whitefall\\Local Settings\\Application Data"
 "My Music"="C:\\users\\miao\\\x6211\x7684\x97f3\x4e50"
 "My Pictures"="C:\\users\\miao\\\x6211\x7684\x56fe\x7247"
 "My Videos"="C:\\users\\miao\\\x6211\x7684\x89c6\x9891"
@@ -593,6 +620,21 @@ WINE REGISTRY Version 2
 #time=1d858e6b1e01c88
 "State"=dword:00023c00
 
+[Software\\Microsoft\\Windows\\Shell\\Associations\\UrlAssociations\\ftp\\UserChoice] 1676603949
+#time=1d9427e99812074
+"ProgId"="ftp"
+
+[Software\\Microsoft\\Windows\\Shell\\Associations\\UrlAssociations\\http\\UserChoice] 1676603949
+#time=1d9427e99815ea4
+"ProgId"="http"
+
+[Software\\Microsoft\\Windows\\Shell\\Associations\\UrlAssociations\\https\\UserChoice] 1676603949
+#time=1d9427e99818b04
+"ProgId"="https"
+
+[Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon] 1676603949
+#time=1d9427e997a19d2
+
 [Software\\Wine\\Debug] 1650919636
 #time=1d858e5a60dfb24
 "RelayExclude"="ntdll.RtlEnterCriticalSection;ntdll.RtlTryEnterCriticalSection;ntdll.RtlLeaveCriticalSection;kernel32.48;kernel32.49;kernel32.94;kernel32.95;kernel32.96;kernel32.97;kernel32.98;kernel32.TlsGetValue;kernel32.TlsSetValue;kernel32.FlsGetValue;kernel32.FlsSetValue;kernel32.SetLastError"
@@ -625,12 +667,11 @@ WINE REGISTRY Version 2
 "OpenWithIcon"="53B9_mshta.0"
 "ProgID"="htafile"
 
-[Software\\Wine\\FileOpenAssociations\\.kno] 1650920543
-#time=1d858e7c2e3a29c
-"AppName"="sm18"
-"DesktopFile"="/home/miao/.local/share/applications/wine-extension-kno.desktop"
+[Software\\Wine\\FileOpenAssociations\\.kno] 1676603958
+#time=1d9427e9f0adcf6
+"AppName"="A Wine application"
+"DesktopFile"="/home/whitefall/.local/share/applications/wine-extension-kno.desktop"
 "MimeType"="application/x-wine-extension-kno"
-"OpenWithIcon"="B9DC_sm18.0"
 "ProgID"="SuperMemo"
 
 [Software\\Wine\\FileOpenAssociations\\.mht] 1650920298
@@ -657,24 +698,57 @@ WINE REGISTRY Version 2
 "OpenWithIcon"="1CD8_rundll32.0"
 "ProgID"="ratfile"
 
-[Software\\Wine\\Fonts] 1650920616
-#time=1d858e7edfec0ce
+[Software\\Wine\\Fonts] 1676603957
+#time=1d9427e9eaf9670
 "Codepages"="936,936"
 "LogPixels"=dword:00000060
 
-[Software\\Wine\\Fonts\\External Fonts] 1650920616
-#time=1d858e7ee1aa668
+[Software\\Wine\\Fonts\\External Fonts] 1676603958
+#time=1d9427e9eb9264a
+"@AR PL UKai CN (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\arphic\\ukai.ttc"
+"@AR PL UKai HK (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\arphic\\ukai.ttc"
+"@AR PL UKai TW (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\arphic\\ukai.ttc"
+"@AR PL UKai TW MBE (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\arphic\\ukai.ttc"
+"@AR PL UMing CN (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\arphic\\uming.ttc"
+"@AR PL UMing HK (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\arphic\\uming.ttc"
+"@AR PL UMing TW (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\arphic\\uming.ttc"
+"@AR PL UMing TW MBE (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\arphic\\uming.ttc"
 "@Droid Sans Fallback (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\droid\\DroidSansFallbackFull.ttf"
 "@Noto Sans CJK HK (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Regular.ttc"
+"@Noto Sans CJK HK Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Black.ttc"
 "@Noto Sans CJK HK Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Bold.ttc"
+"@Noto Sans CJK HK DemiLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-DemiLight.ttc"
+"@Noto Sans CJK HK Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Light.ttc"
+"@Noto Sans CJK HK Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Medium.ttc"
+"@Noto Sans CJK HK Thin (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Thin.ttc"
 "@Noto Sans CJK JP (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Regular.ttc"
+"@Noto Sans CJK JP Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Black.ttc"
 "@Noto Sans CJK JP Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Bold.ttc"
+"@Noto Sans CJK JP DemiLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-DemiLight.ttc"
+"@Noto Sans CJK JP Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Light.ttc"
+"@Noto Sans CJK JP Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Medium.ttc"
+"@Noto Sans CJK JP Thin (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Thin.ttc"
 "@Noto Sans CJK KR (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Regular.ttc"
+"@Noto Sans CJK KR Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Black.ttc"
 "@Noto Sans CJK KR Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Bold.ttc"
+"@Noto Sans CJK KR DemiLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-DemiLight.ttc"
+"@Noto Sans CJK KR Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Light.ttc"
+"@Noto Sans CJK KR Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Medium.ttc"
+"@Noto Sans CJK KR Thin (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Thin.ttc"
 "@Noto Sans CJK SC (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Regular.ttc"
+"@Noto Sans CJK SC Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Black.ttc"
 "@Noto Sans CJK SC Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Bold.ttc"
+"@Noto Sans CJK SC DemiLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-DemiLight.ttc"
+"@Noto Sans CJK SC Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Light.ttc"
+"@Noto Sans CJK SC Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Medium.ttc"
+"@Noto Sans CJK SC Thin (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Thin.ttc"
 "@Noto Sans CJK TC (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Regular.ttc"
+"@Noto Sans CJK TC Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Black.ttc"
 "@Noto Sans CJK TC Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Bold.ttc"
+"@Noto Sans CJK TC DemiLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-DemiLight.ttc"
+"@Noto Sans CJK TC Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Light.ttc"
+"@Noto Sans CJK TC Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Medium.ttc"
+"@Noto Sans CJK TC Thin (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Thin.ttc"
 "@Noto Sans Mono CJK HK (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Regular.ttc"
 "@Noto Sans Mono CJK HK Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Bold.ttc"
 "@Noto Sans Mono CJK JP (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Regular.ttc"
@@ -685,20 +759,54 @@ WINE REGISTRY Version 2
 "@Noto Sans Mono CJK SC Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Bold.ttc"
 "@Noto Sans Mono CJK TC (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Regular.ttc"
 "@Noto Sans Mono CJK TC Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Bold.ttc"
+"@Noto Serif CJK HK (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Regular.ttc"
+"@Noto Serif CJK HK Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Black.ttc"
+"@Noto Serif CJK HK Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Bold.ttc"
+"@Noto Serif CJK HK ExtraLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-ExtraLight.ttc"
+"@Noto Serif CJK HK Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Light.ttc"
+"@Noto Serif CJK HK Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Medium.ttc"
+"@Noto Serif CJK HK SemiBold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-SemiBold.ttc"
 "@Noto Serif CJK JP (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Regular.ttc"
+"@Noto Serif CJK JP Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Black.ttc"
 "@Noto Serif CJK JP Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Bold.ttc"
+"@Noto Serif CJK JP ExtraLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-ExtraLight.ttc"
+"@Noto Serif CJK JP Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Light.ttc"
+"@Noto Serif CJK JP Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Medium.ttc"
+"@Noto Serif CJK JP SemiBold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-SemiBold.ttc"
 "@Noto Serif CJK KR (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Regular.ttc"
+"@Noto Serif CJK KR Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Black.ttc"
 "@Noto Serif CJK KR Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Bold.ttc"
+"@Noto Serif CJK KR ExtraLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-ExtraLight.ttc"
+"@Noto Serif CJK KR Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Light.ttc"
+"@Noto Serif CJK KR Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Medium.ttc"
+"@Noto Serif CJK KR SemiBold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-SemiBold.ttc"
 "@Noto Serif CJK SC (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Regular.ttc"
+"@Noto Serif CJK SC Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Black.ttc"
 "@Noto Serif CJK SC Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Bold.ttc"
+"@Noto Serif CJK SC ExtraLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-ExtraLight.ttc"
+"@Noto Serif CJK SC Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Light.ttc"
+"@Noto Serif CJK SC Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Medium.ttc"
+"@Noto Serif CJK SC SemiBold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-SemiBold.ttc"
 "@Noto Serif CJK TC (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Regular.ttc"
+"@Noto Serif CJK TC Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Black.ttc"
 "@Noto Serif CJK TC Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Bold.ttc"
+"@Noto Serif CJK TC ExtraLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-ExtraLight.ttc"
+"@Noto Serif CJK TC Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Light.ttc"
+"@Noto Serif CJK TC Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Medium.ttc"
+"@Noto Serif CJK TC SemiBold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-SemiBold.ttc"
 "@Phetsarath OT (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\lao\\Phetsarath_OT.ttf"
-"@\x9ed1\x4f53 (TrueType)"="Z:\\home\\miao\\.local\\share\\fonts\\simhei.ttf"
 "aakar (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-gujr-extra\\aakar-medium.ttf"
 "Abyssinica SIL (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\abyssinica\\AbyssinicaSIL-Regular.ttf"
 "Ani (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-beng-extra\\ani.ttf"
 "AnjaliOldLipi Regular (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\malayalam\\AnjaliOldLipi-Regular.ttf"
+"AR PL UKai CN (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\arphic\\ukai.ttc"
+"AR PL UKai HK (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\arphic\\ukai.ttc"
+"AR PL UKai TW (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\arphic\\ukai.ttc"
+"AR PL UKai TW MBE (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\arphic\\ukai.ttc"
+"AR PL UMing CN (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\arphic\\uming.ttc"
+"AR PL UMing HK (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\arphic\\uming.ttc"
+"AR PL UMing TW (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\arphic\\uming.ttc"
+"AR PL UMing TW MBE (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\arphic\\uming.ttc"
 "C059-BdIta (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\urw-base35\\C059-BdIta.otf"
 "C059-Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\urw-base35\\C059-Bold.otf"
 "C059-Italic (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\urw-base35\\C059-Italic.otf"
@@ -712,6 +820,7 @@ WINE REGISTRY Version 2
 "DejaVu Sans Mono Bold (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\dejavu\\DejaVuSansMono-Bold.ttf"
 "DejaVu Serif (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\dejavu\\DejaVuSerif.ttf"
 "DejaVu Serif Bold (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\dejavu\\DejaVuSerif-Bold.ttf"
+"Dhurjati (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\dhurjati.ttf"
 "Droid Sans Fallback (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\droid\\DroidSansFallbackFull.ttf"
 "Dyuthi Regular (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\malayalam\\Dyuthi-Regular.ttf"
 "FreeMono (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\freefont\\FreeMono.ttf"
@@ -734,7 +843,9 @@ WINE REGISTRY Version 2
 "Gayathri Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\malayalam\\Gayathri-Bold.otf"
 "Gayathri Regular (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\malayalam\\Gayathri-Regular.otf"
 "Gayathri Thin (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\malayalam\\Gayathri-Thin.otf"
+"Gidugu (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\Gidugu.ttf"
 "Gubbi (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\Gubbi\\Gubbi.ttf"
+"Gurajada (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\Gurajada.ttf"
 "Jamrul (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-beng-extra\\JamrulNormal.ttf"
 "KacstArt (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\kacst\\KacstArt.ttf"
 "KacstBook (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\kacst\\KacstBook.ttf"
@@ -764,6 +875,7 @@ WINE REGISTRY Version 2
 "Kinnari Bold Oblique (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Kinnari-BoldOblique.ttf"
 "Kinnari Italic (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Kinnari-Italic.ttf"
 "Kinnari Oblique (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Kinnari-Oblique.ttf"
+"LakkiReddy (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\LakkiReddy.ttf"
 "Laksaman (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Laksaman.ttf"
 "Laksaman Bold (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Laksaman-Bold.ttf"
 "Laksaman Bold Italic (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Laksaman-BoldItalic.ttf"
@@ -801,6 +913,8 @@ WINE REGISTRY Version 2
 "Loma Bold (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Loma-Bold.ttf"
 "Loma Bold Oblique (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Loma-BoldOblique.ttf"
 "Loma Oblique (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Loma-Oblique.ttf"
+"Mallanna (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\mallanna.ttf"
+"Mandali (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\Mandali-Regular.ttf"
 "Manjari Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\malayalam\\Manjari-Bold.otf"
 "Manjari Regular (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\malayalam\\Manjari-Regular.otf"
 "Manjari Thin (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\malayalam\\Manjari-Thin.otf"
@@ -830,11 +944,12 @@ WINE REGISTRY Version 2
 "MathJax_WinChrome-Regular (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\mathjax\\MathJax_WinChrome-Regular.otf"
 "MathJax_WinIE6-Regular (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\mathjax\\MathJax_WinIE6-Regular.otf"
 "Meera Regular (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\malayalam\\Meera-Regular.ttf"
-"Mitra Mono (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-beng-extra\\mitra.ttf"
+"Mitra Mono (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-beng-extra\\MitraMono.ttf"
 "mry_KacstQurn (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\kacst\\mry_KacstQurn.ttf"
-"Mukti Narrow (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-beng-extra\\MuktiNarrow.ttf"
-"Mukti Narrow Bold (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-beng-extra\\MuktiNarrowBold.ttf"
+"Mukti (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-beng-extra\\Mukti.ttf"
+"Mukti Bold (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-beng-extra\\Muktibold.ttf"
 "Nakula (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\Nakula\\nakula.ttf"
+"NATS (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\NATS.ttf"
 "Navilu (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\Navilu\\Navilu.ttf"
 "NimbusMonoPS-Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\urw-base35\\NimbusMonoPS-Bold.otf"
 "NimbusMonoPS-BoldItalic (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\urw-base35\\NimbusMonoPS-BoldItalic.otf"
@@ -861,15 +976,41 @@ WINE REGISTRY Version 2
 "Noto Color Emoji"="Z:\\usr\\share\\fonts\\truetype\\noto\\NotoColorEmoji.ttf"
 "Noto Mono (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\noto\\NotoMono-Regular.ttf"
 "Noto Sans CJK HK (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Regular.ttc"
+"Noto Sans CJK HK Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Black.ttc"
 "Noto Sans CJK HK Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Bold.ttc"
+"Noto Sans CJK HK DemiLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-DemiLight.ttc"
+"Noto Sans CJK HK Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Light.ttc"
+"Noto Sans CJK HK Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Medium.ttc"
+"Noto Sans CJK HK Thin (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Thin.ttc"
 "Noto Sans CJK JP (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Regular.ttc"
+"Noto Sans CJK JP Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Black.ttc"
 "Noto Sans CJK JP Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Bold.ttc"
+"Noto Sans CJK JP DemiLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-DemiLight.ttc"
+"Noto Sans CJK JP Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Light.ttc"
+"Noto Sans CJK JP Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Medium.ttc"
+"Noto Sans CJK JP Thin (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Thin.ttc"
 "Noto Sans CJK KR (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Regular.ttc"
+"Noto Sans CJK KR Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Black.ttc"
 "Noto Sans CJK KR Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Bold.ttc"
+"Noto Sans CJK KR DemiLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-DemiLight.ttc"
+"Noto Sans CJK KR Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Light.ttc"
+"Noto Sans CJK KR Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Medium.ttc"
+"Noto Sans CJK KR Thin (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Thin.ttc"
 "Noto Sans CJK SC (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Regular.ttc"
+"Noto Sans CJK SC Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Black.ttc"
 "Noto Sans CJK SC Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Bold.ttc"
+"Noto Sans CJK SC DemiLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-DemiLight.ttc"
+"Noto Sans CJK SC Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Light.ttc"
+"Noto Sans CJK SC Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Medium.ttc"
+"Noto Sans CJK SC Thin (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Thin.ttc"
 "Noto Sans CJK TC (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Regular.ttc"
+"Noto Sans CJK TC Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Black.ttc"
 "Noto Sans CJK TC Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Bold.ttc"
+"Noto Sans CJK TC DemiLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-DemiLight.ttc"
+"Noto Sans CJK TC Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Light.ttc"
+"Noto Sans CJK TC Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Medium.ttc"
+"Noto Sans CJK TC Thin (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Thin.ttc"
+"Noto Sans Mono Bold (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\noto\\NotoSansMono-Bold.ttf"
 "Noto Sans Mono CJK HK (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Regular.ttc"
 "Noto Sans Mono CJK HK Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Bold.ttc"
 "Noto Sans Mono CJK JP (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Regular.ttc"
@@ -880,15 +1021,44 @@ WINE REGISTRY Version 2
 "Noto Sans Mono CJK SC Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Bold.ttc"
 "Noto Sans Mono CJK TC (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Regular.ttc"
 "Noto Sans Mono CJK TC Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSansCJK-Bold.ttc"
+"Noto Sans Mono Regular (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\noto\\NotoSansMono-Regular.ttf"
+"Noto Serif CJK HK (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Regular.ttc"
+"Noto Serif CJK HK Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Black.ttc"
+"Noto Serif CJK HK Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Bold.ttc"
+"Noto Serif CJK HK ExtraLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-ExtraLight.ttc"
+"Noto Serif CJK HK Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Light.ttc"
+"Noto Serif CJK HK Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Medium.ttc"
+"Noto Serif CJK HK SemiBold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-SemiBold.ttc"
 "Noto Serif CJK JP (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Regular.ttc"
+"Noto Serif CJK JP Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Black.ttc"
 "Noto Serif CJK JP Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Bold.ttc"
+"Noto Serif CJK JP ExtraLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-ExtraLight.ttc"
+"Noto Serif CJK JP Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Light.ttc"
+"Noto Serif CJK JP Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Medium.ttc"
+"Noto Serif CJK JP SemiBold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-SemiBold.ttc"
 "Noto Serif CJK KR (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Regular.ttc"
+"Noto Serif CJK KR Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Black.ttc"
 "Noto Serif CJK KR Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Bold.ttc"
+"Noto Serif CJK KR ExtraLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-ExtraLight.ttc"
+"Noto Serif CJK KR Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Light.ttc"
+"Noto Serif CJK KR Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Medium.ttc"
+"Noto Serif CJK KR SemiBold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-SemiBold.ttc"
 "Noto Serif CJK SC (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Regular.ttc"
+"Noto Serif CJK SC Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Black.ttc"
 "Noto Serif CJK SC Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Bold.ttc"
+"Noto Serif CJK SC ExtraLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-ExtraLight.ttc"
+"Noto Serif CJK SC Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Light.ttc"
+"Noto Serif CJK SC Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Medium.ttc"
+"Noto Serif CJK SC SemiBold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-SemiBold.ttc"
 "Noto Serif CJK TC (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Regular.ttc"
+"Noto Serif CJK TC Black (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Black.ttc"
 "Noto Serif CJK TC Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Bold.ttc"
-"OpenSymbol (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\openoffice\\opens___.ttf"
+"Noto Serif CJK TC ExtraLight (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-ExtraLight.ttc"
+"Noto Serif CJK TC Light (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Light.ttc"
+"Noto Serif CJK TC Medium (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-Medium.ttc"
+"Noto Serif CJK TC SemiBold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\noto\\NotoSerifCJK-SemiBold.ttc"
+"NTR (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\NTR.ttf"
+"OpenSymbol (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\libreoffice\\opens___.ttf"
 "P052-Bold (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\urw-base35\\P052-Bold.otf"
 "P052-BoldItalic (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\urw-base35\\P052-BoldItalic.otf"
 "P052-Italic (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\urw-base35\\P052-Italic.otf"
@@ -901,8 +1071,11 @@ WINE REGISTRY Version 2
 "padmaa-Bold.1.1 (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-gujr-extra\\padmaa-Bold.1.1.ttf"
 "padmaa-normal-indictrans (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-gujr-extra\\padmaa-Medium-0.5.ttf"
 "Pagul (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\pagul\\Pagul.ttf"
+"Peddana Regular (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\Peddana-Regular.ttf"
 "Phetsarath OT (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\lao\\Phetsarath_OT.ttf"
+"Ponnala (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\Ponnala.ttf"
 "Pothana2000 (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-telu-extra\\Pothana2000.ttf"
+"Potti Sreeramulu (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\PottiSreeramulu.ttf"
 "Purisa (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Purisa.ttf"
 "Purisa Bold (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Purisa-Bold.ttf"
 "Purisa Bold Oblique (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Purisa-BoldOblique.ttf"
@@ -910,11 +1083,14 @@ WINE REGISTRY Version 2
 "Rachana Bold (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\malayalam\\Rachana-Bold.ttf"
 "Rachana Regular (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\malayalam\\Rachana-Regular.ttf"
 "RaghuMalayalamSans Regular (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\malayalam\\RaghuMalayalamSans-Regular.ttf"
-"Rasa (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Rasa-Regular.ttf"
+"Ramabhadra (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\ramabhadra.ttf"
+"Ramaraja Regular (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\Ramaraja-Regular.ttf"
 "Rasa Bold (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Rasa-Bold.ttf"
 "Rasa Light (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Rasa-Light.ttf"
 "Rasa Medium (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Rasa-Medium.ttf"
+"Rasa Regular (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Rasa-Regular.ttf"
 "Rasa SemiBold (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Rasa-SemiBold.ttf"
+"RaviPrakash (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\RaviPrakash.ttf"
 "Rekha (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-gujr-extra\\Rekha.ttf"
 "Saab (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-guru-extra\\Saab.ttf"
 "Sahadeva (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\Sahadeva\\sahadeva.ttf"
@@ -928,10 +1104,16 @@ WINE REGISTRY Version 2
 "Sawasdee Bold (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Sawasdee-Bold.ttf"
 "Sawasdee Bold Oblique (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Sawasdee-BoldOblique.ttf"
 "Sawasdee Oblique (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Sawasdee-Oblique.ttf"
+"Sree Krushnadevaraya (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\SreeKrushnadevaraya.ttf"
 "Standard Symbols PS (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\urw-base35\\StandardSymbolsPS.otf"
+"Suranna (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\suranna.ttf"
+"Suravaram (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\Suravaram.ttf"
 "Suruma (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\malayalam\\Suruma.ttf"
+"Syamala Ramana (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\SyamalaRamana.ttf"
 "Symbol (TrueType)"="Z:\\usr\\share\\wine\\fonts\\symbol.ttf"
+"TenaliRamakrishna Regular (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\TenaliRamakrishna-Regular.ttf"
 "Tibetan_Machine_Uni (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tibetan-machine\\TibetanMachineUni.ttf"
+"Timmana Regular (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\teluguvijayam\\TimmanaRegular.ttf"
 "Tlwg Mono (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\TlwgMono.ttf"
 "Tlwg Mono Bold (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\TlwgMono-Bold.ttf"
 "Tlwg Mono Bold Oblique (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\TlwgMono-BoldOblique.ttf"
@@ -984,13 +1166,17 @@ WINE REGISTRY Version 2
 "Waree Bold Oblique (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Waree-BoldOblique.ttf"
 "Waree Oblique (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\tlwg\\Waree-Oblique.ttf"
 "Wingdings (TrueType)"="Z:\\usr\\share\\wine\\fonts\\wingding.ttf"
-"Yrsa (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Yrsa-Regular.ttf"
 "Yrsa Bold (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Yrsa-Bold.ttf"
+"Yrsa Bold Italic (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Yrsa-BoldItalic.ttf"
+"Yrsa Italic (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Yrsa-Italic.ttf"
 "Yrsa Light (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Yrsa-Light.ttf"
+"Yrsa Light Italic (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Yrsa-LightItalic.ttf"
 "Yrsa Medium (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Yrsa-Medium.ttf"
+"Yrsa Medium Italic (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Yrsa-MediumItalic.ttf"
+"Yrsa Regular (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Yrsa-Regular.ttf"
 "Yrsa SemiBold (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Yrsa-SemiBold.ttf"
+"Yrsa SemiBold Italic (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\fonts-yrsa-rasa\\Yrsa-SemiBoldItalic.ttf"
 "Z003-MediumItalic (TrueType)"="Z:\\usr\\share\\fonts\\opentype\\urw-base35\\Z003-MediumItalic.otf"
-"\x9ed1\x4f53 (TrueType)"="Z:\\home\\miao\\.local\\share\\fonts\\simhei.ttf"
 
 [Software\\Wine\\MenuFiles] 1650919647
 #time=1d858e5ac7d089c
