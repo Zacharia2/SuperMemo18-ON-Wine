@@ -28,7 +28,7 @@ package() {
 
         echo "put wineprefix"
         # https://stackoverflow.com/questions/8488253/how-to-force-cp-to-overwrite-without-confirmation
-        yes | cp -rf $srcdir/SuperMemo18-ON-Wine/SM18.05-WINE-Vessel $prefix
+        yes | cp -rf $srcdir/SuperMemo18-ON-Wine/deb-package/opt/apps/supermemo/SM18.05-WINE-Vessel $prefix
 
         echo "put binary"
         yes | cp -rf $srcdir/sm18-lazy-package/sm18/* $prefix/SM18.05-WINE-Vessel/drive_c/SuperMemo/
