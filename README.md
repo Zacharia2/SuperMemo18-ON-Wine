@@ -25,9 +25,9 @@ makepkg -i
 
 ## 文件说明
 
-- [SM18.05-WINE-Vessel文件夹](SM18.05-WINE-Vessel)
+- [SM18.05-WINE-Vessel文件夹](deb-package/opt/apps/supermemo/SM18.05-WINE-Vessel)
   - SuperMemo容器环境（仅含Supermemo软件的bin配置目录，请不要覆盖此文件夹（SuperMemo/bin）中的配置文件），分离软件用于保持环境整洁。
-- [SM18.05-WINE-Vessel/README.md](SM18.05-WINE-Vessel/README.md)
+- [SM18.05-WINE-Vessel/README.md](deb-package/opt/apps/supermemo/SM18.05-WINE-Vessel/README.md)
   - SuperMemo容器环境使用教程。（仅限Linux）
 - [docs/Instal-and-Package.md](docs/Instal-and-Package.md)
   - Linux系统中从零开始安装supermemo、与封装deb安装包的流程、知识及注意事项。
