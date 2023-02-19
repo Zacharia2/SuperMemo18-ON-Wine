@@ -9,4 +9,4 @@ rm /usr/bin/sm-wine
 rm -rf /home/SuperMemo卡组与资料库
 
 # 删除软件所在文件夹。
-rm -rf /usr/share/SM18.05-WINE-Vessel
+rm -rf /opt/apps/supermemo/SM18.05-WINE-Vessel
