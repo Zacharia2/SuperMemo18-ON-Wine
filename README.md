@@ -37,10 +37,6 @@ makepkg -i
   - winetricks（wine工具）安装supermemo的缓存依赖文件。用于跳过网络下载，加快安装速度。
 - config/supermemo18.verb
   - winetricks（wine工具）的 supermemo 安装自动化配置文件。
-- config/SuperMemo18.desktop
-  - SuperMemo快速启动的桌面图标。（打包时可以用）
-- config/wine-sm18.05-winecfg.desktop
-  - SuperMemo快速启动wine容器配置的桌面图标。（打包时可以用）
 
 
 
