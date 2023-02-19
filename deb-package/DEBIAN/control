@@ -2,7 +2,8 @@ Package:supermemo18.05-wine32
 Version:1.4.0.lazy-wine32-package
 Section:contrib
 Architecture:i386
-Installed-Size:332800
+Installed-Size:110284.8
+Depends:winetricks
 Maintainer:WhiteFall
 Description:SuperMemo On Wine.(32bit)
  运行软件请使用开始菜单中的启动器文件: SuperMemo18.desktop。配置sm-wine容器请使用启动器: SuperMemo18.05-winecfg.desktop。
