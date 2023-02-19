@@ -2,14 +2,6 @@
 
 # 卸载后执行的脚本
 
-# 删除wine.appimage 链接文件
-# rm /usr/bin/sm-wine
-
-# curent=`eval echo "/home/"${LOGNAME}"/桌面/SuperMemo卡组与资料库/"`
-
-# # 删除ln链接文件夹
-# rm -rf $curent
-
 # su - $LOGNAME -c "调用脚本"
 
 # 删除软件所在文件夹。
