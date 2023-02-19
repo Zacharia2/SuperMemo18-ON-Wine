@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=SuperMemo 18.05
-Exec=env WINEARCH=win32 WINEPREFIX="/usr/share/SM18.05-WINE-Vessel" /usr/share/SM18.05-WINE-Vessel/Wine-x86_64-ubuntu.latest.AppImage /usr/share/SM18.05-WINE-Vessel/drive_c/SuperMemo/sm18.exe
+Exec=env WINEARCH=win32 WINEPREFIX="/opt/apps/supermemo/SM18.05-WINE-Vessel" wine /opt/apps/supermemo/SM18.05-WINE-Vessel/drive_c/SuperMemo/sm18.exe
 Type=Application
 Categories=Education;
 StartupNotify=true
 Comment=组织你的知识，以尽可能快的速度学习。
-Path=/usr/share/SM18.05-WINE-Vessel/drive_c/SuperMemo
-Icon=/usr/share/SM18.05-WINE-Vessel/smicon.png
+Path=/opt/apps/supermemo/SM18.05-WINE-Vessel/drive_c/SuperMemo
+Icon=/opt/apps/supermemo/SM18.05-WINE-Vessel/smicon.png
 StartupWMClass=sm18.exe
