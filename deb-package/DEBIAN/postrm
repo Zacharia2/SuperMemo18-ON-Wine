@@ -3,10 +3,10 @@
 # 卸载后执行的脚本
 
 # 删除wine.appimage 链接文件
-rm /usr/bin/sm-wine
+# rm /usr/bin/sm-wine
 
 # 删除ln链接文件夹
 rm -rf /home/SuperMemo卡组与资料库
 
 # 删除软件所在文件夹。
-rm -rf /opt/apps/supermemo/SM18.05-WINE-Vessel
+rm -rf /opt/apps/supermemo

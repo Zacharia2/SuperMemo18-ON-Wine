@@ -2,8 +2,8 @@
 
 # 安装后执行的脚本
 
-chmod a+x /opt/apps/supermemo/SM18.05-WINE-Vessel/Wine-x86_64-ubuntu.latest.AppImage
-ln -s /opt/apps/supermemo/SM18.05-WINE-Vessel/Wine-x86_64-ubuntu.latest.AppImage /usr/bin/sm-wine
+# chmod a+x /opt/apps/supermemo/SM18.05-WINE-Vessel/Wine-x86_64-ubuntu.latest.AppImage
+# ln -s /opt/apps/supermemo/SM18.05-WINE-Vessel/Wine-x86_64-ubuntu.latest.AppImage /usr/bin/sm-wine
 
 # 获取桌面路径
 # desk=`cat $HOME/.config/user-dirs.dirs | grep DESKTOP | tail  -1  |cut -d '=' -f 2  | sed 's/\"//g'`
