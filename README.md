@@ -23,6 +23,12 @@ wget https://raw.githubusercontent.com/Zacharia2/SuperMemo18-ON-Wine/main/PKGBUI
 makepkg -i
 ```
 
+aur
+
+```bash
+paru -S supermemo18.05-git
+```
+
 ## 文件说明
 
 - [SM18.05-WINE-Vessel文件夹](deb-package/opt/apps/supermemo/SM18.05-WINE-Vessel)
