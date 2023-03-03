@@ -6,7 +6,7 @@
 >
 > 此WINE容器环境包含SusperMemo18.05所需的所有依赖，可以直接使用，仅需将懒人包解压到SM18.05-WINE-Vessel/drive_c/SuperMemo，注意不要覆盖容器中的SuperMemo/bin文件夹。
 >
-> 软件实际所在目录：SM18.05-WINE-Vessel/drive_c/SuperMemo，不过只包含bin文件夹（supermemo的配置文件）。你可以将懒人包的非bin文件夹复制到此，一样使用。你也可以将其封装为DEB安装包，请阅读[docs/Instal-and-Package.md](https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/docs/Instal-and-Package.md)，并下载适合你电脑版本的[Wine Appimage](https://github.com/Hackerl/Wine_Appimage/releases) 来完成打包。
+> 软件实际所在目录：SM18.05-WINE-Vessel/drive_c/SuperMemo，不过只包含bin文件夹（supermemo的配置文件）。你可以将懒人包的非bin文件夹复制到此，一样使用。你也可以将其封装为DEB安装包，请阅读[docs/Instal-and-Package.md](https://github.com/Zacharia2/SuperMemo18-ON-Wine/blob/main/docs/Instal-and-Package.md)，并下载适合你电脑版本的[Wine Appimage](https://github.com/Hackerl/Wine_Appimage/releases) 来完成打包（或者安装winetricks软件包并将其设置为依赖软件完成打包）。
 >
 > SuperMemo WINE32可以作为阅读记忆与复习工具以及手动传统制卡工具使用。
 
