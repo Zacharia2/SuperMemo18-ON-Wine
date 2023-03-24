@@ -52,7 +52,7 @@ paru -S supermemo18.05-git
 
 卸载: `sudo dpkg -r supermemo18.05-wine32`
 
-构建: `sudo dpkg -b deb-package SuperMemo18.05-lazy-wine32-package.v1.4.0.deb`
+构建: `dpkg -b deb-package SuperMemo18.05-lazy-wine32-package.v1.4.0.deb`
 
 
 我准备了一个快速访问SuperMemo的链接资料库文件夹：`/home/SuperMemo卡组与资料库`
