@@ -2,7 +2,7 @@
 
 # 卸载后执行的脚本
 
-# su - $LOGNAME -c "调用脚本"
-
 # 删除软件所在文件夹。
 rm -rf /opt/apps/supermemo
+
+echo "SuperMemo软件卸载完成，请手动删除桌面上的SuperMemo链接文件夹"
