@@ -2,5 +2,5 @@
 
 # 安装后执行的脚本
 
-# 执行 deb-package/opt/apps/supermemo/post-actions.sh 脚本。
-# su - $LOGNAME -c "调用脚本"
+# 以当前普通用户执行 deb-package/opt/apps/supermemo/post-actions.sh 脚本。
+sudo -u $(who | grep "(:0)" | awk '{print $1}') sh /opt/apps/supermemo/post-actions.sh
