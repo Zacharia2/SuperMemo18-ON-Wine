@@ -1,9 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 # 卸载后执行的脚本
 
-# 删除软件所在文件夹。
 rm -rf /opt/apps/supermemo
 
 # 黑底青字
-echo -e "\e[96m \n UninstallSuccess：软件卸载完成，请手动删除桌面上的SuperMemo链接文件夹 \n \e[0m"
+echo -e "\e[96m\nUninstallSuccess：软件卸载完成，请手动删除桌面上的SuperMemo卡组与资料库链接文件夹 \n \e[0m"
