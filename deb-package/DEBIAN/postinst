@@ -2,6 +2,6 @@
 
 # 安装后执行的脚本
 
-# 以当前普通用户执行 deb-package/opt/apps/supermemo/post-actions.sh 脚本。
-sh /opt/apps/supermemo/post-actions.sh
+# 以当前普通用户执行脚本。
+sh /opt/apps/supermemo/postin-action.sh
 # echo "软件安装完成，你可以使用 `sh /opt/apps/supermemo/actions.sh` 命令初始化创建SuperMemo资料库链接文件夹。"
