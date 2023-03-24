@@ -89,6 +89,11 @@ sname=`eval echo $(who | grep "(:0)" | awk '{print $1}')`
 shome=`eval echo "/home/"${sname}"/桌面"`
 ```
 
+```sh
+# 使用图形用户权限执行脚本。
+sudo -u $(who | grep "(:0)" | awk '{print $1}') sh /path/to/script.sh
+```
+
 ## 相关链接：
 
 - Installers for SuperMemo for Windows using Winetricks：https://github.com/alessivs/supermemo-wine
