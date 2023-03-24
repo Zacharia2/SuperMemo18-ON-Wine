@@ -5,4 +5,5 @@
 # 删除软件所在文件夹。
 rm -rf /opt/apps/supermemo
 
-echo "SuperMemo软件卸载完成，请手动删除桌面上的SuperMemo链接文件夹"
+# 黑底青字
+echo -e "\e[96m \n UninstallSuccess：软件卸载完成，请手动删除桌面上的SuperMemo链接文件夹 \n \e[0m"
