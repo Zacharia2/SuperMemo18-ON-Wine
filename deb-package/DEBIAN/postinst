@@ -4,3 +4,4 @@
 
 # 以当前普通用户执行 deb-package/opt/apps/supermemo/post-actions.sh 脚本。
 # sudo -u $(who | grep "(:0)" | awk '{print $1}') sh /opt/apps/supermemo/post-actions.sh
+echo "软件安装完成，你可以使用 `sh /opt/apps/supermemo/actions.sh` 命令初始化创建SuperMemo资料库链接文件夹。"
