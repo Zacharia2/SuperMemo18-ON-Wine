@@ -3,6 +3,8 @@
 sname=`eval echo $(who | grep "(:0)" | awk '{print $1}')`
 scurrent=`eval echo "/home/"${sname}"/桌面/SuperMemo卡组与资料库/"`
 
+echo $scurrent
+
 # 创建父目录
 mkdir -p /opt/apps/supermemo/SM18.05-WINE-Vessel/drive_c/SuperMemo/SuperMemo资料库
 mkdir -p $scurrent
