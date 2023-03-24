@@ -8,9 +8,6 @@ Maintainer:WhiteFall
 Description:SuperMemo On Wine.(32bit)
  运行软件请使用开始菜单中的启动器文件: SuperMemo18.desktop。配置sm-wine容器请使用启动器: SuperMemo18.05-winecfg.desktop。
  . 
- 可以使用sm-wine命令启动SuperMemo18-WINE32自带的wine-appimage。没有设置WINEPREFIX容器根目录变量的情况下这将会在HOME目录生成默认的.wine容器。
- . 
- 软件实际所在目录：/usr/share/SM18.05-WINE-Vessel/drive_c/SuperMemo
+ 软件实际所在目录：/opt/apps/supermemo/SM18.05-WINE-Vessel/drive_c/SuperMemo
  . 
  说明文档以及项目地址: https://github.com/Zacharia2/SuperMemo18-ON-Wine ，请需要时查阅。
-
