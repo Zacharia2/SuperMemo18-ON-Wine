@@ -75,7 +75,9 @@ paru -S supermemo18.05-git
  
 软件实际所在目录：`/usr/share/SM18.05-WINE-Vessel/drive_c/SuperMemo`
 
-## 使用任意用户权限在图形用户桌面下创建文件夹。
+## 图形用户桌面
+
+使用任意用户权限在图形用户桌面下创建文件夹。
 
 任意用户执行 sh foo.sh 脚本。
 
