@@ -10,8 +10,8 @@
 Debian / Ubuntu
 
 ```bash
-wget https://github.com/Zacharia2/SuperMemo18-ON-Wine/releases/download/v1.4.0/SuperMemo18.05-lazy-wine32-package.v1.4.0.deb \
-&& sudo dpkg -i ./SuperMemo18.05-lazy-wine32-package.v1.4.0.deb
+wget https://github.com/Zacharia2/SuperMemo18-ON-Wine/releases/download/v1.4.0.1/SuperMemo18.05-lazy-winetricks.v1.4.0.1.deb \
+&& sudo dpkg -i ./SuperMemo18.05-lazy-winetricks.v1.4.0.1.deb
 ```
 
 Arch / Manjaro
@@ -48,11 +48,11 @@ paru -S supermemo18.05-git
 
 ## SuperMemo18.05-lazy-wine32-package.v1.4.0.deb
 
-安装: `sudo dpkg -i SuperMemo18.05-lazy-wine32-package.v1.4.0.deb`
+安装: `sudo dpkg -i SuperMemo18.05-lazy-winetricks.v1.4.0.1.deb`
 
 卸载: `sudo dpkg -r supermemo18.05-wine32`
 
-构建: `dpkg -b deb-package SuperMemo18.05-lazy-wine32-package.v1.4.0.deb`
+构建: `dpkg -b deb-package SuperMemo18.05-lazy-winetricks.v1.4.0.1.deb`
 
 
 我准备了一个快速访问SuperMemo的链接资料库文件夹：`/home/SuperMemo卡组与资料库`
