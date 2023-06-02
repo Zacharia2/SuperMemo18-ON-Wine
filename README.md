@@ -16,13 +16,6 @@ wget https://github.com/Zacharia2/SuperMemo18-ON-Wine/releases/download/v1.4.0.1
 
 Arch / Manjaro
 
-```bash
-mkdir -p /tmp/sm18
-cd /tmp/sm18
-wget https://raw.githubusercontent.com/Zacharia2/SuperMemo18-ON-Wine/main/PKGBUILD
-makepkg -i
-```
-
 aur
 
 ```bash
